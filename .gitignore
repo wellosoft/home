@@ -1,3 +1,5 @@
 node_modules/
 # for local development
 dist/
+*.jpg
+*.png
