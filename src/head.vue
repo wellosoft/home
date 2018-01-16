@@ -51,7 +51,6 @@
 
     #head .menu>li {
         display: inline-block;
-        list-style-type: none;
         padding: 0px 10px;
     }
 </style>
