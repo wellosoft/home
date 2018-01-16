@@ -3,7 +3,7 @@
         <div class='logo'>Wello Soft</div>
         <div class='space'></div>
         <ul class='menu'>
-            <li v-for='h in heads'> {{ h }} </li>
+            <li><label for='about'>About</label></li>
         </ul>
     </div>
 </template>
@@ -45,10 +45,6 @@
 
     #head .space {
         flex-grow: 1;
-    }
-
-    #head .menu {
-
     }
 
     #head .menu>li {

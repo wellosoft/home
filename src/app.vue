@@ -1,6 +1,7 @@
 <template>
     <div>
         <my-head></my-head>
+        <my-about></my-about>
         <my-contact></my-contact>
         <my-brand></my-brand>
         <my-repos></my-repos>
@@ -16,6 +17,7 @@
     import brand from './brand.vue'
     import graphics from './graphics.vue'
     import foot from './foot.vue'
+    import about from './about.vue'
     export default {
         components: {
             "my-head": head,
@@ -24,6 +26,7 @@
             "my-brand": brand,
             "my-graphics": graphics,
             "my-foot": foot,
+            "my-about": about,
         }
     }
 </script>
@@ -59,6 +62,10 @@
 
     li {
         list-style-type: none;
+    }
+
+    label {
+        cursor: pointer;
     }
 </style>
 
