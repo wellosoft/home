@@ -5,9 +5,12 @@
         <ul id='repos'>
             <li v-for="r in repos">
                 <a :href='r.url'>
-                    <h3>{{ r.name }}  <pre :style="{ 'background-color': r.primaryLanguage.color }">{{ r.primaryLanguage.name }}</pre></h3>
-                    <span>{{ r.description }}</span>
-
+                    <h3>
+                        <span class="name">{{ r.name }}</span>
+                        <span class="lang" :style="{ 'background-color': r.primaryLanguage.color, 'color': getForeground(r.primaryLanguage.color) }">{{ r.primaryLanguage.name }}</span>
+                        <span v-if="r.stargazers">⭐ {{ r.stargazers }}</span>
+                    </h3>
+                    <span class="desc">{{ r.description }}</span>
                 </a>
             </li>
         </ul>
@@ -24,28 +27,57 @@
         flex-wrap: wrap;
     }
 
-    #repos > li {
+    li {
         flex-grow: 1;
-        width: 400px;
-        border: solid 2px #000;
+        width: 30%;
+        min-width: 200px;
+        border: solid 2px rgba(#07c, 0);
         border-radius: 0px 5px 5px 5px;
         margin: 0px 5px;
-        padding: 0px 8px;
+        padding: 10px;
         animation: border 0.2s ease-in;
     }
 
-    #repos li:hover,
-    #repos li:focus {
+    li:hover,
+    li:focus {
         border: solid 2px #07c;
         animation: border 0.2s ease-in;
     }
 
+    .lang {
+        padding: 3px;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 11px;
+        margin-left: 8px;
+    }
+
+    .name {
+        border-bottom: solid 1px #07c;
+    }
+
+    .desc {
+        display: inline-block;
+        margin: 10px 0px 15px 0px;
+        font-size: 14px;
+    }
 </style>
 
 <script>
     var data = {
         repos: [],
         error: '',
+        getForeground: function (bgColor) {
+
+            // https://stackoverflow.com/a/41491220/3908409
+            var color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
+            var r = parseInt(color.substring(0, 2), 16); // hexToR
+            var g = parseInt(color.substring(2, 4), 16); // hexToG
+            var b = parseInt(color.substring(4, 6), 16); // hexToB
+            return (((r * 0.299) + (g * 0.587) + (b * 0.114)) > 186) ?
+                '#000' : '#fff';
+
+        }
     }
 
     var xhr = new XMLHttpRequest();

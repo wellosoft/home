@@ -47,7 +47,9 @@
         flex-grow: 1;
     }
 
-    #head .menu {}
+    #head .menu {
+
+    }
 
     #head .menu>li {
         display: inline-block;
