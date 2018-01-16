@@ -1,11 +1,11 @@
 <template>
     <div>
         <my-head></my-head>
-        <div class="hero">
-            <my-contact></my-contact>
-        </div>
-        <my-repos></my-repos>
+        <my-contact></my-contact>
         <my-brand></my-brand>
+        <my-repos></my-repos>
+        <my-graphics></my-graphics>
+        <my-foot></my-foot>
     </div>
 </template>
 
@@ -49,7 +49,10 @@
         transition: color 0.2s ease-in;
     }
 
-    h3, h4, h5, h6 {
+    h3,
+    h4,
+    h5,
+    h6 {
         font-weight: normal;
         margin: 10px;
     }
@@ -60,5 +63,4 @@
 </style>
 
 <style scoped>
-
 </style>

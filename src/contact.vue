@@ -1,5 +1,5 @@
 <template>
-    <div id='contact'>
+    <div class="hero" id='contact'>
         <img class="profile" :src='profile' />
         <h2>Wildan Mubarok</h2>
         <h3>Programmer that Builds Dream 🌈</h3>

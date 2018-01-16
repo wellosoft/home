@@ -8,10 +8,10 @@
         </span>
         <div id='pad'>
             <span>
-                <a :href='expertise'><span>See my stack of Artworks</span></a>
+                <a :href='expertise' target="_blank"><span>See stacks of my artful works 🎨</span></a>
             </span>
             <span>
-                <a :href='blog'><span>See my rolls of Blogroll</span></a>
+                <a :href='blog'  target="_blank"><span>See rolls of my feedy blogs ✍</span></a>
             </span>
         </div>
     </div>
@@ -54,7 +54,9 @@
         height: 500px;
     }
 
-    div>.spoiler {
+    .spoiler {
+        display: inline-block;
+        width: 100%;
         opacity: 0;
         transition: opacity 0.3s ease-out;
         color: transparent;
@@ -63,7 +65,7 @@
 
     /* don't use > and see the bug? */
 
-    div:hover>.spoiler {
+    .spoiler:hover {
         opacity: 1;
         transition: opacity 0.3s ease-in;
     }
