@@ -11,7 +11,7 @@
     export default {
         data: function() {
             return {
-               dino: require('raw-loader!../img/dino.txt')
+               dino: require('../img/dino.txt')
             }
         }
     }

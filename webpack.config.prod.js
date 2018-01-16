@@ -1,12 +1,12 @@
 const path = require('path')
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './src/main.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, './dist'),
-        //      publicPath: 'dist',
+        path: path.resolve(__dirname, './docs'),
     },
     module: {
         rules: [{
@@ -39,5 +39,12 @@ module.exports = {
             }],
         }]
     },
-    plugins: [new webpack.ProgressPlugin()]
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+              NODE_ENV: '"production"'
+            }
+          }),
+        new webpack.ProgressPlugin(),
+        new UglifyJsPlugin()]
 }
