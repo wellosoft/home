@@ -2,16 +2,16 @@
     <div>
         <div class="hero demo" id='graphics' :style="{ 'background-image': url(images[idx].image) }">
             <span class="dummygap nav rows">
-                <a @click='setg(idx, -1)' href='#seq-left'>◀</a>
+                <a data-balloon="previous" data-balloon-pos="up" @click='setg(idx, -1)'>◀</a>
                 <span class="dummygap"></span>
-                <a @click='setg(idx, 1)' href='#seq-right'>▶</a>
+                <a data-balloon="next" data-balloon-pos="up" @click='setg(idx, 1)'>▶</a>
             </span>
             <div class="btm rows">
                 <div class="left">
                     <a :href='images[idx].url' target="_blank"><h2>{{ images[idx].title }} ↗</h2></a>
                     <span>{{ images[idx].desc }}</span>
                 </div>
-                <a href='https://connect.unity.com/u/5850d37f0909150027e23f02'>
+                <a data-balloon="I do Unity stuff few years now so check my Connect profile!" data-balloon-pos="left" href='https://connect.unity.com/u/5850d37f0909150027e23f02' target="_blank">
                     <span class="right mdunity" v-html='mdunity'>
                     </span>
                 </a>
@@ -89,20 +89,25 @@
             var data = {
                 mdunity: require('../img/madewithunity.svg'),
                 images: [{
+                    image: "https://res.cloudinary.com/wellosoft/image/upload/v1516086014/home/interactive-tothehighestplace.jpg",
+                    title: "To the Highest Place",
+                    desc: "Rule #1 is Move Higher",
+                    url: "https://willnode.itch.io/tthp"
+                }, {
                     image: "https://res.cloudinary.com/wellosoft/image/upload/v1516085765/home/library-simpleproceduralskybox.jpg",
                     title: "Simple Procedural Skybox",
                     desc: "Procedural Skybox with features",
-                    url: 'http://u3d.as/dfr'
+                    url: 'http://u3d.as/fCV'
                 }, {
                     image: "https://res.cloudinary.com/wellosoft/image/upload/v1516085765/home/library-texdraw.jpg",
                     title: "TEXDraw",
                     desc: "Expressing math syntax made easy",
                     url: 'http://u3d.as/mFe'
                 }, {
-                    image: "https://res.cloudinary.com/wellosoft/image/upload/v1516086014/home/interactive-tothehighestplace.jpg",
-                    title: "To the Highest Place",
-                    desc: "Rule #1 is Move Higher",
-                    url: "https://willnode.itch.io/tthp"
+                    image: "https://res.cloudinary.com/wellosoft/image/upload/v1516170774/home/Med_2.png",
+                    title: "Engine4",
+                    desc: "Turn the game to one dimension higher",
+                    url: "http://u3d.as/fdm"
                 }],
                 idx: 0,
                 setg: function (idx, delta) {

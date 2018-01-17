@@ -11,7 +11,7 @@
                 <a :href='expertise' target="_blank"><span>See stacks of my artful works 🎨</span></a>
             </span>
             <span>
-                <a :href='blog'  target="_blank"><span>See rolls of my feedy blogs ✍</span></a>
+                <a :href='blog' target="_blank"><span>See rolls of my feedy blogs ✍</span></a>
             </span>
         </div>
     </div>
@@ -76,8 +76,8 @@
         data: function () {
             return {
                 cover: 'https://res.cloudinary.com/wellosoft/image/upload/v1516031835/home/wellosoft-bg.jpg',
-                blog: 'http://blog.wellosoft.net',
-                expertise: 'http://expertise.wellosoft.net',
+                blog: 'https://blog.wellosoft.net',
+                expertise: 'https://wellosoft.net/expertise',
                 url: function (path) {
                     return 'url(' + path + ')'
                 }

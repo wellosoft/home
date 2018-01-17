@@ -1,9 +1,16 @@
 <template>
     <div id='head'>
-        <div class='logo'>Wello Soft</div>
+        <div class='logo'>
+            <span><img class="icon" :src='favicon'></span>
+            Wello Soft</div>
         <div class='space'></div>
         <ul class='menu'>
-            <li><label for='about'>About</label></li>
+            <li>
+                <label data-balloon="Show my email" data-balloon-pos="down" @click='gotoEmail()' for='email'>📧 Contact</label>
+            </li>
+            <li>
+                <label data-balloon="Show my story" data-balloon-pos="down" for='about'>🤵 About</label>
+            </li>
         </ul>
     </div>
 </template>
@@ -17,13 +24,18 @@
                     'Projects',
                     'Blog',
                     'About'
-                ]
+                ],
+                favicon: require('url-loader!../img/favicon.ico'),
+                gotoEmail: function () {
+                    if (!document.getElementById('email').checked)
+                        document.getElementById('email-window').scrollIntoView({ behavior: 'smooth' });
+                }
             }
         }
     }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
     #head {
         box-shadow: 0 0 0px 0px rgba(#07c, 0);
         display: flex;
@@ -32,7 +44,12 @@
         transition: box-shadow 0.1s ease-in;
     }
 
-    #head > *{
+    .icon {
+        width: 32px;
+        height: 32px;
+vertical-align: middle;
+    }
+    #head>* {
         margin: 0;
         padding: 1em 0px;
     }

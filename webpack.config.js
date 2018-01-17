@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, './dist'),
+//        path: path.resolve(__dirname, './dist'),
         //      publicPath: 'dist',
     },
     module: {
@@ -15,11 +15,7 @@ module.exports = {
                 loader: 'vue-loader',
                 options: {
                     loaders: {
-                        scss: ['vue-style-loader', 'css-loader', {
-                            loader: 'sass-loader', options: {
-              /*spaghetti*/   outputStyle: 'compressed'
-                            }
-                        }],
+                        scss: ['vue-style-loader', 'css-loader', 'sass-loader'],
                     }
                 }
             }],

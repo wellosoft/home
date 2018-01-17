@@ -13,6 +13,7 @@
     "sass-loader": "^6.0.6",
     "svg-inline-loader": "^0.8.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
+    "url-loader": "^0.6.2",
     "vue": "^2.5.13",
     "vue-loader": "^13.7.0",
     "vue-style-loader": "^3.0.3",
@@ -25,5 +26,7 @@
     "build": "webpack",
     "prod": "webpack --config webpack.config.prod.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "balloon-css": "^0.5.0"
+  }
 }

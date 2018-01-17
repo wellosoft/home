@@ -1,16 +1,18 @@
 <template>
     <div>
-        <h2>Latest Repositories</h2>
-        <span v-if='error'>{{ error }}. Something not works? 🤔</span>
+        <a href='https://github.com/willnode' target="_blank">
+            <h2 data-balloon="see all my repositories on GitHub!" data-balloon-pos="down">Latest Repositories ↗</h2>
+        </a>
+        <span v-if='error'>{{ error }}</span>
         <ul id='repos'>
             <li v-for="r in repos">
                 <a :href='r.url'>
                     <h3>
                         <span class="name">{{ r.name }}</span>
                         <span class="lang" :style="{ 'background-color': r.primaryLanguage.color, 'color': getForeground(r.primaryLanguage.color) }">{{ r.primaryLanguage.name }}</span>
-                        <span v-if="r.stargazers">⭐ {{ r.stargazers }}</span>
                     </h3>
                     <span class="desc">{{ r.description }}</span>
+                    <div v-if="r.stargazers">⭐ {{ r.stargazers }}</div>
                 </a>
             </li>
         </ul>
@@ -25,6 +27,7 @@
     #repos {
         display: flex;
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     li {
@@ -66,7 +69,7 @@
 <script>
     var data = {
         repos: [],
-        error: '',
+        error: 'Be patient. Our 🐒 still scraping the web for you...',
         getForeground: function (bgColor) {
 
             // https://stackoverflow.com/a/41491220/3908409
@@ -81,15 +84,16 @@
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://gh-latest-repos-ugtxvfawkj.now.sh", true);
+    xhr.open("GET", "https://gh-latest-repos-mhqyelmowl.now.sh", true);
     //xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 data.repos = JSON.parse(xhr.responseText);
                 data.repos.reverse();
+                data.error = data.repos.length === 0 ? 'Whoops. Nothing here. But we still ❤ U' : '';
             } else {
-                data.error = xhr.status + ": " + xhr.statusText;
+                data.error = xhr.status + ": Sorry our monkeys have failed load your request 🤔";
             }
         }
     }
