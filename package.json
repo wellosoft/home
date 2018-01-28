@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "prod": "webpack --config webpack.config.prod.js"
+    "prod": "webpack --config webpack.config.prod.js",
+    "test": "yarn run build"
   }
 }
