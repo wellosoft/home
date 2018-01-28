@@ -49,20 +49,21 @@
     }
 
     .links li {
-        border: solid 2px #000;
+        border: solid 2px;
+        border-color: transparent;
         border-radius: 0px 5px 5px 5px;
         white-space: nowrap;
         overflow-wrap: normal;
         display: inline-flex;
         margin: 0px 5px;
         padding: 0px 8px;
-        animation: border 0.2s ease-in;
+        animation: border-color 0.2s ease-in;
     }
 
     .links li:hover,
     .links li:focus {
-        border: solid 2px #07c;
-        animation: border 0.2s ease-in;
+        border-color: #07c;
+        animation: border-color 0.2s ease-in;
     }
 
     .links span {
@@ -89,6 +90,10 @@
                         name: 'Codepen',
                         href: 'https://codepen.io/willnode',
                         icon: require('../img/codepen.svg')
+                    }, {
+                        name: 'Artstation',
+                        href: 'https://artstation.com/willnode',
+                        icon: require('../img/artstation.svg')
                     }
                 ],
                 profile: 'https://avatars1.githubusercontent.com/u/20214420',

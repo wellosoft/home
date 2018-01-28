@@ -111,19 +111,18 @@
                 }],
                 idx: 0,
                 setg: function (idx, delta) {
+                    const length = 4;
 
                     var g = document.getElementById('graphics');
                     g.style.filter = 'brightness(0)';
 
                     idx += delta;
-                    if (idx >= 3)
+                    if (idx >= length)
                         idx = 0;
                     else if (idx < 0)
-                        idx = 2;
+                        idx = length - 1;
 
                     setTimeout(() => {g.style.filter = ''; data.idx = idx}, 500);
-
-
                 },
                 url: function (path) {
                     return 'url(' + path + ')'

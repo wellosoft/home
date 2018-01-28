@@ -16,6 +16,9 @@
 
 
 <style lang="scss" scoped>
+    label {
+        padding: 5px 0px;
+    }
     #about {
         display: none;
     }
@@ -49,6 +52,10 @@
     h3 {
         font-weight: bold;
         margin: 15px 0px;
+    }
+
+    h2 {
+        padding: 20px 0px;
     }
 
     h3::after, h3::before {
