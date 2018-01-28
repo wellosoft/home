@@ -19,13 +19,15 @@
     "vue-loader": "^13.7.0",
     "vue-style-loader": "^3.0.3",
     "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.10.0",
+    "webpack": "^3.10.0"
+  },
+  "optionalDependencies": {
     "webpack-dev-server": "^2.11.0"
   },
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
     "prod": "webpack --config webpack.config.prod.js",
-    "test": "yarn run build"
+    "test": "npm run prod"
   }
 }

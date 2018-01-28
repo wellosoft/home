@@ -6,6 +6,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         filename: 'bundle.js',
+        path: path.resolve(__dirname, './dist')
     },
     module: {
         rules: [{
@@ -44,6 +45,5 @@ module.exports = {
               NODE_ENV: '"production"'
             }
           }),
-        new webpack.ProgressPlugin(),
-        new UglifyJsPlugin()]
+          new UglifyJsPlugin()]
 }
