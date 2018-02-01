@@ -1,7 +1,7 @@
 <template>
     <div id='head'>
         <div class='logo'>
-            <span><img class="icon" :src='favicon'></span>
+            <span><img class="icon" :src='favicon' alt="Logo"></span>
             Wello Soft</div>
         <div class='space'></div>
         <ul class='menu'>

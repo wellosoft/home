@@ -8,10 +8,10 @@
         </span>
         <div id='pad'>
             <span>
-                <a :href='expertise' target="_blank"><span>See stacks of my artful works 🎨</span></a>
+                <a :href='expertise' target="_blank" rel="noopener"><span>See stacks of my artful works 🎨</span></a>
             </span>
             <span>
-                <a :href='blog' target="_blank"><span>See rolls of my feedy blogs ✍</span></a>
+                <a :href='blog' target="_blank" rel="noopener"><span>See rolls of my feedy blogs ✍</span></a>
             </span>
         </div>
     </div>

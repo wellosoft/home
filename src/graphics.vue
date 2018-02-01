@@ -8,10 +8,10 @@
             </span>
             <div class="btm rows">
                 <div class="left">
-                    <a :href='images[idx].url' target="_blank"><h2>{{ images[idx].title }} ↗</h2></a>
+                    <a :href='images[idx].url' target="_blank" rel="noopener"><h2>{{ images[idx].title }} ↗</h2></a>
                     <span>{{ images[idx].desc }}</span>
                 </div>
-                <a data-balloon="I do Unity stuff few years now so check my Connect profile!" data-balloon-pos="left" href='https://connect.unity.com/u/5850d37f0909150027e23f02' target="_blank">
+                <a data-balloon="I do Unity stuff few years now so check my Connect profile!" data-balloon-pos="left" href='https://connect.unity.com/u/5850d37f0909150027e23f02' target="_blank" rel="noopener">
                     <span class="right mdunity" v-html='mdunity'>
                     </span>
                 </a>

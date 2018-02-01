@@ -1,16 +1,16 @@
 <template>
     <div>
-        <a href='https://github.com/willnode' target="_blank">
+        <a href='https://github.com/willnode' target="_blank" rel="noopener">
             <h2 data-balloon="see all my repositories on GitHub!" data-balloon-pos="down">Latest Repositories ↗</h2>
         </a>
         <span v-if='error'>{{ error }}</span>
         <ul id='repos'>
             <li v-for="r in repos">
                 <a :href='r.url'>
-                    <h3>
+                    <span class="repo">
                         <span class="name">{{ r.name }}</span>
                         <span class="lang" :style="{ 'background-color': r.primaryLanguage.color, 'color': getForeground(r.primaryLanguage.color) }">{{ r.primaryLanguage.name }}</span>
-                    </h3>
+                    </span><br>
                     <span class="desc">{{ r.description }}</span>
                     <div v-if="r.stargazers">⭐ {{ r.stargazers }}</div>
                 </a>
@@ -20,6 +20,10 @@
 </template>
 
 <style lang='scss' scoped>
+    .repo {
+        font-size: 20px;
+    }
+
     div {
         text-align: center;
     }
@@ -35,7 +39,7 @@
         width: 30%;
         min-width: 200px;
         border: solid 2px rgba(#07c, 0);
-        border-radius: 0px 5px 5px 5px;
+        border-radius: 0px 10px;
         margin: 0px 5px;
         padding: 10px;
         animation: border 0.2s ease-in;
@@ -61,7 +65,7 @@
 
     .desc {
         display: inline-block;
-        margin: 10px 0px 15px 0px;
+        margin: 15px 0px;
         font-size: 14px;
     }
 </style>

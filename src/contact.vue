@@ -1,13 +1,13 @@
 <template>
     <div class="hero" id='contact'>
-        <img class="profile" :src='profile' />
+        <img class="profile" :src='profile' alt="Profile Picture on GitHub" />
         <h2>Wildan Mubarok</h2>
         <h3>Programmer that builds dream
             <span data-balloon="and fun!" data-balloon-pos="right">🌈</span>
         </h3>
         <ul class="links">
             <li v-for='l in links'>
-                <a :href='l.href' target='_blank'>
+                <a :href='l.href' target='_blank' rel='noopener'>
                     <span class="icon" v-html='l.icon'></span>
                     <span> {{ l.name }} </span>
                 </a>
