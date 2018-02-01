@@ -26,6 +26,7 @@
     #pad span {
         display: flex;
         flex-grow: 1;
+        margin: 0px 5px;
     }
 
     #pad a {

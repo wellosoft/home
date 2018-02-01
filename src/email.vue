@@ -24,6 +24,7 @@
 
     #email-window {
         display: flex;
+        flex-wrap: wrap;
         height: 0px;
         background-color: darken(#07c, 30);
         transition: height 0.4s ease-in;
@@ -66,8 +67,9 @@
 
 <style lang="scss">
     #email-window svg {
-        height: 70px;
-        width: 70px;
+        width: 100%;
+        max-width: 70px;
+        padding-right: 5px;
         vertical-align: text-bottom;
         fill: white;
     }

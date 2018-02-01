@@ -46,6 +46,7 @@
     .links {
         display: inline-block;
         font-size: 20px;
+        padding: 0px;
     }
 
     .links li {

@@ -11,7 +11,7 @@
                 <a data-balloon="go up" data-balloon-pos="up" @click='goTop()'>⬆⬆</a>
             </h3>
         </div>
-        <div class="rainbow"> </div>
+        <div class="rainbow"></div>
     </div>
 </template>
 
@@ -35,5 +35,11 @@
     .rainbow {
         height: 15px;
         background: linear-gradient(to right, red, yellow, lime, cyan, blue, magenta, red);
+        transition: height 0.3s ease-out;
+    }
+
+    .rainbow:hover, .rainbow:active {
+        height: 100vh;
+        transition: height 1s ease-in;
     }
 </style>

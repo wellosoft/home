@@ -1,21 +1,22 @@
 <template>
     <div id='head'>
-        <div class='logo'>
-            <span><img class="icon" :src='favicon' alt="Logo"></span>
-            Wello Soft</div>
+        <div class='logo' data-balloon=":P" data-balloon-pos="right">
+            <img class="icon" :src='favicon' alt="Logo"  @click="mayhem()">
+        </div>
         <div class='space'></div>
         <ul class='menu'>
             <li>
                 <label data-balloon="Show my email" data-balloon-pos="down" @click='gotoEmail()' for='email'>📧 Contact</label>
             </li>
             <li>
-                <label data-balloon="Show my story" data-balloon-pos="down" for='about'>🤵 About</label>
+                <label data-balloon="Show my story" data-balloon-pos="down" for='about'>👓 About</label>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+    var may_hem = false;
     export default {
         data: function () {
             return {
@@ -28,7 +29,12 @@
                 favicon: require('url-loader!../img/favicon.ico'),
                 gotoEmail: function () {
                     if (!document.getElementById('email').checked)
-                        document.getElementById('email-window').scrollIntoView({ behavior: 'smooth' });
+                        document.getElementById('email-window').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                },
+                mayhem: function () {
+                    // ?
                 }
             }
         }
@@ -47,8 +53,10 @@
     .icon {
         width: 32px;
         height: 32px;
-vertical-align: middle;
+        vertical-align: middle;
+        cursor: pointer;
     }
+
     #head>* {
         margin: 0;
         padding: 1em 0px;

@@ -8,7 +8,7 @@
                     <h3>{{ t.time }}</h3>
                     <span v-html='tidy(t.wth)'></span>
                 </div>
-                <label for='about'>✖</label>
+                <label for='about' @click='goTop()'>✖</label>
             </div>
         </div>
     </div>
@@ -18,7 +18,15 @@
 <style lang="scss" scoped>
     label {
         padding: 5px 0px;
+        color: black;
+        transition: color 0.3s ease-in;
     }
+
+    label:hover {
+        color: #07c;
+        transition: color 0.3s ease-in;
+    }
+
     #about {
         display: none;
     }
@@ -27,7 +35,7 @@
         display: flex;
         max-height: 0px;
         background-color: #eee;
-        transition: max-height 0.4s ease-in;
+        transition: max-height 0.4s ease-in 0.4s;
         overflow: hidden;
     }
 
@@ -122,6 +130,9 @@
                     }
                 ],
                 tidy: (x) => x.replace(/\. /g, '.<br>'),
+                goTop: () => {
+                    window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })
+                }
             }
         }
     }
