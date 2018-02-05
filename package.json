@@ -9,6 +9,7 @@
     "balloon-css": "^0.5.0",
     "css-loader": "^0.28.8",
     "file-loader": "^1.1.6",
+    "ga-lite": "^2.0.1",
     "node-sass": "^4.7.2",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
