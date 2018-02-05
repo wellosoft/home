@@ -18,9 +18,6 @@
 </template>
 
 <style lang="scss" scoped>
-    #email {
-        display: none;
-    }
 
     #email-window {
         display: flex;

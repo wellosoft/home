@@ -1,7 +1,9 @@
 <template>
     <div id='head'>
-        <div class='logo' data-balloon=":P" data-balloon-pos="right">
-            <img class="icon" :src='favicon' alt="Logo"  @click="mayhem()">
+        <div class='logo' data-balloon="Scroll down and hover over rainbow 🌈" data-balloon-pos="right">
+            <a href='https://github.com/willnode/willnode.github.io/'>
+                <img class="icon" :src='favicon' alt="Logo">
+            </a>
         </div>
         <div class='space'></div>
         <ul class='menu'>
@@ -16,7 +18,6 @@
 </template>
 
 <script>
-    var may_hem = false;
     export default {
         data: function () {
             return {
@@ -32,9 +33,6 @@
                         document.getElementById('email-window').scrollIntoView({
                             behavior: 'smooth'
                         });
-                },
-                mayhem: function () {
-                    // ?
                 }
             }
         }

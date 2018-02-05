@@ -7,6 +7,7 @@
         <my-brand></my-brand>
         <my-repos></my-repos>
         <my-graphics></my-graphics>
+        <my-thanks></my-thanks>
         <my-foot></my-foot>
     </div>
 </template>
@@ -20,6 +21,7 @@
     import graphics from './graphics.vue'
     import foot from './foot.vue'
     import about from './about.vue'
+    import thanks from './thanks.vue'
     export default {
         components: {
             "my-head": head,
@@ -30,6 +32,7 @@
             "my-graphics": graphics,
             "my-foot": foot,
             "my-about": about,
+            "my-thanks": thanks,
         }
     }
 
@@ -81,6 +84,10 @@
 
     label {
         cursor: pointer;
+    }
+
+    input[type='checkbox'] {
+        display: none;
     }
 </style>
 

@@ -36,6 +36,7 @@
         height: 15px;
         background: linear-gradient(to right, red, yellow, lime, cyan, blue, magenta, red);
         transition: height 0.3s ease-out;
+        overflow: hidden;
     }
 
     .rainbow:hover, .rainbow:active {

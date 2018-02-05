@@ -27,10 +27,6 @@
         transition: color 0.3s ease-in;
     }
 
-    #about {
-        display: none;
-    }
-
     #about-window {
         display: flex;
         max-height: 0px;
@@ -133,6 +129,11 @@
                 goTop: () => {
                     window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })
                 }
+            }
+        },
+        mounted: () => {
+            if (window.location.hash === '#about') {
+                document.getElementById('about').checked = true;
             }
         }
     }
