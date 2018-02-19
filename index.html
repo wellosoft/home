@@ -1,5 +1,18 @@
 ---
 layout: compress
+links:
+- name: GitHub
+  href: https://github.com/willnode
+  icon: "img/github.svg"
+- name: Twitter
+  href: https://twitter.com/willnode
+  icon: "img/twitter.svg"
+- name: Codepen
+  href: https://codepen.io/willnode
+  icon: "img/codepen.svg"
+- name: Artstation
+  href: https://artstation.com/willnode
+  icon: "img/artstation.svg"
 ---
 <html lang="en">
     <head>
@@ -13,5 +26,41 @@ layout: compress
     </head>
     <body>
         {% include head.html %}
+        <!-- Contacts -->
+        <div class="hero" id="contact">
+            <img class="profile" src="https://avatars1.githubusercontent.com/u/20214420" alt="Profile Picture on GitHub" />
+            <h2>Wildan Mubarok</h2>
+            <h3>Programmer that builds dream
+                <span data-balloon="and fun!" data-balloon-pos="right">🌈</span>
+            </h3>
+            <ul class="links">
+                {% for v in page.links %}
+                <li>
+                    <a href="{{ v.href }}" target="_blank" rel="noopener">
+                        {% include_relative {{ v.icon }} %}
+                        <span> {{ v.name }} </span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- Brand -->
+        <div id="brand" class="hero demo" style="background-image: url(https://res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg)">
+            <span class="spoiler">
+                <b>FUN FACT</b> Wello Soft is a one-man fictional company that pretended to exist because
+                <i>it was really cool</i> 😎
+                <br>
+                <b>FUN FACT AGAIN</b> So many cool stuff still hiding! Go find out while you're here! 🔥
+            </span>
+            <div id='pad'>
+                <span>
+                    <a href='/expertise/' target="_blank" rel="noopener"><span>See stacks of my artful works 🎨</span></a>
+                </span>
+                <span>
+                    <a href='//blog.wellosoft.net/' target="_blank" rel="noopener"><span>See rolls of my feedy blogs ✍</span></a>
+                </span>
+            </div>
+        </div>
+        {% include foot.html %}
     </body>
 </html>

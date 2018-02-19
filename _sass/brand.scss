@@ -1,0 +1,43 @@
+#brand {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+    min-height: 450px;
+    #pad {
+        display: flex;
+        height: calc(100% - 150px);
+        span {
+            display: flex;
+            flex-grow: 1;
+            margin: 0px 5px;
+        }
+        a {
+            margin: auto;
+            background-color: rgba(#07c, 0);
+            border: solid 2px #07c;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            &:hover {
+                background-color: #07c;
+                transition: background-color 0.3s ease-in;
+            }
+        }
+    }
+    .demo {
+        height: 500px;
+    }
+    .spoiler {
+        display: inline-block;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        color: transparent;
+        text-shadow: 1px 1px 5px #111;
+    }
+    .spoiler:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+}

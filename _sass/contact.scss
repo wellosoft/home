@@ -1,0 +1,46 @@
+.links {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px;
+    svg {
+        height: 26px;
+        width: 26px;
+        vertical-align: text-bottom;
+        fill: black;
+    }
+    li {
+        border: solid 2px;
+        border-color: transparent;
+        border-radius: 0px 5px 5px 5px;
+        white-space: nowrap;
+        overflow-wrap: normal;
+        display: inline-flex;
+        margin: 0px 5px;
+        padding: 0px 8px;
+        animation: border-color 0.2s ease-in;
+        &:hover,
+        &:focus {
+            border-color: #07c;
+            animation: border-color 0.2s ease-in;
+            svg {
+                fill: #07c;
+                transition: fill 0.2s ease-out;
+            }
+        }
+    }
+    span {
+        margin: 10px 5px;
+        display: inline-block;
+    }
+}
+
+#contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}

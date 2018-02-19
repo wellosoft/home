@@ -1,0 +1,18 @@
+#footer {
+    .content {
+        text-align: center;
+        padding: 50px 2px;
+        background-color: #eee;
+    }
+    .rainbow {
+        height: 15px;
+        background: linear-gradient(to right, red, yellow, lime, cyan, blue, magenta, red);
+        transition: height 0.3s ease-out;
+        overflow: hidden;
+    }
+    .rainbow:hover,
+    .rainbow:active {
+        height: 100vh;
+        transition: height 1s ease-in;
+    }
+}
