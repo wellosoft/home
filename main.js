@@ -4,3 +4,7 @@ gotoEmail = function () {
             behavior: 'smooth'
         });
 }
+
+// Google analytics
+galite('create', 'UA-109180894-1', 'auto');
+galite('send', 'pageview');
