@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease-out;
+}
+
+a:hover {
+    color: #07c;
+    transition: color 0.2s ease-in;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    display: none;
+}

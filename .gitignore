@@ -4,3 +4,5 @@ dist/
 *.jpg
 *.png
 bundle.js
+_site/
+.sass-cache/
