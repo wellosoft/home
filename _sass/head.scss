@@ -4,14 +4,12 @@
     margin: 0;
     padding: 2px 40px;
     transition: box-shadow 0.1s ease-in;
-
     .icon {
         width: 32px;
         height: 32px;
         vertical-align: middle;
         cursor: pointer;
     }
-
     &:focus,
     &:hover {
         box-shadow: 0 0 5px 0px rgba(#07c, 50);

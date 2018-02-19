@@ -1,0 +1,43 @@
+#repo {
+    text-align: center;
+}
+
+#repos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    .repo {
+        font-size: 20px;
+    }
+    li {
+        flex-grow: 1;
+        width: 30%;
+        min-width: 200px;
+        border: solid 2px rgba(#07c, 0);
+        border-radius: 0px 10px;
+        margin: 0px 5px;
+        padding: 10px;
+        animation: border 0.2s ease-in;
+        &:hover,
+        &:focus {
+            border: solid 2px #07c;
+            animation: border 0.2s ease-in;
+        }
+    }
+    .lang {
+        padding: 3px;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 11px;
+        margin-left: 8px;
+    }
+    .name {
+        border-bottom: solid 1px #07c;
+    }
+    .desc {
+        display: inline-block;
+        margin: 15px 0px;
+        font-size: 14px;
+        flex-grow: 1;
+    }
+}

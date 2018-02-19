@@ -5,6 +5,6 @@ gotoEmail = function () {
         });
 }
 
-// Google analytics
-galite('create', 'UA-109180894-1', 'auto');
-galite('send', 'pageview');
+goTop = function () {
+    window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+}

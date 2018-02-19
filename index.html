@@ -13,6 +13,9 @@ links:
 - name: Artstation
   href: https://artstation.com/willnode
   icon: "img/artstation.svg"
+email:
+  alias: willnode@wellosoft.net
+  support: support@wellosoft.net
 ---
 <html lang="en">
     <head>
@@ -44,6 +47,24 @@ links:
                 {% endfor %}
             </ul>
         </div>
+        <!-- Email -->
+        <div class="hero">
+            <input type="checkbox" id="email">
+            <div id="email-window" v-once>
+                <span data-balloon="Both email delivers to the same human and priority" data-balloon-pos="right" class="icon">
+                    {% include_relative img/gmail.svg %}
+                </span>
+                <span>
+                    <b>Support: </b>
+                    <a data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects" data-balloon-pos="down" title="" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
+                </span>
+                <span>
+                    <b>General: </b>
+                    <a data-balloon="Use this for general use (e.g. events or promotion)" data-balloon-pos="down" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
+                </span>
+                <label data-balloon="Close it" data-balloon-pos="down" click='goTop()' for="email">OK</label>
+            </div>
+        </div>
         <!-- Brand -->
         <div id="brand" class="hero demo" style="background-image: url(https://res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg)">
             <span class="spoiler">
@@ -61,6 +82,36 @@ links:
                 </span>
             </div>
         </div>
+        <div id='repo'>
+            <a href='https://github.com/willnode' target="_blank" rel="noopener">
+                <h2 data-balloon="see all my repositories on GitHub!" data-balloon-pos="down">Latest Repositories ↗</h2>
+            </a>
+            <span id='repos-stat'><noscript>This repo list need Javascript. Sorry! You can click link above 😇</noscript></span>
+            <ul id='repos'></ul>
+        </div>
+        <!-- Graphics -->
+        <div id='graphics'>
+            <noscript>This carousel needs Javascript. Sorry! 😇</noscript>
+            <span class="dummygap nav rows">
+                <a data-balloon="previous" data-balloon-pos="up" id="graphics-p" onclick='graphics.setg(-1)'>◀</a>
+                <span class="dummygap"></span>
+                <a data-balloon="next" data-balloon-pos="up" id="graphics-n" onclick='graphics.setg(1)'>▶</a>
+            </span>
+            <div class="btm rows">
+                <div class="left">
+                    <h2><a id='graphics-link' target="_blank" rel="noopener"></a></h2>
+                    <span id='graphics-desc'></span>
+                </div>
+                <a data-balloon="I do Unity stuff few years now so check my Connect profile!" data-balloon-pos="left" href='https://connect.unity.com/u/5850d37f0909150027e23f02' target="_blank" rel="noopener">
+                    <span class="right mdunity">
+                        {% include_relative img/madewithunity.svg %}
+                    </span>
+                </a>
+            </div>
+        </div>
         {% include foot.html %}
+        {% if jekyll.environment == "production" %}<script src="/analytics.js"></script>{% endif %}
+        <script src="/main.js"></script>
+        <script src="/homeui.js"></script>
     </body>
 </html>
