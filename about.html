@@ -13,10 +13,21 @@ permalink: /about/
     </head>
     <body>
         {% include head.html %}
-
+        <div class="hero">
+            <h1>Hi! I'm Wildan 🐱‍💻</h1>
+            <ul id="bubbles">
+                <li style="background-color:#7b0" data-balloon="Unity + Asset Store Publisher" data-balloon-pos="up">🎮 Game Developer</li>
+                <li style="background-color:#c70" data-balloon="HTML/CSS/JS + Progressive Frameworks" data-balloon-pos="up">🌐 Web Front-End</li>
+                <li style="background-color:#07c" data-balloon="NodeJS + Go + Bash/CMD + .NET Apps" data-balloon-pos="up">🔨 Tool Maker</li>
+                <li style="background-color:gray" data-balloon="hackerone/willnode" data-balloon-pos="up">🐱‍👤 Hacker Baboon</li>
+            </ul>
+        </div>
+        <div class="hero" id="logs">
+            {% capture logs %}{% include about.md %}{% endcapture %}
+            {{ logs | markdownify }}
+        </div>
         {% include foot.html %}
         {% if jekyll.environment == "production" %}<script src="/analytics.js"></script>{% endif %}
         <script src="/main.js"></script>
-        <script src="/homeui.js"></script>
     </body>
 </html>

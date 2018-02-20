@@ -1,0 +1,17 @@
+#bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        border: 1px solid grey;
+        border-radius: 2px;
+        margin: 3px;
+        padding: 5px 9px;
+        color: white;
+        transition: border-color 0.2s ease-in;
+        &:hover {
+            border-color: #07c;
+        }
+    }
+
+}

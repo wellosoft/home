@@ -7,13 +7,17 @@
     <div class="space"></div>
     <ul class="menu">
         <li>
-            <a data-balloon="Show my story" data-balloon-pos="down" href="/about/">👓 About</a>
+            <a data-balloon="Read my story" data-balloon-pos="down" href="/about/">👓 About</a>
         </li>
         <li>
-            <a data-balloon="Show my story" data-balloon-pos="down" href="//blog.wellosoft.net">📝 Blog</a>
+            <a data-balloon="Visit my log" data-balloon-pos="down" href="//blog.wellosoft.net">📝 Blog</a>
         </li>
         <li>
+            {% if page.url=='/' %}
             <label data-balloon="Show my email" data-balloon-pos="down" onclick="gotoEmail()" for="email">📧 Contact</label>
+            {% else %}
+            <a data-balloon="Back to main page" data-balloon-pos="down" href="/">🏠 Home</a>
+            {% endif %}
         </li>
     </ul>
 </div>
