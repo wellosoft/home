@@ -1,20 +1,18 @@
 # https://wellosoft.net
 
-## Technologies:
+This is my site. Hosted as Github Pages. (yay!)
 
-+ Frameworks: Vue.JS
-+ Bundler: Webpack
-+ Images: Cloudinary
-+ Deploy: Travis CI
+## Technologies
 
-> The world of building internet is awesome. I should be more thankful today.
+Just pure Jekyll. No plugins. Uses SCSS [without syntax error](style.css). Uses [GALite](https://github.com/jehna/ga-lite).
+
+And [jekyll-compress](https://github.com/penibelst/jekyll-compress-html) for compressing HTML.
 
 ## Run Local
 
 ```
 git clone willnode/willnode.github.io
-yarn
-yarn run dev
+jekyll serve
 ```
 
 ## License
