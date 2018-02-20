@@ -1,16 +1,19 @@
-<div id='head'>
-    <div class='logo' data-balloon="Scroll down and hover over rainbow 🌈" data-balloon-pos="right">
-        <a href='https://github.com/willnode/willnode.github.io/'>
-            <img class="icon" src='/favicon.ico' alt="Logo">
+<div id="head">
+    <div class="logo" data-balloon="Scroll down and hover over rainbow 🌈" data-balloon-pos="right">
+        <a href="{% if page.url=='/' %}//github.com/willnode/willnode.github.io/{% else %}/{% endif %}">
+            <img class="icon" src="/favicon.ico" alt="Logo">
         </a>
     </div>
-    <div class='space'></div>
-    <ul class='menu'>
+    <div class="space"></div>
+    <ul class="menu">
         <li>
-            <label data-balloon="Show my email" data-balloon-pos="down" click='gotoEmail()' for='email'>📧 Contact</label>
+            <a data-balloon="Show my story" data-balloon-pos="down" href="/about/">👓 About</a>
         </li>
         <li>
-            <label data-balloon="Show my story" data-balloon-pos="down" for='about'>👓 About</label>
+            <a data-balloon="Show my story" data-balloon-pos="down" href="//blog.wellosoft.net">📝 Blog</a>
+        </li>
+        <li>
+            <label data-balloon="Show my email" data-balloon-pos="down" onclick="gotoEmail()" for="email">📧 Contact</label>
         </li>
     </ul>
 </div>
