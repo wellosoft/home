@@ -97,3 +97,9 @@ if (graphics.bg)
     }
     xhr.send();
 })();
+
+/* Tracking */
+
+function track(str) {
+    galite('send', 'event', 'Link', str);
+}
