@@ -1,0 +1,31 @@
+---
+layout: compress
+permalink: /projects/
+---
+<html lang="en">
+    <head>
+        <title>My Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#07c">
+        <meta name="description" content="Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        {% include head.html %}
+        <div class="hero">
+            <h1>Curated Lists of my projects.</h1>
+            <a href="//twitter.com/willnode/timelines/967548520856215553" target="_blank" rel="noopener">
+                <h3>Powered by Twitter 🐦</h3>
+            </a>
+        </div>
+        <div class="hero" id="logs">
+            <a class="twitter-grid" data-limit="30" data-partner="tweetdeck" href="//twitter.com/willnode/timelines/967548520856215553?ref_src=twsrc%5Etfw">List of OSS Repos</a>
+            <a href="//github.com/willnode" target="_blank" rel="noopener">
+                <h2>See all of my repositories on GitHub! ↗</h2>
+            </a>
+        </div>
+        {% include foot.html %}
+        <script async src="//platform.twitter.com/widgets.js"></script>
+    </body>
+</html>

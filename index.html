@@ -3,16 +3,16 @@ layout: compress
 links:
 - name: GitHub
   href: //github.com/willnode
-  icon: "img/github.svg"
+  icon: img/github.svg
 - name: Twitter
   href: //twitter.com/willnode
-  icon: "img/twitter.svg"
+  icon: img/twitter.svg
 - name: Codepen
   href: //codepen.io/willnode
-  icon: "img/codepen.svg"
+  icon: img/codepen.svg
 - name: Artstation
   href: //artstation.com/willnode
-  icon: "img/artstation.svg"
+  icon: img/artstation.svg
 email:
   alias: willnode@wellosoft.net
   support: support@wellosoft.net
@@ -32,7 +32,7 @@ email:
         <!-- Contacts -->
         <div class="hero" id="contact">
             <img class="profile" src="//avatars1.githubusercontent.com/u/20214420" alt="Profile Picture on GitHub" />
-            <h2>Wildan Mubarok</h2>
+            <h1>Wildan Mubarok</h1>
             <h3>Programmer that builds dream
                 <span data-balloon="and fun!" data-balloon-pos="right">🌈</span>
             </h3>
@@ -82,6 +82,7 @@ email:
                 </span>
             </div>
         </div>
+        <!-- Repos -->
         <div id="repo" class="hero">
             <a href="//github.com/willnode" target="_blank" rel="noopener">
                 <h2 data-balloon="see all my repositories on GitHub!" data-balloon-pos="down">Latest Repositories ↗</h2>
@@ -110,8 +111,6 @@ email:
             </div>
         </div>
         {% include foot.html %}
-        {% if jekyll.environment == "production" %}<script src="/analytics.js"></script>{% endif %}
-        <script src="/main.js"></script>
-        <script src="/homeui.js"></script>
+        <script src="/js/homeui.js"></script>
     </body>
 </html>

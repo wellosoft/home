@@ -3,6 +3,8 @@
 
 ⚡ I began to learn the modern Javascript.
 
+Launched +20 OSS Project (and counting) ⏲.
+
 I'm living home until my free time is left due in 6 months ⌛.
 
 ## 2017
@@ -11,13 +13,17 @@ I'm living home until my free time is left due in 6 months ⌛.
 
 I graduated from high school but then skip college until next year 🏫.
 
+I went to learn how an engine works by creating [4D game engine](//u3d.as/fdm) 🤪.
+
 ## 2016
 
-🚀 [TEXDraw](//u3d.as/mFe) (my highest rated asset) is launched. Crafting it for almost a year ⌚.
+🚀 [TEXDraw](//u3d.as/mFe) launched. Crafting it for almost a year ⌚.
 
 ## 2015
 
 ✍ I wrote [my first game](//willnode.itch.io/tthp) 🚀.
+
+I taught myself on how to [write a shader](http://u3d.as/fCV) in Unity.
 
 Also the first time I [sell small assets](//u3d.as/cco), hence my first dollar 💲.
 
@@ -33,16 +39,22 @@ Also _C#-all-the-things_ was become my standard moto 💪.
 
 🌐 Internet is common at this stage.
 
-I grid my self VS2012 and .NET.
+I upgrade my self with .NET and VS2012.
 
-Also was became a game maniac 🎮.
+I was became a game maniac 🎮.
 
-## 2011
+## 2012
 
-ActiveX; VB6; Office 2007 macros.
+ActiveX; VB6; MS Office 2007 macros.
 
-That's how I write my first code 👨‍💻.
+That's when I write my first code 👨‍💻.
+
+## ...
+
+## ..
+
+## .
 
 ## 2000
 
-<span style="font-size:30px">🐣</span>
+<span style="font-size:40px" data-balloon="Don't you think that I'm awesome 😎" data-balloon-pos="down">🐣</span>

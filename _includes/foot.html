@@ -1,7 +1,7 @@
 <div id="footer">
     <div class="content">
         <q>
-            <span data-balloon="code" data-balloon-pos="up">👨‍💻</span> into the world of
+            <span data-balloon="hack" data-balloon-pos="up">👨‍💻</span> into the world of
             <span data-balloon="cookies" data-balloon-pos="up">🍪</span> and
             <span data-balloon="rainbows" data-balloon-pos="up">🌈</span>
         </q>
@@ -10,5 +10,8 @@
             <a data-balloon="go up" data-balloon-pos="up" onclick="goTop()">⬆⬆</a>
         </h3>
     </div>
+    <!-- Scripts -->
     <div class="rainbow"></div>
+    {% if jekyll.environment == "production" %}<script src="/js/analytics.js"></script>{% endif %}
+    <script src="/js/main.js"></script>
 </div>
