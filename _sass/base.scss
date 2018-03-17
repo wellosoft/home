@@ -11,12 +11,15 @@ body {
 
 a {
     text-decoration: none;
+    border-bottom: 1px dotted;
+    border-bottom-color: transparent;
     color: black;
     transition: color 0.2s ease-out;
 }
 
 a:hover {
     color: #07c;
+    border-bottom-color: #07c;
     transition: color 0.2s ease-in;
 }
 

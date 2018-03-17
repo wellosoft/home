@@ -83,9 +83,11 @@ if (graphics.bg)
             <span class="name">${r.name}</span>
             <span class="lang" style="background-color: ${r.primaryLanguage.color}; color:${getForeground(r.primaryLanguage.color)}">${r.primaryLanguage.name}</span>
         </span><br>
-        <span class="desc">${r.description}</span>
-        <div>${r.stargazers ? ('⭐ ' + r.stargazers) : ''}</div>
     </a>
+    <a href='${r.url}'>
+        <span class="desc">${r.description}</span>
+    </a>
+    <div>${r.stargazers ? ('⭐ ' + r.stargazers) : ''}</div>
 </li>`;
                     });
                     document.getElementById('repos').innerHTML = result;
