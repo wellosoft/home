@@ -1,11 +1,21 @@
 #projects {
+    h1, h2 {
+        padding: 0px 10px;
+    }
     ul {
         padding: 5px 20%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         li {
-            display: inline-block;
-            padding: 10px 25px;
+            a {
+                padding: 10px 25px;
+                display: inline-block;
+            }
             width: fit-content;
-            margin: auto;
         }
+    }
+    [data-balloon]::before, [data-balloon]::after {
+        pointer-events: none !important; /* avoid messing with touches */
     }
 }

@@ -2,11 +2,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     padding: 10px;
-    min-height: 450px;
+    height: 70vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
     #pad {
         display: flex;
-        height: calc(100% - 150px);
+        flex-grow: 1;
         span {
             display: flex;
             flex-grow: 1;
