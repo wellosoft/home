@@ -1,14 +1,17 @@
-#graphics {
+.carousel {
     background-color: #222;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     padding: 25px 25px;
-    min-height: 450px;
+    height: 65vw;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     filter: brightness(1);
     transition: filter 0.9s;
+    box-shadow: inset 0px -50px 100px rgba(0,0,0,0.5);
     &.blink {
         filter: brightness(0);
     }

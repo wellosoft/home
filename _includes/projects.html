@@ -1,0 +1,44 @@
+<ul>
+    {% for p in include.list %}
+    <li data-balloon-length="fit" data-balloon="{{p.desc}}" data-balloon-pos="down">
+        <a href="{% if p.url %}{{p.url}}{% else %}{{ 'https://github.com/willnode/' | append: p.name }}{% endif %}">
+            {{p.name}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<div class="carousel" id="{{include.id}}">
+    <span class="dummygap nav rows">
+        <a data-balloon="previous" data-balloon-pos="up" id="{{include.id}}-p" onclick="setImg('{{include.id}}',-1)">◀</a>
+        <span class="dummygap"></span>
+        <a data-balloon="next" data-balloon-pos="up" id="{{include.id}}-n" onclick="setImg('{{include.id}}',1)">▶</a>
+    </span>
+    <div class="btm rows">
+        <div class="left dim">
+            <h2>
+                <a id="{{include.id}}-link" target="_blank" rel="noopener"></a>
+            </h2>
+            <span id="{{include.id}}-desc"></span>
+        </div>
+    </div>
+</div>
+<script>
+    window['{{include.id}}_imgs'] = [
+        /* {% for p in include.list %}{% if p.img %} */
+        {
+            image: "{{p.img}}",
+            title: "{{p.name}}",
+            desc: "{{p.desc}}",
+            url: "{% if p.url %}{{p.url}}{% else %}{{ 'https://github.com/willnode/' | append: p.name }}{% endif %}"
+        },
+        /* {% endif %}{% endfor %}  */
+    ];
+    setImg('{{include.id}}', 0);
+</script>
+<noscript>
+    <style>
+        .carousel {
+            display: none;
+        }
+    </style>
+</noscript>

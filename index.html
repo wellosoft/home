@@ -51,12 +51,14 @@ email:
         <div>
             <input type="checkbox" id="email">
             <div id="email-window" v-once>
-                <span data-balloon="Both email delivers to the same human and priority" data-balloon-pos="right" class="icon">
-                    {% include_relative img/gmail.svg %}
-                </span>
+                    <span data-balloon="Both email delivers to the same human and priority" data-balloon-pos="right" class="icon">
+                        <a href="/img/dino.txt" target="_blank">
+                            {% include_relative img/gmail.svg %}
+                        </a>
+                    </span>
                 <span>
                     <b>Support: </b>
-                    <a data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects" data-balloon-pos="down" title="" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
+                    <a data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects OR prefer to be private (and good reason to)" data-balloon-pos="down" title="" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
                 </span>
                 <span>
                     <b>General: </b>
@@ -75,7 +77,7 @@ email:
             </span>
             <div id="pad">
                 <span>
-                    <a href="/expertise/" target="_blank" rel="noopener"><span>See stacks of my artful works 🎨</span></a>
+                    <a href="/projects/" target="_blank" rel="noopener"><span>See stacks of my artful works 🎨</span></a>
                 </span>
                 <span>
                     <a href="//blog.wellosoft.net/" target="_blank" rel="noopener"><span>See rolls of my feedy blogs ✍</span></a>
@@ -91,7 +93,7 @@ email:
             <ul id="repos"></ul>
         </div>
         <!-- Graphics -->
-        <div id="graphics">
+        <div id="graphics" class="carousel">
             <noscript>This carousel needs Javascript. Sorry! 😇</noscript>
             <span class="dummygap nav rows">
                 <a data-balloon="previous" data-balloon-pos="up" id="graphics-p" onclick="graphics.setg(-1)">◀</a>

@@ -1,5 +1,5 @@
 /* Graphics */
-graphics = {
+var graphics = {
     images: [{
         image: "//res.cloudinary.com/wellosoft/image/upload/v1516086014/home/interactive-tothehighestplace.jpg",
         title: "To the Highest Place",
@@ -24,7 +24,7 @@ graphics = {
     bg: (() => document.getElementById('graphics'))(),
     idx: 0,
     setg: function (delta) {
-        const length = 4;
+        const length = graphics.images.length;
 
         var g = graphics.bg;
         var idx = graphics.idx;
@@ -66,10 +66,10 @@ if (graphics.bg)
     setMessage('Be patient. Our 🐒 still scraping the web for you...');
     var repos = [];
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://gh-latest-repos-mhqyelmowl.now.sh", true);
+    xhr.open("GET", "https://gh-latest-repos-hiuhzuiwwn.now.sh", true);
     xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
+            if (xhr.status === 200 || xhr.status === 202) {
                 repos = JSON.parse(xhr.responseText);
                 repos.reverse();
                 setMessage(repos.length === 0 ? 'Whoops. Nothing here. But we still 💖 U' : '');
