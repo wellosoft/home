@@ -69,7 +69,7 @@ if (graphics.bg)
     xhr.open("GET", "https://gh-latest-repos-hiuhzuiwwn.now.sh", true);
     xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4) {
-            if (xhr.status === 200 || xhr.status === 202) {
+            if (xhr.status === 200) {
                 repos = JSON.parse(xhr.responseText);
                 repos.reverse();
                 setMessage(repos.length === 0 ? 'Whoops. Nothing here. But we still 💖 U' : '');
@@ -90,6 +90,11 @@ if (graphics.bg)
                     });
                     document.getElementById('repos').innerHTML = result;
                 }
+            } else if (xhr.status === 202) {
+                console.warn("REPOS: Resend after found 202");
+                setTimeout(() => {
+                    xhr.send();
+                }, 1000);
             } else {
                 setMessage(xhr.status + ": Sorry our monkeys have failed load your request 🤔");
             }
