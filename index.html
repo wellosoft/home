@@ -52,17 +52,17 @@ email:
             <input type="checkbox" id="email">
             <div id="email-window" v-once>
                     <span data-balloon="Both email delivers to the same human and priority" data-balloon-pos="right" class="icon">
-                        <a href="/img/dino.txt" target="_blank">
+                        <a href="/img/dino.txt" target="_blank" rel="nofollow noopener">
                             {% include_relative img/gmail.svg %}
                         </a>
                     </span>
                 <span>
                     <b>Support: </b>
-                    <a data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects OR prefer to be private (and good reason to)" data-balloon-pos="down" title="" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
+                    <a data-balloon-length="fit" data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects OR prefer to be private (and good reason to)" data-balloon-pos="right" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
                 </span>
                 <span>
                     <b>General: </b>
-                    <a data-balloon="Use this for general use (e.g. events or promotion)" data-balloon-pos="down" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
+                    <a data-balloon-length="fit" data-balloon="Use this for general use (e.g. events or promotion)" data-balloon-pos="left" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
                 </span>
                 <label data-balloon="Close it" data-balloon-pos="down" onclick="goTop()" for="email">OK</label>
             </div>
