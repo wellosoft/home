@@ -1,5 +1,7 @@
 ---
 layout: compress
+title: Wello Soft
+excerpt: Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool
 links:
 - name: GitHub
   href: //github.com/willnode
@@ -16,22 +18,24 @@ links:
 email:
   alias: willnode@wellosoft.net
   support: support@wellosoft.net
+thumb:
+  normal: //avatars1.githubusercontent.com/u/20214420
+  hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
 ---
 <html lang="en">
     <head>
-        <title>Wello Soft</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#07c">
-        <meta name="description" content="Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool">
+        {% include meta.html %}
         <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
         {% include head.html %}
         <!-- Contacts -->
         <div class="hero" id="contact">
-            <img class="profile" src="//avatars1.githubusercontent.com/u/20214420" alt="Profile Picture on GitHub" />
+            <div>
+                <img id="pict" class="profile" src="{{page.thumb.normal}}" alt="Me on Profile Picture"
+                 onmouseover="this.src='{{page.thumb.hover}}'" onmouseout="this.src='{{page.thumb.normal}}'"
+                 />
+            </div>
             <h1>Wildan Mubarok</h1>
             <h3>Programmer that builds dream
                 <span data-balloon="and fun!" data-balloon-pos="right">🌈</span>
