@@ -66,7 +66,7 @@ if (graphics.bg)
     setMessage('Be patient. Our 🐒 still scraping the web for you...');
     var repos = [];
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://gh-latest-repos-hiuhzuiwwn.now.sh", true);
+    xhr.open("GET", "https://gh-latest-repos-mboegechzb.now.sh", true);
     xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {

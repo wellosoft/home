@@ -1,0 +1,42 @@
+---
+title: Access Grants
+excerpt: Grant access to Wello Soft private repo!
+layout: compress
+permalink: /grants/
+---
+<html lang="en">
+    <head>
+		{% include meta.html %}
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+    <body>
+		{% include head.html %}
+		<div id="grants-bg" class="hero">
+
+		</div>
+		<div class="hero">
+			<h1>Get access to Private Repo</h1>
+			<p>If you're one of my customer that bought this asset on Asset Store:</p>
+			<p><b><a href="u3d.as/mFe">TEXDraw</a></b></p>
+			<p>Means you've come to right place to ask an access to core repository that I setup private on GitLab! 😁</p>
+			<p>Just fill the required information below 👇</p>
+		</div>
+        <form action="https://uas-gitlab-auth-elgdepiqse.now.sh" method="post">
+			<div id="grants-box">
+				<div>
+					<span>Invoice Number:</span><input type="text" name="invoice" placeholder="Invoice number that you've bought. Numbers only" required pattern="\d+"><br>
+				</div>
+				<div>
+					<span>GitLab Username:</span><input type="text" name="username" placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"><br>
+				</div>
+				<div class="g-recaptcha" data-sitekey='{% if jekyll.environment == "production" %}6LfW_00UAAAAAEx3dWvyUpNKpiBPqLTbHd0lwM48{% else %}6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI{% endif %}'></div>
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+		<div  id="grants-faq" class="hero">
+			{% capture logs %}{% include grants.md %}{% endcapture %}
+			{{ logs | markdownify }}
+		</div>
+	{% include foot.html %}
+    </body>
+</html>
