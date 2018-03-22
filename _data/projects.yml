@@ -77,6 +77,8 @@ node:
   desc: Manipulate JavaScript object case insensitively
 - name: bandit-proxy
   desc: 🔫 A dangerous proxy for unrestricted XHR access in browser
+- name: uas-gitlab-auth
+  desc: 🔑 Microservice to grant access to GitLab private repo using Asset Store Invoice API.
 web:
 - name: bandit
   desc: 🐱‍👤 The swiss army of hacking tools
