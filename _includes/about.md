@@ -23,7 +23,7 @@ I went to learn how an engine works by creating [4D game engine](//u3d.as/fdm) �
 
 ✍ I wrote [my first game](//willnode.itch.io/tthp) 🚀.
 
-I taught myself on how to [write a shader](http://u3d.as/fCV) in Unity.
+I taught myself on how to [write a shader](//u3d.as/fCV) in Unity.
 
 Also the first time I [sell small assets](//u3d.as/cco), hence my first dollar 💲.
 
