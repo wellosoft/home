@@ -1,22 +1,22 @@
 /* Graphics */
 var graphics = {
     images: [{
-        image: "//res.cloudinary.com/wellosoft/image/upload/v1516086014/home/interactive-tothehighestplace.jpg",
+        image: "//res.cloudinary.com/wellosoft/image/upload/expertise/interactive-tothehighestplace.jpg",
         title: "To the Highest Place",
         desc: "Rule #1 is Move Higher",
         url: "//willnode.itch.io/tthp"
     }, {
-        image: "//res.cloudinary.com/wellosoft/image/upload/v1516085765/home/library-simpleproceduralskybox.jpg",
+        image: "//res.cloudinary.com/wellosoft/image/upload/expertise/library-simpleproceduralskybox.jpg",
         title: "Simple Procedural Skybox",
         desc: "Procedural Skybox with features",
         url: '//u3d.as/fCV'
     }, {
-        image: "//res.cloudinary.com/wellosoft/image/upload/v1516085765/home/library-texdraw.jpg",
+        image: "//res.cloudinary.com/wellosoft/image/upload/expertise/library-texdraw.jpg",
         title: "TEXDraw",
         desc: "Expressing math syntax made easy",
         url: '//u3d.as/mFe'
     }, {
-        image: "//res.cloudinary.com/wellosoft/image/upload/v1516170774/home/Med_2.png",
+        image: "//res.cloudinary.com/wellosoft/image/upload/expertise/library-engine4.png",
         title: "Engine4",
         desc: "Turn the game to one dimension higher",
         url: "//u3d.as/fdm"
