@@ -17,6 +17,9 @@ a {
     transition: color 0.2s ease-out;
 }
 
+.links-aon a {
+    border-bottom-color: black;
+}
 a:hover {
     color: #07c;
     border-bottom-color: #07c;

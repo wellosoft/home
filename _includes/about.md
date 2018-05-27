@@ -1,53 +1,57 @@
 
-# Today
+# Timeline
 
-⚡ I began to learn the modern Javascript.
+_The timeline sorts from top (earlier) to bottom (latest), although I do reverse year order into sections._
 
-Launched +20 OSS Project (and counting) ⏲.
+## Today (_2018_)
 
-I'm living home until my free time is left due in 6 months ⌛.
+⚡ Began to learn Javascript and [open sourcing many JS projects](https://github.com/willnode?tab=repositories&type=source&language=javascript).
+
+Learning C++ and [rewriting Engine4 again](https://forum.unity.com/threads/320549/#post-3510626) as C++ 🧙‍.
 
 ## 2017
 
-🦑 Signed up to GitHub. Teaching my self how to do OSS 💪.
+🦑 Joined [GitHub](https://github.com/willnode). Getting used with Git and many open source tools.
 
-I graduated from high school but then skip college until next year 🏫.
+Finished school 🎓 but skipping college until next year 🏫.
 
-I went to learn how an engine works by creating [4D game engine](//u3d.as/fdm) 🤪.
+[Rewriting 4D game engine](https://u3d.as/fdm) from stratch, twice. before rebranded as *Engine4*.
+
+[First Tweet on Twitter](https://twitter.com/willnode/status/886859398483632128) 🐦.
 
 ## 2016
 
-🚀 [TEXDraw](//u3d.as/mFe) launched. Crafting it for almost a year ⌚.
+🚀 [TEXDraw](https://u3d.as/mFe) launched, with improvements over the years.
+
+Releasing [1:1 scale of solar system simulations](https://github.com/willnode/Observatory) in Unity (local project).
 
 ## 2015
 
-✍ I wrote [my first game](//willnode.itch.io/tthp) 🚀.
+✍ Wrote [my first game](https://willnode.itch.io/tthp) 🚀.
 
-I taught myself on how to [write a shader](//u3d.as/fCV) in Unity.
+Releasing [my first premium skybox asset](https://u3d.as/ccx) 🌤.
 
-Also the first time I [sell small assets](//u3d.as/cco), hence my first dollar 💲.
+Taught myself to write a shader and [sold it](https://u3d.as/fCV) on Unity.
+
+Releasing the first, early prototype of [4D gaming in Unity](https://youtu.be/TGaoH5oHKhs) (also as [a premium asset](https://u3d.as/fdm)).
 
 ## 2014
 
 🎧 I began to learn Game Programming with Unity 3D.
 
-This also means I also doing a lot graphics in Blender.
+Learning modeling and simulations in Blender.
 
-Also _C#-all-the-things_ was become my standard moto 💪.
+Switching projects from VB into C#.
 
 ## 2013
 
-🌐 Internet is common at this stage.
+🌐 Internet became a habit.
 
-I upgrade my self with .NET and VS2012.
-
-I was became a game maniac 🎮.
+Gripping with VB.NET and VS 2012.
 
 ## 2012
 
-ActiveX; VB6; MS Office 2007 macros.
-
-That's when I write my first code 👨‍💻.
+First programming in VB6 _aka._ MS office macros. 💻
 
 ## ...
 
