@@ -47,8 +47,9 @@ net:
   img: //res.cloudinary.com/wellosoft/image/upload/expertise/tools-iconizer.png
 - name: IsoCreatorLib
   desc: Create ISO Files in .NET (Fork Repository)
-- name: Ascii Painter
-  desc: //res.cloudinary.com/wellosoft/image/upload/expertise/tools-asciipainter.png
+- name: Ascii-Painter
+  desc: .NET Based Text painting tool
+  img: //res.cloudinary.com/wellosoft/image/upload/expertise/tools-asciipainter.png
 - name: Nafza-Faroidh
   desc: Aplikasi Desktop untuk Penghitungan Faroidh atau Waris mewaris harta peninggalan menurut Ajaran Islam
 - name: Socket-Clipboard
