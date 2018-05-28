@@ -34,3 +34,27 @@
         transition: all 0.2s ease-in;
     }
 }
+
+#about-bg {
+    background-color: #111;
+	background: url(https://res.cloudinary.com/wellosoft/image/upload/home/AboutCover.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	height: 70vw;
+    max-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-foot {
+    background-color: #111;
+	background: url(https://res.cloudinary.com/wellosoft/image/upload/home/HexaBallCover.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	height: 70vw;
+    max-height: 100vh;
+}

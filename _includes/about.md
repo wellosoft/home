@@ -1,4 +1,10 @@
 
+# Me in 15 Seconds
+
+_My name is Wildan Mubarok and I've been programming since twelve. Main interests is in Game Programming and Unity, although I also having fun with other programming areas including Web and Scripting tools. Currently attending college while living by selling assets in Unity Asset Store since 2015._
+
+### [🐦](https://twitter.com/willnode)
+
 # Timeline
 
 _The timeline sorts from top (earlier) to bottom (latest), although I do reverse year order into sections._
@@ -39,7 +45,7 @@ Releasing the first, early prototype of [4D gaming in Unity](https://youtu.be/TG
 
 🎧 I began to learn Game Programming with Unity 3D.
 
-Learning modeling and simulations in Blender.
+Learning modeling and simulations in Blender 💠.
 
 Switching projects from VB into C#.
 
