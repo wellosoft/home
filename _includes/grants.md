@@ -32,10 +32,6 @@ Otherwise there'll special message delivered for you so you can wonder on things
 
 No, atleast it have to be done manually. Send me an email if it important.
 
-### Only TEXDraw? What about other Asset?!
-
-I'll add it when it ready, or at least when the repo has been stable in my laptop.
-
 ### Hey this thing didn't work for me!
 
 If you are the person that has refunded your purchase or getting the package via free vouchers somewhere. You can't, atleast the authentication has to be done manually.

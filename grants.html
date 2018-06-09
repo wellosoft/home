@@ -17,17 +17,20 @@ permalink: /grants/
 		<div class="hero">
 			<h1>Get access to Private Repo</h1>
 			<p>If you're one of my customer that bought this asset on Asset Store:</p>
-			<p><b><a href="//u3d.as/mFe">TEXDraw</a></b></p>
+			<p><b><a href="//u3d.as/mFe">TEXDraw</a></b> | <b><a href="//u3d.as/fdm">Engine4</a></b> |
+				<b><a href="//u3d.as/MT0">Camera Projecter</a></b> | <b><a href="//u3d.as/fCV">Simple Procedural Skybox</a></b></p>
 			<p>Means you've come to right place to ask an access to core repository that I setup private on GitLab! 😁</p>
 			<p>Just fill the required information below 👇</p>
 		</div>
-        <form action="https://uas-gitlab-auth-bscfxmcxev.now.sh" method="post">
+        <form action="https://uas-gitlab-auth-fmvonsbwuj.now.sh" method="post">
 			<div id="grants-box">
 				<div>
 					<span>Invoice Number:</span><input type="text" name="invoice" placeholder="Invoice number that you've bought. Numbers only" required pattern="\d+"><br>
 				</div>
 				<div>
-					<span>GitLab Username:</span><input type="text" name="username" placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"><br>
+					<span>GitLab Username:</span><input type="text" name="username" id="gitname" placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"
+					oninput="document.getElementById('gittest').setAttribute('href', 'https://gitlab.com/' + document.getElementById('gitname').value);"><br>
+					<a id="gittest" href="https://gitlab.com/" target="_blank" rel="noreferrer nofollow">Test</a>
 				</div>
 				<div class="g-recaptcha" data-sitekey='{% if jekyll.environment == "production" %}6LfW_00UAAAAAEx3dWvyUpNKpiBPqLTbHd0lwM48{% else %}6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI{% endif %}'></div>
 				<input type="submit" value="Submit">

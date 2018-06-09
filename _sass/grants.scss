@@ -10,7 +10,7 @@
 	}
 	input {
 		flex-grow: 1;
-		margin-left: 10px;
+		margin: 0px 10px;
 		padding: 4px 1em;
 	}
 	.g-recaptcha > div {
@@ -21,6 +21,7 @@
 		margin: auto;
 	}
 }
+
 #grants-faq {
 	max-width: 800px;
 	margin: auto;
@@ -31,6 +32,7 @@
 		font-weight: bold;
 	}
 }
+
 #grants-bg {
 	background: url(//res.cloudinary.com/wellosoft/image/upload/home/Evil_Duck_CR_-_Copy.jpg);
 	background-attachment: fixed;
