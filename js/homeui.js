@@ -80,8 +80,10 @@ if (graphics.bg)
 <li>
     <a href='${r.url}'>
         <span class="repo">
-            <span class="name">${r.name}</span>
-            <span class="lang" style="background-color: ${r.primaryLanguage.color}; color:${getForeground(r.primaryLanguage.color)}">${r.primaryLanguage.name}</span>
+            <span class="name">${r.name}</span>${
+                !r.primaryLanguage ? "" :
+                `<span class="lang" style="background-color: ${r.primaryLanguage.color}; color:${getForeground(r.primaryLanguage.color)}">${r.primaryLanguage.name}</span>`
+                    }
         </span><br>
     </a>
     <a href='${r.url}'>

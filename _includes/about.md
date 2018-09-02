@@ -15,11 +15,13 @@ _The timeline sorts from top (earlier) to bottom (latest), although I do reverse
 
 Learning C++ and [rewriting Engine4 again](https://forum.unity.com/threads/320549/#post-3510626) as C++ 🧙‍.
 
+I entered college at [UTM](https://trunojoyo.ac.id) by this year! 🏫.
+
 ## 2017
 
 🦑 Joined [GitHub](https://github.com/willnode). Getting used with Git and many open source tools.
 
-Finished school 🎓 but skipping college until next year 🏫.
+Finished school 🎓 but skipping college until next year 💪.
 
 [Rewriting 4D game engine](https://u3d.as/fdm) from stratch, twice. before rebranded as *Engine4*.
 
