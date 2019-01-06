@@ -1,15 +1,27 @@
-#head {
+#navbar {
+    &.index {
+        position:absolute;
+        left:0;
+        right:0;
+        &, a {
+            color: white;
+        }
+        a:hover, label:hover {
+            font-weight: bold;
+        }
+    }
+
     box-shadow: 0 0 0px 0px rgba(#07c, 0);
     display: flex;
     margin: 0;
     padding: 2px 40px;
     transition: box-shadow 0.1s ease-in;
-    .icon {
+    svg {
         width: 32px;
         height: 32px;
-        vertical-align: middle;
         cursor: pointer;
         margin: 1em 0px;
+        fill: white;
     }
     &:focus,
     &:hover {

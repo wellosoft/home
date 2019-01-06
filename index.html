@@ -10,9 +10,6 @@ links:
 - name: Unity
   href: //u3d.as/cco
   icon: img/unity.svg
-- name: Twitter
-  href: //twitter.com/willnode
-  icon: img/twitter.svg
 - name: Codepen
   href: //codepen.io/willnode
   icon: img/codepen.svg
@@ -30,20 +27,25 @@ thumb:
     <head>
         {% include meta.html %}
         <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
+        <script src="vendor/particles.min.js"></script>
     </head>
     <body>
+        <div class="particles-js" id="particles-js"></div>
+
         {% include head.html %}
         <!-- Contacts -->
-        <div class="hero" id="contact">
+        <div class="hero full" id="contact">
             <div>
-                <img id="pict" class="profile" src="{{page.thumb.normal}}" alt="Me on Profile Picture"
-                 onmouseover="this.src='{{page.thumb.hover}}'" onmouseout="this.src='{{page.thumb.normal}}'"
+                <img id="pict" class="profile" src="{{site.img}}avatar-1.jpg" alt="Me on Profile Picture"
                  />
             </div>
             <h1>Wildan Mubarok</h1>
-            <h3>Programmer that builds dream
-                <span data-balloon="and fun!" data-balloon-pos="right">🌈</span>
-            </h3>
+            <p>
+                <span data-balloon="Web Design" data-balloon-pos="down">🌐</span>,
+                <span data-balloon="Game Developer" data-balloon-pos="down">🎮</span> and
+                <span data-balloon="Emoji" data-balloon-pos="down">🎨</span> fanatics
+                <span data-balloon="in a fun way!" data-balloon-pos="right">🌈</span>
+            </p>
             <ul class="links">
                 {% for v in page.links %}
                 <li>
@@ -59,7 +61,7 @@ thumb:
         <div>
             <input type="checkbox" id="email">
             <div id="email-window" v-once>
-                    <span data-balloon="Both email delivers to the same human and priority" data-balloon-pos="right" class="icon">
+                    <span data-balloon="Both delivers to the same human and priority"  data-balloon-length="large" data-balloon-pos="right" class="icon">
                         <a href="/img/dino.txt" target="_blank" rel="nofollow noopener">
                             {% include_relative img/gmail.svg %}
                         </a>
@@ -75,60 +77,57 @@ thumb:
                 <label data-balloon="Close it" data-balloon-pos="down" onclick="goTop()" for="email">OK</label>
             </div>
         </div>
-        <!-- Brand -->
-        <div id="brand" class="hero" style="background-image: url(//res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg)">
-            <span class="spoiler">
-                <b>FUN FACT</b> Wello Soft is a one-man fictional company that pretended to exist because
-                <i>it was really cool</i> 😎
-                <br>
-                <b>FUN FACT AGAIN</b> So many cool stuff still hiding! Go find out while you're here! 🔥
-            </span>
-            <div id="pad">
-                <span>
-                    <a href="/projects/" target="_blank" rel="noopener"><span>See stacks of my artful works 🎨</span></a>
-                </span>
-                <span>
-                    <a href="//blog.wellosoft.net/" target="_blank" rel="noopener"><span>See rolls of my feedy blogs ✍</span></a>
-                </span>
+        <!-- Bio -->
+        <div id="overview" class="hero">
+            <div class="hero-overlay full">
+                <h3>Hi! 👋</h3>
+                <p>My name is Wildan Mubarok and I’ve been a self-taught programmer since twelve. I'm a web designer and a game developer with main interests in designs and all-kinds of algorithms that makes a design beautiful -- also learns all the way down into creating his own web server and working with CLI tools.</p>
+                <p>Right now I'm a student college while making a living by selling digital assets in Unity Asset Store since 2015.<span class="blink">_</span></p>
             </div>
         </div>
-        <!-- Repos -->
-        <div id="repo" class="hero">
-            <a href="//github.com/willnode" target="_blank" rel="noopener">
-                <h2 data-balloon="see all my repositories on GitHub!" data-balloon-pos="down">Latest Repositories ↗</h2>
-            </a>
-            <span id="repos-stat"><noscript>This repo list need Javascript. Sorry! You can click link above 😇</noscript></span>
-            <ul id="repos"></ul>
+        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/me-backside.jpg)">
+            <div class="hero-overlay full" style="background: linear-gradient(transparent, #530)">
+                    <h3>Going deeper?</h3>
+                    <p>I live in Indonesia and I love to share stories and tips in my own mother language.</p>
+                    <a class="btn" href="bio.html">See more about me (Indonesian)</a>
+            </div>
         </div>
-        <!-- Graphics -->
-        <div id="graphics" class="carousel">
-            <noscript>This carousel needs Javascript. Sorry! 😇</noscript>
-            <span class="dummygap nav rows">
-                <a data-balloon="previous" data-balloon-pos="up" id="graphics-p" onclick="graphics.setg(-1)">◀</a>
-                <span class="dummygap"></span>
-                <a data-balloon="next" data-balloon-pos="up" id="graphics-n" onclick="graphics.setg(1)">▶</a>
-            </span>
-            <div class="btm rows">
-                <div class="left">
-                    <h2><a id="graphics-link" target="_blank" rel="noopener"></a></h2>
-                    <span id="graphics-desc"></span>
+        <div id="local" class="hero">
+            <div class="hero-overlay">
+                <q>I love quotes. I love to see businesses and life as a fun play.</q>
+            </div>
+        </div>
+        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/ex-snowman.png)">
+            <div class="hero-overlay full" style="background: linear-gradient(transparent, #501)">
+                    <h3>Unity Asset Store</h3>
+                    <p>Digital assets suited for unique games and media</p>
+                    <a class="btn" href="asset-store.html">See more about my products</a>
+            </div>
+        </div>
+        <div id="local" class="hero">
+            <div class="hero-overlay">
+                <q>I find inspirations from anywhere &mdash; from books into movies &mdash; kind of turning dreams into reality.</q>
+            </div>
+        </div>
+        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/ex-badge.png)">
+            <div class="hero-overlay full" style="background: linear-gradient(transparent, #053)">
+                    <h3>Featured Projects</h3>
+                    <p>All featured, playable web games and media</p>
+                    <a class="btn" href="projects.html">See more about what I've created</a>
+            </div>
+        </div>
+        <div id="local" class="hero">
+                <div class="hero-overlay">
+                    <q>Self-taught is the key. So many stuffs I can learn by my self. faster because of that.</q>
                 </div>
-                <a data-balloon="I do Unity stuff few years now so check my Connect profile!" data-balloon-pos="left" href="//connect.unity.com/u/5850d37f0909150027e23f02" target="_blank" rel="noopener">
-                    <span class="right mdunity">
-                        {% include_relative img/madewithunity.svg %}
-                    </span>
-                </a>
-            </div>
-		</div>
-		<div class="hero">
-            <h2>Hey! Are you my customer in <a href="https://assetstore.unity.com/publishers/11882">Asset Store?</a></h2>
-            <h1><a href="/grants/">👉 I got something for you</a></h1>
         </div>
-        <!--div id="patron" class="hero">
-            <a href="https://www.patreon.com/preview/fbafa014335e454fbc340f76e1bd34bd" target="_blank" rel="noopener" onclick="track('patreon')">
-                <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" style="margin:5px">
-            </a>
-		</div-->
+        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/me-backcloud.jpg)">
+            <div class="hero-overlay full" style="background: linear-gradient(transparent, #503)">
+                    <h3>Looking for Hire?</h3>
+                    <p>No more need to look around. See what I can do.</p>
+                    <a class="btn" href="cv.html">See more about my CV</a>
+            </div>
+        </div>
         {% include foot.html %}
         <script src="/js/homeui.js"></script>
     </body>

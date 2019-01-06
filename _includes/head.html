@@ -1,7 +1,7 @@
-<div id="head">
+<div id="navbar" class="{% if page.url=='/' %}index{% endif %}">
     <div class="logo" data-balloon="Scroll down and hover over rainbow 🌈" data-balloon-pos="right">
         <a href="{% if page.url=='/' %}//github.com/willnode/willnode.github.io/{% else %}/{% endif %}">
-            <img class="icon" src="/favicon.ico" alt="Logo">
+            {% include_relative img/wellosoft.svg %}
         </a>
     </div>
     <div class="space"></div>
