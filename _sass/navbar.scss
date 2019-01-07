@@ -10,7 +10,7 @@
             font-weight: bold;
         }
         svg {
-            fill: #07c !important;
+            fill: white !important;
         }
     }
 
@@ -20,11 +20,11 @@
     padding: 2px 40px;
     transition: box-shadow 0.1s ease-in;
     svg {
-        width: 32px;
-        height: 32px;
+        width: 48px;
+        height: 48px;
         cursor: pointer;
-        margin: 1em 0px;
-        fill: white;
+        margin: 0.5em 0px;
+        fill: #07c;
     }
     &:focus,
     &:hover {
@@ -37,12 +37,9 @@
     }
     .menu {
         display: flex;
-        li {
-            a {
-                padding: 5px 10px;
-            }
-            display: inline-block;
-            vertical-align: middle;
+        margin: auto;
+        li a {
+            padding: 5px 10px;
         }
     }
 }
