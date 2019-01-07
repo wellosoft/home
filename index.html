@@ -57,19 +57,21 @@ thumb:
                 {% endfor %}
             </ul>
             <style>
-                .fadeout {
+                .warn {
                     animation: fadeout ease-out 1s 5s forwards;
+                    position: absolute;
+                    bottom: 10;
+                    left: 0;
+                    right: 0;
+                    width: 500px;
+                    padding-bottom: 10px;
                 }
                 @keyframes fadeout {
-                    0% {
-                        opacity: 1;
-                    }
-                    100% {
-                        opacity: 0;
-                    }
+                    0% { opacity: 1; }
+                    100% { opacity: 0; }
                 }
             </style>
-            <small class="fadeout" style="color:yellow">⚠ This website is still under heavy development ⚠</small>
+            <small class="warn" style="color:yellow">⚠ This website is still under heavy development ⚠</small>
         </div>
         <!-- Email -->
         <div>
