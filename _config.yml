@@ -4,3 +4,4 @@ img: https://res.cloudinary.com/wellosoft/image/upload/home
 exclude:
 - CNAME
 - README.md
+- img/

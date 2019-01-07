@@ -1,0 +1,53 @@
+---
+layout: compress
+permalink: /bio/
+title: About
+excerpt: willnode's biography in timeline 💪
+hero: https://res.cloudinary.com/wellosoft/image/upload/v1527478890/home/AboutCover.png
+links:
+- name: Blog
+  href: //blog.wellosoft.net/
+  icon: img/wheniwork.svg
+- name: Memo
+  href: //memo.wellosoft.net/
+  icon: img/ko-fi.svg
+- name: Instagram
+  href: //instagram.com/willn0de/
+  icon: img/instagram.svg
+- name: Twitter
+  href: //twitter.com/willnode/
+  icon: img/twitter.svg
+---
+<html lang="id">
+    <head>
+        {% include meta.html %}
+    </head>
+    <body>
+        {% include navbar.html %}
+        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/me-withalma.jpg)">
+            <div class="hero-overlay full" style="background: linear-gradient(#07c5, #035)">
+                    <h1>Hi! 👋</h1>
+                    <p><i>Selamat datang di Bioku &mdash; edisi bahasa indonesia</i></p>
+                    <ul class="links">
+                        {% for v in page.links %}
+                        <li>
+                            <a href="{{ v.href }}" target="_blank" rel="noopener">
+                                {% include_relative {{ v.icon }} %}
+                                <span> {{ v.name }} </span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+            </div>
+        </div>
+
+        <div id="overview" class="hero">
+            <div class="hero-overlay full">
+                <h3>&mdash; Siapa aku? &mdash;</h3>
+                <p>Namaku adalah Wildan Mubarok dan saya programmer yang khusus dalam bagian desain dan semua jenis algoritma yang membuat desain itu indah -- juga terkadang mempelajari sampai membuat server web sendiri dan bermain dengan Software utilitas CLI.</p>
+                <p>Sekarang saya sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
+            </div>
+        </div>
+        {% include foot.html %}
+    </body>
+</html>

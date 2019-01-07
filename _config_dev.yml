@@ -5,3 +5,4 @@ compress_html:
 exclude:
 - CNAME
 - README.md
+- img/
