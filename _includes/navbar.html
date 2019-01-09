@@ -5,25 +5,23 @@
         </a>
     </div>
     <div class="space"></div>
-    <ul class="menu">
-        <li>
-            <a data-balloon="Read my story" data-balloon-pos="down" href="/bio/">👓 Bio</a>
-        </li>
-        <li>
-            <a data-balloon="Read my story" data-balloon-pos="down" href="/asset-store/">💼 Products</a>
-        </li>
-        <li>
-            <a data-balloon="See what I've create!" data-balloon-pos="down" href="/projects/">🔨 Projects</a>
-        </li>
-        <li>
-            <a data-balloon="Visit my log" data-balloon-pos="down" href="/cv/">📝 CV</a>
-        </li>
-        <li>
-            {% if page.url=='/' %}
-            <label data-balloon="Show my email" data-balloon-pos="down" onclick="gotoEmail()" for="email">📧 Contact</label>
-            {% else %}
-            <a data-balloon="Back to main page" data-balloon-pos="down" href="/">🏠 Home</a>
-            {% endif %}
-        </li>
-    </ul>
+    <div class="toggle">
+        <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="menu">
+        <a data-balloon="Read my story" data-balloon-pos="down" href="/bio/">👓 Bio</a>
+        <a data-balloon="Read my story" data-balloon-pos="down" href="/asset-store/">💼 Products</a>
+        <a data-balloon="See what I've create!" data-balloon-pos="down" href="/projects/">🔨 Projects</a>
+        <a data-balloon="Visit my log" data-balloon-pos="down" href="/cv/">📝 CV</a>
+        {% if page.url=='/' %}
+        <label data-balloon="Show my email" data-balloon-pos="down" onclick="gotoEmail()" for="email">📧 Contact</label>
+        {% else %}
+        <a data-balloon="Back to main page" data-balloon-pos="down" href="/">🏠 Home</a>
+        {% endif %}
+    </div>
 </div>
