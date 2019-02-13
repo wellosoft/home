@@ -26,8 +26,8 @@ links:
     </head>
     <body class="index">
         {% include navbar.html %}
-        <div class="full hero-imaged" style="background-image: url({{site.img}}/me-withalma.jpg)">
-            <div class="master-slick" style="background: linear-gradient(#07c5, rgb(0, 32, 53))">
+        <div class="hero-imaged">
+            <div class="full master-slick" style="background: linear-gradient(#07c5, rgb(0, 32, 53))">
                 <div>
                     <div class="hero">
                         <h3>&mdash; Siapa aku? &mdash;</h3>
@@ -37,8 +37,12 @@ links:
                 </div>
                 <div>
                     <div class="hero ">
+                        <div>
+                            <img id="pict" class="profile" src="{{site.img}}me-withalma.jpg" alt="Me on Profile Picture"/>
+                        </div>
                         <h1>Hi! 👋</h1>
-                        <p>&mdash; <i>Selamat datang di Bio saya</i> &mdash;</p>
+                        <p>&mdash; <i>Selamat datang di Bio Personal saya</i> &mdash;</p>
+                        <p>Bahasa Indonesia</p>
                         <ul class="links">
                             {% for v in page.links %}
                             <li>
@@ -55,7 +59,7 @@ links:
         </div>
         {% include foot.html %}
         <script>
-            $('.master-slick').slick({dots: true});
+            $('.master-slick').slick({dots: true, initialSlide: 1});
         </script>
     </body>
 </html>

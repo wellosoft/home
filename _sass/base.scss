@@ -9,7 +9,7 @@ body {
 }
 
 body.index {
-    background-color: black;
+    background-color: #07c;
 }
 
 a {
@@ -61,14 +61,16 @@ input[type='checkbox'] {
 }
 
 .full {
-    min-height: 100vh;
+    min-height: calc(100vh - 64px);
+}
+
+.master-slick.full {
+    height: calc(100vh - 64px);
 }
 
 .hero {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    overflow-y: auto;
     font-size: 1.4rem;
 
     q {

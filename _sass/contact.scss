@@ -1,7 +1,7 @@
 .links {
     display: flex;
     justify-content: center;
-    overflow-x: auto;
+    flex-wrap: wrap;
     font-size: 20px;
     padding: 0;
     margin-bottom: 0;
@@ -47,4 +47,5 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    object-fit: cover;
 }
