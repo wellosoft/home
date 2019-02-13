@@ -1,8 +1,5 @@
 gotoEmail = function () {
-    if (!document.getElementById('email').checked)
-        document.getElementById('email-window').scrollIntoView({
-            behavior: 'smooth'
-        });
+    $('.home-slick').slick('slickGoTo', 2);
 }
 
 goTop = function () {
