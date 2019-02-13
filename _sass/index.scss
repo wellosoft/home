@@ -13,11 +13,13 @@
     outline: none;
 }
 
-.home-slick {
+.master-slick {
+
     color: white;
 
     .slick-slide>div {
         height: 100%;
+        padding: 2rem;
     }
 
     .slick-prev {

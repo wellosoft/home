@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+body.index {
+    background-color: black;
+}
+
 a {
     text-decoration: none;
     border-bottom: 1px dotted;

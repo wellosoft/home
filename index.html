@@ -27,17 +27,15 @@ thumb:
     <head>
         {% include meta.html %}
         <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-        <script src="vendor/particles.min.js"></script>
-        <link rel="stylesheet" type="text/css" media="screen" href="vendor/slick.min.css" />
         <script src="vendor/jquery.min.js"></script>
         <script src="vendor/slick.min.js"></script>
+        <script src="vendor/particles.min.js"></script>
     </head>
-    <body>
+    <body class="index">
         <div class="particles-js" id="particles-js"></div>
         {% include navbar.html %}
-        <!-- Contacts -->
 
-        <div class="home-slick full">
+        <div class="master-slick full">
             <div>
                 <div class="hero">
                     <h3>Hi! 👋</h3>
@@ -90,10 +88,13 @@ thumb:
         </div>
 
         {% include foot.html %}
-        <script src="/js/homeui.js"></script>
         <script>
 
-            $('.home-slick').slick({dots: true});
+            particlesJS.load('particles-js', 'js/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+
+            $('.master-slick').slick({dots: true, initialSlide: 1});
         </script>
     </body>
 </html>

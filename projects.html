@@ -6,23 +6,42 @@ layout: compress
 permalink: /projects/
 ---
 <html lang="en">
-    <head>
-        {% include meta.html %}
-    </head>
-    <body>
-        {% include navbar.html %}
-        <script src="/js/projectsui.js"></script>
-        <div style="text-align: center" id="projects">
-            <h1>✨ Curated Lists of my works. ✨</h1>
-            <h2>Unity Projects</h2>
-            {% include projects.html list=site.data.projects.unity id="unity" %}
-            <h2>.NET Projects</h2>
-            {% include projects.html list=site.data.projects.net id="net" %}
-            <h2>Web Projects</h2>
-            {% include projects.html list=site.data.projects.web id="web" %}
-            <h2>Node.JS Projects</h2>
-            {% include projects.html list=site.data.projects.node id="node" nocarousel="yes" %}
-        </div>
-        {% include foot.html %}
-    </body>
+
+<head>
+    {% include meta.html %}
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/vendor/slick.min.js"></script>
+</head>
+
+<body>
+    {% include navbar.html %}
+    <script src="/js/projectsui.js"></script>
+    <div style="text-align: center" id="projects">
+        <h1>✨ Curated Lists of my works. ✨</h1>
+        <h2>Unity Projects</h2>
+        {% include projects.html list=site.data.projects.unity id="unity" %}
+        <h2>.NET Projects</h2>
+        {% include projects.html list=site.data.projects.net id="net" %}
+        <h2>Web Projects</h2>
+        {% include projects.html list=site.data.projects.web id="web" %}
+        <h2>Node.JS Projects</h2>
+        {% include projects.html list=site.data.projects.node id="node" nocarousel="yes" %}
+    </div>
+    {% include foot.html %}
+
+    <script>
+        $('.master-slick').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: '60px',
+            centerMode: true,
+
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+</body>
+
 </html>

@@ -18,4 +18,34 @@
     [data-balloon]::before, [data-balloon]::after {
         pointer-events: none !important; /* avoid messing with touches */
     }
+
+    .master-slick.projects {
+        height: calc(4rem + 30vw + 150px);
+        background-color: darken($color: darkslategray, $amount: 10);
+
+        .item {
+            margin: 1rem;
+        }
+        .p-img {
+            height: 30vw;
+            background-position: center;
+            background-size: cover;
+        }
+        a {
+            color: white;
+        }
+        .slick-dots li, .slick-next, .slick-prev {
+            background-color: darkslategray;
+            border-radius: 50%;
+        }
+        .p-ctn {
+            background-color: darkslategray;
+            color: white;
+            height: 150px;
+            padding: 1em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
 }

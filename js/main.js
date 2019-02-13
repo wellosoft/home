@@ -1,5 +1,5 @@
 gotoEmail = function () {
-    $('.home-slick').slick('slickGoTo', 2);
+    $('.master-slick').slick('slickGoTo', 2);
 }
 
 goTop = function () {

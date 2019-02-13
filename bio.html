@@ -21,25 +21,41 @@ links:
 <html lang="id">
     <head>
         {% include meta.html %}
+        <script src="/vendor/jquery.min.js"></script>
+        <script src="/vendor/slick.min.js"></script>
     </head>
-    <body>
+    <body class="index">
         {% include navbar.html %}
-        <div id="local" class="hero hero-imaged" style="background-image: url({{site.img}}/me-withalma.jpg)">
-            <div class="hero-overlay full" style="background: linear-gradient(#07c5, #035)">
-                    <h1>Hi! 👋</h1>
-                    <p><i>Selamat datang di Bio saya &mdash; edisi Bahasa Indonesia</i></p>
-                    <ul class="links">
-                        {% for v in page.links %}
-                        <li>
-                            <a href="{{ v.href }}" target="_blank" rel="noopener">
-                                {% include_relative {{ v.icon }} %}
-                                <span> {{ v.name }} </span>
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
+        <div class="full hero-imaged" style="background-image: url({{site.img}}/me-withalma.jpg)">
+            <div class="master-slick" style="background: linear-gradient(#07c5, rgb(0, 32, 53))">
+                <div>
+                    <div class="hero">
+                        <h3>&mdash; Siapa aku? &mdash;</h3>
+                        <p>Nama saya Wildan dan saya adalah developer yang fokus dalam bagian desain dan semua jenis algoritma yang membuat desain itu indah -- juga terkadang mempelajari sampai membuat server web sendiri dan bermain dengan Software utilitas CLI.</p>
+                        <p>Sekarang saya sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero ">
+                        <h1>Hi! 👋</h1>
+                        <p>&mdash; <i>Selamat datang di Bio saya</i> &mdash;</p>
+                        <ul class="links">
+                            {% for v in page.links %}
+                            <li>
+                                <a href="{{ v.href }}" target="_blank" rel="noopener">
+                                    {% include_relative {{ v.icon }} %}
+                                    <span> {{ v.name }} </span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         {% include foot.html %}
+        <script>
+            $('.master-slick').slick({dots: true});
+        </script>
     </body>
 </html>
