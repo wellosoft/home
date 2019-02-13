@@ -1,5 +1,7 @@
 .links {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
     font-size: 20px;
     padding: 0;
     margin-bottom: 0;

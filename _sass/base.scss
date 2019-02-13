@@ -24,6 +24,12 @@ a {
     border-bottom-color: black;
 }
 
+.nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 a:hover {
     color: #07c;
     border-bottom-color: #07c;

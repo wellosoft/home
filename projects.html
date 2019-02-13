@@ -37,9 +37,15 @@ permalink: /projects/
             slidesToScroll: 1,
             centerPadding: '60px',
             centerMode: true,
-
             autoplay: true,
             autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                   dots: false,
+                }
+            }]
         });
     </script>
 </body>
