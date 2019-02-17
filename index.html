@@ -95,23 +95,6 @@ thumb:
 
             $('.master-slick').slick({dots: true, initialSlide: 1});
 
-            function calcVH() {
-                $('.index').innerHeight( $(this).innerHeight() );
-            }
-
-            (function() {
-                function size() {
-
-                if (/android|webos|iphone|ipad|ipod|blackberry|nokia|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase())) {
-                    var theminheight = Math.min(document.documentElement.clientHeight, window.screen.height, window.innerHeight);
-                    $('html body #yourelementofchoise').css('height', theminheight);
-                }
-                }
-                window.addEventListener('resize orientationchange', function() {
-                size();
-                }, false);
-                size();
-            }());
         </script>
     </body>
 </html>
