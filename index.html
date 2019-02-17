@@ -94,6 +94,17 @@ thumb:
             });
 
             $('.master-slick').slick({dots: true, initialSlide: 1});
+
+            function calcVH() {
+                $('.master-slick').innerHeight( $(this).innerHeight() );
+            }
+
+            (function($) {
+            calcVH();
+            $(window).on('orientationchange', function() {
+                calcVH();
+            });
+            })(jQuery);
         </script>
     </body>
 </html>
