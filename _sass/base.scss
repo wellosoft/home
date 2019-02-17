@@ -68,12 +68,14 @@ input[type='checkbox'] {
     min-height: calc(100vh - 64px);
 }
 
+#navbar {
+    height: 64px;
+}
+.slick-dots {
+    background-color: red;
+}
 .master-slick.full {
-    position: absolute;
-    bottom: 0;
-    top: 64px;
-    left: 0;
-    right: 0;
+    height: calc(100% - 64px);
 }
 
 .hero {
