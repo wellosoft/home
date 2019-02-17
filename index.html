@@ -45,22 +45,20 @@ thumb:
             </div>
             <div>
                 <div class="home-contact hero">
+                    <h1 class="nowrap">WIIIN0DE<span class="blink">_</span></h1>
                     <div>
-                        <img id="pict" class="profile" src="{{site.img}}avatar-1.jpg" alt="Me on Profile Picture"/>
+                        <img id="pict" class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture"/>
                     </div>
-                    <h1 class="nowrap">Wildan Mubarok<span class="blink">_</span></h1>
-                    <p class="nowrap">
+                    <p>
                         <span data-balloon="Web Design" data-balloon-pos="down">🌐</span>,
                         <span data-balloon="Game Developer" data-balloon-pos="down">🎮</span> and
-                        <span data-balloon="Emoji" data-balloon-pos="down">🎨</span> fanatics
-                        <span data-balloon="in a fun way!" data-balloon-pos="right">🌈</span>
+                        <span data-balloon="Emoji" data-balloon-pos="down">🎨</span>
                     </p>
                     <ul class="links">
                         {% for v in page.links %}
                         <li>
-                            <a href="{{ v.href }}" target="_blank" rel="noopener">
+                            <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}" data-balloon-pos="down">
                                 {% include_relative {{ v.icon }} %}
-                                <span> {{ v.name }} </span>
                             </a>
                         </li>
                         {% endfor %}
@@ -75,14 +73,15 @@ thumb:
                                 {% include_relative img/gmail.svg %}
                             </a>
                         </span>
-                        <span>
-                            <b>Support: </b>
-                            <a data-balloon-length="fit" data-balloon="Use this to seek technical help with my NOT-IN-GITHUB projects OR prefer to be private (and good reason to)" data-balloon-pos="down" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
-                        </span>
-                        <span>
-                            <b>General: </b>
-                            <a data-balloon-length="fit" data-balloon="Use this for general use (e.g. events or promotion)" data-balloon-pos="down" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
-                        </span>
+                        <ul class="links">
+                            <li>
+                                <a data-balloon="Support Email (GitHub, Unity Products, etc.)" data-balloon-pos="down" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
+                            </li>
+                            <li>
+                                <a data-balloon="General Email (Events, Invitations, Updates, etc.)" data-balloon-pos="down" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
+                            </li>
+                        </ul>
+
                 </div>
             </div>
         </div>

@@ -24,10 +24,10 @@ links:
         <script src="/vendor/jquery.min.js"></script>
         <script src="/vendor/slick.min.js"></script>
     </head>
-    <body class="index">
+    <body class="index" style="background: #07c">
         {% include navbar.html %}
         <div class="hero-imaged">
-            <div class="full master-slick" style="background: linear-gradient(#07c5, rgb(0, 32, 53))">
+            <div class="full master-slick bio">
                 <div>
                     <div class="hero">
                         <h3>&mdash; Siapa aku? &mdash;</h3>
@@ -36,19 +36,16 @@ links:
                     </div>
                 </div>
                 <div>
-                    <div class="hero ">
+                    <div class="hero">
                         <div>
                             <img id="pict" class="profile" src="{{site.img}}me-withalma.jpg" alt="Me on Profile Picture"/>
                         </div>
-                        <h1>Hi! 👋</h1>
                         <p>&mdash; <i>Selamat datang di Bio Personal saya</i> &mdash;</p>
-                        <p>Bahasa Indonesia</p>
                         <ul class="links">
                             {% for v in page.links %}
                             <li>
-                                <a href="{{ v.href }}" target="_blank" rel="noopener">
+                                <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}" data-balloon-pos="down">
                                     {% include_relative {{ v.icon }} %}
-                                    <span> {{ v.name }} </span>
                                 </a>
                             </li>
                             {% endfor %}
