@@ -96,18 +96,6 @@ thumb:
 
             $('.master-slick').slick({dots: true, initialSlide: 1});
 
-            function calcVH() {
-                $('.index').innerHeight( $(this).innerHeight() );
-            }
-
-            (function() {
-
-                var ua = navigator.userAgent.toLowerCase();
-                if (/android|mobile/i.test(ua) && /chrome/i.test(ua) ) {
-                    $('.master-slick.full').attr('style', 'bottom:-56px');
-                    alert('mobile');
-                }
-            }());
         </script>
     </body>
 </html>

@@ -11,6 +11,9 @@ body {
 body.index {
     overflow: hidden;
     font-family: monospace;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
 a {
