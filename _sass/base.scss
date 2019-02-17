@@ -75,7 +75,11 @@ input[type='checkbox'] {
     background-color: red;
 }
 .master-slick.full {
-    height: calc(100% - 64px);
+    position: absolute;
+    bottom: 0;
+    top: 64px;
+    left: 0;
+    right: 0;
 }
 
 .hero {
