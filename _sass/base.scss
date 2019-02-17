@@ -10,7 +10,6 @@ body {
 
 body.index {
     overflow: hidden;
-    font-family: monospace;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -71,6 +70,7 @@ input[type='checkbox'] {
     position: absolute;
     bottom: 0;
     top: 64px;
+    font-family: monospace;
     left: 0;
     right: 0;
 }
