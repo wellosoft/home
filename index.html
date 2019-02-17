@@ -30,6 +30,7 @@ thumb:
         <script src="vendor/jquery.min.js"></script>
         <script src="vendor/slick.min.js"></script>
         <script src="vendor/particles.min.js"></script>
+        <meta name="theme-color" content="#000">
     </head>
     <body class="index">
         <div class="particles-js" id="particles-js"></div>
@@ -95,6 +96,18 @@ thumb:
 
             $('.master-slick').slick({dots: true, initialSlide: 1});
 
+            function calcVH() {
+                $('.index').innerHeight( $(this).innerHeight() );
+            }
+
+            (function() {
+
+                var ua = navigator.userAgent.toLowerCase();
+                if (/android|mobile/i.test(ua) && /chrome/i.test(ua) ) {
+                    $('.master-slick.full').attr('style', 'bottom:-56px');
+                    alert('mobile');
+                }
+            }());
         </script>
     </body>
 </html>
