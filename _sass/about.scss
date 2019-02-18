@@ -56,7 +56,49 @@
 }
 
 .bio {
-
     background-color: #131313;
-    background-size: 20px 20px;
+}
+
+.memo-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a {
+        display: table;
+        padding: 0.5em;
+        color: white;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: var(--url) center/cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            box-shadow: 0 0 1px transparent;
+            filter: brightness(10%);
+        }
+        &:hover {
+            z-index: 2;
+
+            &::before {
+                filter: brightness(80%);
+                box-shadow: 0 0 10px #07c;
+                transition: all 0.2s;
+            }
+
+            span {
+                text-shadow: 0 0 5px black;
+            }
+        }
+
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 0.8em;
+        }
+    }
 }

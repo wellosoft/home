@@ -15,6 +15,7 @@
             width: fit-content;
         }
     }
+
     [data-balloon]::before, [data-balloon]::after {
         pointer-events: none !important; /* avoid messing with touches */
     }
@@ -33,6 +34,11 @@
         }
         a {
             color: white;
+            width: 100%;
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         .slick-dots li, .slick-next, .slick-prev {
             background-color: darkslategray;
@@ -47,5 +53,22 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
+    }
+}
+
+#u3d {
+    text-align: center;
+
+    .projects {
+        margin: 2rem 0;
+        background: darkslategray;
+    }
+
+    .u3d-embed {
+        width:600px;
+        height:130px;
+        border:0px;
+        background-color: white;
+        margin: auto;
     }
 }

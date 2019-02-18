@@ -27,37 +27,51 @@ links:
     </head>
     <body class="index" style="background: #07c">
         {% include navbar.html %}
-        <div class="hero-imaged">
-            <div class="full master-slick bio">
-                <div>
-                    <div class="hero">
-                        <h3>&mdash; Siapa aku? &mdash;</h3>
-                        <p>Nama saya Wildan dan saya adalah developer yang fokus dalam bagian desain dan semua jenis algoritma yang membuat desain itu indah -- juga terkadang mempelajari sampai membuat server web sendiri dan bermain dengan Software utilitas CLI.</p>
-                        <p>Sekarang saya sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
+        <div class="full master-slick bio">
+            <div>
+                <div class="hero">
+                    <div>
+                        <img id="pict" class="profile" src="{{site.img}}avatar-3.jpg"/>
                     </div>
+                    <p>&mdash; <i>Selamat datang di Bio Personal saya</i> &mdash;</p>
+                    <ul class="links">
+                        {% for v in page.links %}
+                        <li>
+                            <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}" data-balloon-pos="down">
+                                {% include_relative {{ v.icon }} %}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-                <div>
-                    <div class="hero">
-                        <div>
-                            <img id="pict" class="profile" src="{{site.img}}me-withalma.jpg" alt="Me on Profile Picture"/>
-                        </div>
-                        <p>&mdash; <i>Selamat datang di Bio Personal saya</i> &mdash;</p>
-                        <ul class="links">
-                            {% for v in page.links %}
-                            <li>
-                                <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}" data-balloon-pos="down">
-                                    {% include_relative {{ v.icon }} %}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
+            </div>
+            <div>
+                <div class="hero hero-imaged" style="--url:url({{site.img}}ex-warpland.jpg)">
+                    <h3>&mdash; Siapa saya? &mdash;</h3>
+                    <p>Namaku Wildan dan aku adalah developer yang fokus pada desain dan semua jenis algoritma yang membuat desain itu indah &mdash; juga mempelajari hingga membuat server web sendiri dan bermain dengan Software CLI.</p>
+                    <p>Aku sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
+                </div>
+            </div>
+            <div>
+                    <div class="hero hero-imaged" style="--url:url({{site.img}}me-sunshine.jpg)">
+                        <h3>Memo</h3>
+                        <p>Tulisan untuk mengingatkan diriku pada kehidupan -- termasuk kamu.</p>
+                        <div class="memo-list"></div>
                     </div>
-                </div>
             </div>
         </div>
         {% include foot.html %}
         <script>
-            $('.master-slick').slick({dots: true, initialSlide: 1});
+            $('.master-slick').slick({dots: true, initialSlide: 0});
+
+            $.getJSON('https://memo.wellosoft.net/home-api.json', (data) => {
+                $('.memo-list').append(
+                    data.slice(0,5).map(x => `<a href="${x.uri}" style="--url:url(${x.ig}media)"><span>${x.title}</span></a>`).join('')
+                );
+                $('.memo-list').append(
+                    `<a href="https://memo.wellosoft.net/"><span><i>Lebih Banyak...</i></span></a>`
+                );
+            });
         </script>
     </body>
 </html>

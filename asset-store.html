@@ -1,0 +1,88 @@
+---
+layout: compress
+permalink: /asset-store/
+title: Asset Store
+excerpt: Wello Soft Asset Store Products
+hero: https://res.cloudinary.com/wellosoft/image/upload/v1527478890/home/AboutCover.png
+links:
+- name: Blog
+  href: //blog.wellosoft.net/
+  icon: img/wheniwork.svg
+- name: Memo
+  href: //memo.wellosoft.net/
+  icon: img/ko-fi.svg
+- name: Instagram
+  href: //instagram.com/wiiin0de/
+  icon: img/instagram.svg
+- name: Twitter
+  href: //twitter.com/willnode/
+  icon: img/twitter.svg
+---
+
+<html lang="en">
+
+<head>
+    {% include meta.html %}
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/vendor/slick.min.js"></script>
+    <meta name="theme-color" content="#07c">
+</head>
+
+<body id="u3d">
+	{% include navbar.html %}
+
+	<h1>Asset Store Products</h1>
+	<p><a href="https://assetstore.unity.com/publishers/11882"><b>Visit</b> our publisher page</a> or <a href="/grants/"><b>Get</b> access to our Git Repos</a></p>
+	<div class="master-slick projects">
+		<div class="item">
+			<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/library-texdraw.png)">
+				<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/51426/widget-wide"
+					class="u3d-embed"></iframe>
+			</div>
+
+		</div>
+	</div>
+	<div class="master-slick projects">
+		<div class="item">
+			<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/library-engine4.png)">
+				<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/34475/widget-wide"
+					class="u3d-embed"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="master-slick projects">
+		<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/library-simpleproceduralskybox.png)">
+			<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/35569/widget-wide"
+				class="u3d-embed"></iframe>
+		</div>
+	</div>
+	<div class="master-slick projects">
+		<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/library-cameraprojecter.png)">
+			<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/86733/widget-wide"
+				class="u3d-embed"></iframe>
+		</div>
+	</div>
+
+	<div class="master-slick projects">
+		<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/graphics-10skyboxesdaynight.png)">
+			<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/32236/widget-wide"
+				class="u3d-embed"></iframe>
+		</div>
+	</div>
+
+	<div class="master-slick projects">
+		<div class="hero hero-imaged" style="--url:url({{site.img}}../expertise/library-meshdebugger.png)">
+			<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/90350/widget-wide"
+				class="u3d-embed"></iframe>
+		</div>
+	</div>
+    {% include foot.html %}
+    <script>
+		 $('.master-slick').slick({
+            dots: true,
+            slidesToScroll: 1,
+        });
+    </script>
+</body>
+
+</html>

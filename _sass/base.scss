@@ -109,8 +109,20 @@ input[type='checkbox'] {
 }
 
 .hero-imaged {
-    background-attachment: fixed;
-	background-position: center center;
+    position: relative;
+}
+
+.hero-imaged::before {
+    content: '';
+    z-index: -1;
+    background-image: var(--url);
+    filter: blur(2px);
+	background-position: center;
     background-size: cover;
     color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
