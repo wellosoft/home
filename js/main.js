@@ -1,5 +1,6 @@
 gotoEmail = function () {
     $('.master-slick').slick('slickGoTo', 2);
+    $('#nav-check').prop('checked', false);
 }
 
 goTop = function () {
