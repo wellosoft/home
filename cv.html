@@ -11,7 +11,7 @@ hero: https://res.cloudinary.com/wellosoft/image/upload/v1527478890/home/AboutCo
     </head>
     <body>
         {% include navbar.html %}
-        <div class="hero links-aon" id="cv">
+        <div class="wrapper links-aon" id="cv">
             {% capture logs %}{% include cv.md %}{% endcapture %}
             {{ logs | markdownify }}
         </div>

@@ -55,15 +55,16 @@
     background-size: cover;
 }
 
-.bio {
-    background-color: #131313;
-}
+// .bio {
+//     background-color: #131313;
+// }
 
 .memo-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     a {
+        width: 33.3333%;
+        height: 7em;
         display: table;
         padding: 0.5em;
         color: white;

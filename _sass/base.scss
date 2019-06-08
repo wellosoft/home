@@ -9,10 +9,8 @@ body {
 }
 
 body.index {
-    overflow: hidden;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
-    position: fixed;
 }
 
 a {
@@ -66,19 +64,12 @@ input[type='checkbox'] {
 #navbar {
     height: 64px;
 }
-.master-slick.full {
-    position: absolute;
-    bottom: 0;
-    top: 64px;
-    font-family: monospace;
-    left: 0;
-    right: 0;
-}
 
 .hero {
+
     text-align: center;
-    overflow-y: auto;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding: 2em;
 
     q {
         font-style: italic;
@@ -116,7 +107,6 @@ input[type='checkbox'] {
     content: '';
     z-index: -1;
     background-image: var(--url);
-    filter: blur(2px);
 	background-position: center;
     background-size: cover;
     color: white;
@@ -125,4 +115,20 @@ input[type='checkbox'] {
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+.wrapper {
+    margin:auto;
+    max-width: 600px;
+}
+
+#cv {
+    li {
+        list-style-type: initial;
+    }
+    th {
+        min-width: 100px;
+        text-align: left;
+    }
+
 }

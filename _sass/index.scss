@@ -1,5 +1,5 @@
 .particles-js {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -16,6 +16,13 @@
 .master-slick {
 
     color: white;
+
+    &>div {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .slick-slide  {
         display: flex;
@@ -96,6 +103,16 @@
 
     a {
         color: whitesmoke;
+    }
+}
+
+.devlog-list {
+    display: flex;
+    flex-direction: column;
+
+    &>a {
+        color: white;
+        margin-top: 0.5em;
     }
 }
 

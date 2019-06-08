@@ -27,7 +27,7 @@ links:
     </head>
     <body class="index" style="background: #07c">
         {% include navbar.html %}
-        <div class="full master-slick bio">
+        <div class="master-slick bio">
             <div>
                 <div class="hero">
                     <div>
@@ -45,24 +45,23 @@ links:
                     </ul>
                 </div>
             </div>
-            <div>
-                <div class="hero hero-imaged" style="--url:url({{site.img}}ex-warpland.jpg)">
+            <div class="hero hero-imaged" style="--url:url({{site.img}}ex-warpland.jpg)">
+                <div>
                     <h3>&mdash; Siapa saya? &mdash;</h3>
                     <p>Namaku Wildan dan aku adalah developer yang fokus pada desain dan semua jenis algoritma yang membuat desain itu indah &mdash; juga mempelajari hingga membuat server web sendiri dan bermain dengan Software CLI.</p>
                     <p>Aku sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
                 </div>
             </div>
-            <div>
-                    <div class="hero hero-imaged" style="--url:url({{site.img}}me-sunshine.jpg)">
-                        <h3>Memo</h3>
-                        <p>Tulisan untuk mengingatkan diriku pada kehidupan -- termasuk kamu.</p>
-                        <div class="memo-list"></div>
-                    </div>
+            <div class="hero hero-imaged" style="--url:url({{site.img}}me-sunshine.jpg)">
+                <div>
+                    <h3>Memo</h3>
+                    <p>Tulisan untuk mengingatkan diriku pada kehidupan -- termasuk kamu.</p>
+                    <div class="memo-list"></div>
+                </div>
             </div>
         </div>
         {% include foot.html %}
         <script>
-            $('.master-slick').slick({dots: true, initialSlide: 0});
 
             $.getJSON('https://memo.wellosoft.net/home-api.json', (data) => {
                 $('.memo-list').append(

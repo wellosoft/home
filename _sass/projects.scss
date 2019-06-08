@@ -20,6 +20,7 @@
         pointer-events: none !important; /* avoid messing with touches */
     }
 
+
     .master-slick.projects {
         height: calc(4rem + 30vw + 150px);
         background-color: darken($color: darkslategray, $amount: 10);
@@ -57,6 +58,10 @@
             flex-direction: column;
         }
     }
+
+    .master-slick>div {
+        min-height: initial !important;
+    }
 }
 
 #u3d {
@@ -65,6 +70,10 @@
     .projects {
         margin: 2rem 0;
         background: darkslategray;
+    }
+
+    .hero-imaged {
+        height: 100vh;
     }
 
     .u3d-embed {

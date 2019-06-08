@@ -24,77 +24,97 @@ thumb:
   hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
 ---
 <html lang="en">
-    <head>
-        {% include meta.html %}
-        <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-        <script src="vendor/jquery.min.js"></script>
-        <script src="vendor/slick.min.js"></script>
-        <script src="vendor/particles.min.js"></script>
-        <meta name="theme-color" content="#000">
-    </head>
-    <body class="index">
-        <div class="particles-js" id="particles-js"></div>
-        {% include navbar.html %}
 
-        <div class="master-slick full">
-            <div>
-                <div class="hero">
-                    <h3 class="nowrap">Hi! 👋</h3>
-                    <p>My name is Wildan and I’ve been a self-taught programmer since twelve. I doing web design and game development with main objective in designs and all kinds of algorithm that makes it beautiful -- also learns all the way down into creating its own web server and working with CLI tools.</p>
-                    <p>Right now I'm a student college while making a living by selling digital assets in Unity Asset Store since 2015.<span class="blink">_</span></p>
+<head>
+    {% include meta.html %}
+    <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/slick.min.js"></script>
+    <script src="vendor/particles.min.js"></script>
+    <meta name="theme-color" content="#000">
+</head>
+
+<body class="index">
+    <div class="particles-js" id="particles-js"></div>
+    {% include navbar.html %}
+
+    <div class="master-slick">
+        <div>
+            <div class="home-contact hero">
+                <h1 class="nowrap">WIIIN0DE<span class="blink">_</span></h1>
+                <div>
+                    <img id="pict" class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
                 </div>
-            </div>
-            <div>
-                <div class="home-contact hero">
-                    <h1 class="nowrap">WIIIN0DE<span class="blink">_</span></h1>
-                    <div>
-                        <img id="pict" class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture"/>
-                    </div>
-                    <p>
-                        <span data-balloon="Web Design" data-balloon-pos="down">🌐</span>,
-                        <span data-balloon="Game Developer" data-balloon-pos="down">🎮</span> and
-                        <span data-balloon="Emoji" data-balloon-pos="down">🎨</span>
-                    </p>
-                    <ul class="links">
-                        {% for v in page.links %}
-                        <li>
-                            <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}" data-balloon-pos="down">
-                                {% include_relative {{ v.icon }} %}
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <!-- Email -->
-            <div>
-                <div class="home-email">
-                    <span data-balloon="Both delivers to the same human and priority" data-balloon-pos="up" class="icon">
-                        <a href="/img/dino.txt" target="_blank" rel="nofollow noopener">
-                            {% include_relative img/gmail.svg %}
+                <p>
+                    <span data-balloon="Web Design" data-balloon-pos="down">🌐</span>,
+                    <span data-balloon="Game Developer" data-balloon-pos="down">🎮</span> and
+                    <span data-balloon="Emoji" data-balloon-pos="down">🎨</span>
+                </p>
+                <ul class="links">
+                    {% for v in page.links %}
+                    <li>
+                        <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}"
+                            data-balloon-pos="down">
+                            {% include_relative {{ v.icon }} %}
                         </a>
-                    </span>
-                    <ul class="links">
-                        <li>
-                            <a data-balloon="Support Email (GitHub, Unity Products, etc.)" data-balloon-pos="down" href="mailto:{{page.email.support}}">{{page.email.support}}</a>
-                        </li>
-                        <li>
-                            <a data-balloon="General Email (Events, Invitations, Updates, etc.)" data-balloon-pos="down" href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
+        <div>
+            <div class="hero">
+                <h3 class="nowrap">Hi! 👋</h3>
+                <p>My name is Wildan and I’ve been a self-taught programmer since twelve. I doing web design and game
+                    development with main objective in designs and all kinds of algorithm that makes it beautiful --
+                    also learns all the way down into creating its own web server and working with CLI tools.</p>
+                <p>Right now I'm a student college while making a living by selling digital assets in Unity Asset Store
+                    since 2015.<span class="blink">_</span></p>
+            </div>
+        </div>
+        <div>
+            <div class="hero">
+                <h3>Devlog</h3>
+                <div class="devlog-list"></div>
+            </div>
+        </div>
+        <!-- Email -->
+        <div>
+            <div class="home-email hero">
+                <span data-balloon="Both delivers to the same human and priority" data-balloon-pos="up" class="icon">
+                    <a href="/img/dino.txt" target="_blank" rel="nofollow noopener">
+                        {% include_relative img/gmail.svg %}
+                    </a>
+                </span>
+                <ul class="links">
+                    <li>
+                        <a data-balloon="Support Email (GitHub, Unity Products, etc.)" data-balloon-pos="down"
+                            href="mailto:{{page.email.support}}">{{page.email.support}}</a>
+                    </li>
+                    <li>
+                        <a data-balloon="General Email (Events, Invitations, Updates, etc.)" data-balloon-pos="down"
+                            href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-        {% include foot.html %}
-        <script>
+    {% include foot.html %}
+    <script>
+        particlesJS.load('particles-js', 'js/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
 
-            particlesJS.load('particles-js', 'js/particles.json', function() {
-                console.log('callback - particles.js config loaded');
-            });
+        $.getJSON('https://devlog.wellosoft.net/home-api.json', (data) => {
+            $('.devlog-list').append(
+                data.slice(0, 10).map(x => `<a href="${x.uri}"><span>${x.title}</span><small> &mdash; ${x.date.substr(0,10)}</small></a>`).join('')
+            );
+            $('.devlog-list').append(
+                `<a href="https://devlog.wellosoft.net/"><span><i>More...</i></span></a>`
+            );
+        });
+    </script>
+</body>
 
-            $('.master-slick').slick({dots: true, initialSlide: 1});
-
-        </script>
-    </body>
 </html>
