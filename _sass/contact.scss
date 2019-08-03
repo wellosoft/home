@@ -12,10 +12,9 @@
         }
     }
     svg {
-        height: 26px;
-        width: 26px;
+        width: 2em;
         vertical-align: text-bottom;
-        fill: white;
+        fill: var(--fore-color);
     }
     li {
         border: solid 2px;
@@ -28,10 +27,10 @@
         animation: border-color 0.2s ease-in;
         &:hover,
         &:focus {
-            border-color: #07c;
+            border-color: var(--hover-color);
             animation: border-color 0.2s ease-in;
             svg {
-                fill: #07c;
+                fill: var(--hover-color);
                 transition: fill 0.2s ease-out;
             }
         }
@@ -42,11 +41,38 @@
     }
 }
 
-.profile {
-    border-radius: 50%;
+.index-logo {
     width: 300px;
     height: 300px;
     max-width: 50vw;
     max-height: 50vw;
-    object-fit: cover;
+    margin: auto;
+    text-align: center;
+    fill: white;
+    margin-bottom: 2em;
+}
+
+.circle {
+    border-radius: 1000px;
+}
+
+.index-flex {
+    display: flex;
+    margin: 2em 0;
+    align-items: center;
+
+    .grow {
+        padding: 1em;
+        flex-grow: 1;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .profile {
+        width: 300px;
+        margin: 10px;
+        border-radius: 200px;
+    }
 }

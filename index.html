@@ -4,24 +4,24 @@ title: Wello Soft
 excerpt: Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool
 hero: https://res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg
 links:
-- name: GitHub
-  href: //github.com/willnode
-  icon: img/github.svg
-- name: Unity
-  href: //u3d.as/cco
-  icon: img/unity.svg
-- name: Codepen
-  href: //codepen.io/willnode
-  icon: img/codepen.svg
-- name: Artstation
-  href: //artstation.com/willnode
-  icon: img/artstation.svg
+-   name: GitHub
+    href: //github.com/willnode
+    icon: img/github.svg
+-   name: Unity
+    href: //u3d.as/cco
+    icon: img/unity.svg
+-   name: Codepen
+    href: //codepen.io/willnode
+    icon: img/codepen.svg
+-   name: Artstation
+    href: //artstation.com/willnode
+    icon: img/artstation.svg
 email:
-  alias: willnode@wellosoft.net
-  support: support@wellosoft.net
+    alias: willnode@wellosoft.net
+    support: support@wellosoft.net
 thumb:
-  normal: //avatars1.githubusercontent.com/u/20214420
-  hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
+    normal: //avatars1.githubusercontent.com/u/20214420
+    hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
 ---
 <html lang="en">
 
@@ -30,85 +30,140 @@ thumb:
     <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
     <script src="vendor/jquery.min.js"></script>
     <script src="vendor/slick.min.js"></script>
-    <script src="vendor/particles.min.js"></script>
     <meta name="theme-color" content="#000">
 </head>
-
 <body class="index">
-    <div class="particles-js" id="particles-js"></div>
     {% include navbar.html %}
 
-    <div class="master-slick">
-        <div>
+    <div>
+        <div class="bg-blue">
             <div class="home-contact hero">
-                <h1 class="nowrap">WIIIN0DE<span class="blink">_</span></h1>
-                <div>
-                    <img id="pict" class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
+                <div id="pict" class="index-logo">
+                    {% include_relative img/wellosoft.svg %}
                 </div>
-                <p>
-                    <span data-balloon="Web Design" data-balloon-pos="down">🌐</span>,
-                    <span data-balloon="Game Developer" data-balloon-pos="down">🎮</span> and
-                    <span data-balloon="Emoji" data-balloon-pos="down">🎨</span>
-                </p>
-                <ul class="links">
-                    {% for v in page.links %}
-                    <li>
-                        <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}"
-                            data-balloon-pos="down">
-                            {% include_relative {{ v.icon }} %}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
+                <small>Welcome to the amazing&hellip;</small>
+                <h1>WELLOSOFT.NET<span class="blink">_</span></h1>
+
             </div>
         </div>
-        <div>
-            <div class="hero">
-                <h3 class="nowrap">Hi! 👋</h3>
-                <p>My name is Wildan and I’ve been a self-taught programmer since twelve. I doing web design and game
-                    development with main objective in designs and all kinds of algorithm that makes it beautiful --
-                    also learns all the way down into creating its own web server and working with CLI tools.</p>
-                <p>Right now I'm a student college while making a living by selling digital assets in Unity Asset Store
-                    since 2015.<span class="blink">_</span></p>
+        <div class="blue-up white-down">
+            {% include_relative img/hr-curvy.svg %}
+        </div>
+        <div class="bg-white">
+            <div class="index-flex">
+                <div>
+                    <img class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
+                </div>
+                <div>
+                    <div class="home-contact hero">
+                        <h2>Meet the Dev</h2>
+                        <ul class="links">
+                            {% for v in page.links %}
+                            <li>
+                                <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}"
+                                    data-balloon-pos="down">
+                                    {% include_relative {{ v.icon }} %}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        <p>My name is <b>Wildan</b> and I'm a self-taught programmer since twelve. I doing design and
+                            code logics for web and game development. I also learns all the way down into
+                            managing web servers and working with CLI tools.
+                        </p>
+                        <p>Currently I'm a student college while making a living by selling digital assets in Unity
+                            Asset Store since 2015.<span class="blink">_</span></p>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div>
+        <div class="white-up blue-down">
+            {% include_relative img/hr-lhline.svg %}
+        </div>
+        <div class="bg-blue hero">
+            <div class="index-flex">
+                <div class="grow">
+                    <div class="hero">
+                        <small>Featured Product</small>
+                        <h2>TEXDraw</h2>
+                        <p>Bringing TeX-Typing and TeX Document Processing into Unity Game Engine</p>
+                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><u>Check it out</u></a>
+                    </div>
+                </div>
+                <div>
+                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><img src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle" alt="TEXDraw" width="300"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="blue-up white-down">
+            {% include_relative img/hr-hlline.svg %}
+        </div>
+        <div class="bg-white hero">
+            <div class="index-flex">
+                <div>
+                        <a href="https://forth.wellosoft.net/"><img src="https://forth.wellosoft.net/images/preview.gif" class="circle" alt="Forth Engine" width="300"/></a>
+                </div>
+                <div class="grow">
+                    <div class="hero">
+                        <small>Featured in Development Project</small>
+                        <h2>Forth Engine</h2>
+                        <p>OpenGL-powered Four Dimensional Game Engine in C++</p>
+                        <a href="https://forth.wellosoft.net/"><u>Check it out</u></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="white-up blue-down">
+            {% include_relative img/hr-lhline.svg %}
+        </div>
+        <div class="bg-blue">
+            <div class="hero" style="padding:3em 1em">
+                <a href="/asset-store/">More Products</a> &bullet;
+                <a href="/projects/">More Projects</a> &bullet;
+                <a href="/cv/">Curriculum Vitae</a>
+
+            </div>
+        </div>
+        <div class="blue-up white-down">
+            {% include_relative img/hr-lhline.svg %}
+        </div>
+        <div class="bg-white">
             <div class="hero">
                 <h3>Devlog</h3>
                 <div class="devlog-list"></div>
             </div>
         </div>
-        <!-- Email -->
-        <div>
+        <div class="white-up blue-down">
+            {% include_relative img/hr-curvy.svg %}
+        </div>
+            <!-- Email -->
+        <div class="bg-blue">
             <div class="home-email hero">
-                <span data-balloon="Both delivers to the same human and priority" data-balloon-pos="up" class="icon">
-                    <a href="/img/dino.txt" target="_blank" rel="nofollow noopener">
+                <p>
+                    <a class="icon" href="/img/dino.txt" target="_blank" rel="nofollow noopener">
                         {% include_relative img/gmail.svg %}
                     </a>
-                </span>
-                <ul class="links">
-                    <li>
-                        <a data-balloon="Support Email (GitHub, Unity Products, etc.)" data-balloon-pos="down"
-                            href="mailto:{{page.email.support}}">{{page.email.support}}</a>
-                    </li>
-                    <li>
-                        <a data-balloon="General Email (Events, Invitations, Updates, etc.)" data-balloon-pos="down"
-                            href="mailto:{{page.email.alias}}">{{page.email.alias}}</a>
-                    </li>
-                </ul>
+                </p>
+                <small>Support Email</small>
+                <p><a data-balloon="Support Email for GitHub, Unity Products, etc." data-balloon-pos="down"
+                    href="mailto:{{page.email.support}}">{{page.email.support}}</a></p>
+                <small>DM and Enquiries</small>
+                <p><a data-balloon="Email for Events, Invitations, Updates, etc." data-balloon-pos="down"
+                    href="mailto:{{page.email.alias}}">{{page.email.alias}}</a></p>
+                <p><a data-balloon="If you prefer chats (This is NOT a support channel)" data-balloon-pos="down"
+                    href="https://t.me/WIIIN0DE">Telegram DM</a></p>
             </div>
         </div>
     </div>
 
     {% include foot.html %}
     <script>
-        particlesJS.load('particles-js', 'js/particles.json', function () {
-            console.log('callback - particles.js config loaded');
-        });
-
         $.getJSON('https://devlog.wellosoft.net/home-api.json', (data) => {
             $('.devlog-list').append(
-                data.slice(0, 10).map(x => `<a href="${x.uri}"><span>${x.title}</span><small> &mdash; ${x.date.substr(0,10)}</small></a>`).join('')
+                data.slice(0, 10).map(x =>
+                    `<a href="${x.uri}"><span>${x.title}</span><small> &mdash; ${x.date.substr(0,10)}</small></a>`
+                ).join('')
             );
             $('.devlog-list').append(
                 `<a href="https://devlog.wellosoft.net/"><span><i>More...</i></span></a>`

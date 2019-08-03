@@ -2,12 +2,9 @@
 layout: compress
 permalink: /bio/
 title: About
-excerpt: willnode's biography in timeline 💪
+excerpt: Manusia dalangnya wellosoft.net
 hero: https://res.cloudinary.com/wellosoft/image/upload/v1527478890/home/AboutCover.png
 links:
-- name: Blog
-  href: //blog.wellosoft.net/
-  icon: img/wheniwork.svg
 - name: Memo
   href: //memo.wellosoft.net/
   icon: img/ko-fi.svg
@@ -17,23 +14,23 @@ links:
 - name: Twitter
   href: //twitter.com/willnode/
   icon: img/twitter.svg
+- name: Telegram
+  href: //telegram.com/wiiin0de/
+  icon: img/telegram.svg
 ---
 <html lang="id">
     <head>
         {% include meta.html %}
         <script src="/vendor/jquery.min.js"></script>
         <script src="/vendor/slick.min.js"></script>
-        <meta name="theme-color" content="#07c">
+        <meta name="theme-color" content="#70c">
     </head>
-    <body class="index" style="background: #07c">
+    <body class="index bio" style="background: #70c">
         {% include navbar.html %}
-        <div class="master-slick bio">
-            <div>
-                <div class="hero">
-                    <div>
-                        <img id="pict" class="profile" src="{{site.img}}avatar-3.jpg"/>
-                    </div>
-                    <p>&mdash; <i>Selamat datang di Bio Personal saya</i> &mdash;</p>
+        <div >
+            <div class="bg-pink">
+                <div class="hero welcome">
+                    <h1>WIIIN0DE<span class="blink">_</span></h1>
                     <ul class="links">
                         {% for v in page.links %}
                         <li>
@@ -43,20 +40,27 @@ links:
                         </li>
                         {% endfor %}
                     </ul>
+                    <small style="margin-top: 2em"><i>I live and grow in Indonesian tribe.<br> Not speaking Indonesia? You should check the <a href="/">main page</a>.<br>This page is about Me, personally.</i></small>
                 </div>
             </div>
-            <div class="hero hero-imaged" style="--url:url({{site.img}}ex-warpland.jpg)">
-                <div>
-                    <h3>&mdash; Siapa saya? &mdash;</h3>
-                    <p>Namaku Wildan dan aku adalah developer yang fokus pada desain dan semua jenis algoritma yang membuat desain itu indah &mdash; juga mempelajari hingga membuat server web sendiri dan bermain dengan Software CLI.</p>
-                    <p>Aku sedang menempuh pendidikan jenjang S1 di Universitas Tronojoyo Madura sebagai Mahasiswa Teknik Informatika sejak 2018.<span class="blink">_</span></p>
+            <div class="hero my-bio hero-imaged fixed" style="--url:url({{site.img}}MeBehindAlma.jpg);">
+                <div class="bg-white box">
+                    <div>
+                        {% capture _bio %}{% include about.md %}{% endcapture %}
+                        {{ _bio | markdownify }}
+                    </div>
                 </div>
             </div>
-            <div class="hero hero-imaged" style="--url:url({{site.img}}me-sunshine.jpg)">
+            <div class="hero hero-imaged my-memo" style="--url:url({{site.img}}me-sunshine.jpg);">
                 <div>
                     <h3>Memo</h3>
-                    <p>Tulisan untuk mengingatkan diriku pada kehidupan -- termasuk kamu.</p>
+                    <p>Tulisan untuk mengingatkan diriku pada kehidupan &mdash; termasuk kamu.</p>
                     <div class="memo-list"></div>
+                </div>
+            </div>
+            <div class="home-email hero hero-imaged my-hi" style="--url:url({{site.img}}ex-warpland.jpg)">
+                <div>
+                    <a href="https://t.me/WIIIN0DE">Katakan Hai!</a>
                 </div>
             </div>
         </div>

@@ -11,13 +11,19 @@ body {
 body.index {
     min-height: 100%;
     width: 100%;
+    background-color: #07c;
+}
+
+body:not(.index) {
+    a {
+        color: black;
+    }
 }
 
 a {
     text-decoration: none;
     border-bottom: 1px dotted;
     border-bottom-color: transparent;
-    color: black;
     transition: color 0.2s ease-out;
 }
 
@@ -32,8 +38,7 @@ a {
 }
 
 a:hover {
-    color: #07c;
-    border-bottom-color: #07c;
+    font-weight: bold;
     transition: color 0.2s ease-in;
 }
 
@@ -74,9 +79,11 @@ input[type='checkbox'] {
     q {
         font-style: italic;
     }
+
     h3 {
         font-size: 2rem;
     }
+
     .btn {
         padding: 1rem;
         border: 1px solid white;
@@ -101,24 +108,34 @@ input[type='checkbox'] {
 
 .hero-imaged {
     position: relative;
+    color: white;
+
+    &::before {
+        content: '';
+        z-index: -1;
+        background-image: var(--url);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    &.right::before {
+        background-position: right;
+    }
+
+    &.fixed::before {
+        background-attachment: fixed;
+    }
 }
 
-.hero-imaged::before {
-    content: '';
-    z-index: -1;
-    background-image: var(--url);
-	background-position: center;
-    background-size: cover;
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
 
 .wrapper {
-    margin:auto;
+    margin: auto;
     max-width: 600px;
 }
 
@@ -126,9 +143,40 @@ input[type='checkbox'] {
     li {
         list-style-type: initial;
     }
+
     th {
         min-width: 100px;
         text-align: left;
+    }
+
+}
+
+.hr-curvy {
+    position: relative;
+    height: 0;
+
+    svg {
+        position: absolute;
+        top: -50px;
+        height: 100px;
+        width: 100%;
+        display: block;
+    }
+
+    .blue-up>& .up {
+        fill: #07c;
+    }
+
+    .white-up>& .up {
+        fill: white;
+    }
+
+    .white-down>& .down {
+        fill: white;
+    }
+
+    .blue-down>& .down {
+        fill: #07c;
     }
 
 }

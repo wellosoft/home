@@ -9,6 +9,36 @@
     background: #010207;
 }
 
+.bg-blue {
+    --back-color: #07c;
+    --fore-color: white;
+    --hover-color: white;
+}
+
+.bg-pink {
+    --back-color: #70c;
+    --fore-color: white;
+    --hover-color: white;
+}
+
+.bg-white {
+    --back-color: white;
+    --fore-color: black;
+    --hover-color: #07c;
+}
+
+.bg-blue, .bg-white, .bg-pink {
+    background-color: var(--back-color);
+    color: var(--fore-color);
+
+    a {
+        color: var(--fore-color);
+    }
+    a:hover {
+        border-bottom-color: var(--fore-color);
+    }
+}
+
 .slick-slide:focus {
     outline: none;
 }
@@ -72,6 +102,7 @@
         margin-top: 0;
     }
 }
+
 .home-email {
 
     svg {
@@ -79,7 +110,7 @@
         max-width: 70px;
         padding-right: 5px;
         vertical-align: text-bottom;
-        fill: white;
+        fill: black;
 
         &:hover,
         &:focus {
@@ -102,7 +133,10 @@
     }
 
     a {
-        color: whitesmoke;
+        color: black;
+        background-color: white;
+        padding: 0.2em 1em;
+        border-radius: 100px;
     }
 }
 
@@ -111,7 +145,6 @@
     flex-direction: column;
 
     &>a {
-        color: white;
         margin-top: 0.5em;
     }
 }
@@ -128,7 +161,7 @@
     }
 
     50% {
-        color: white;
+        color: var(--fore-color);
     }
 }
 
@@ -143,4 +176,48 @@
     }
 
     font-family: monospace;
+}
+
+.index.bio {
+    .hero.welcome {
+        min-height: calc(100vh - 64px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero.my-bio .box {
+        margin: 100vh -3rem -3rem 50%;
+        padding: 0.5em;
+        font-size: 1.2rem;
+        min-height: 100vh;
+        display: flex;
+        >div {
+            margin: auto;
+        }
+        a {
+            font-weight: bold;
+        }
+        p {
+            text-align: justify;
+            text-indent: 2rem;
+            line-height: 1.5em;
+            text-indent: 2em;
+        }
+
+    @media (max-width: 600px) {
+        & {
+            margin-left: -3em;
+        }
+    }
+
+    }
+
+    .hero.my-memo {
+        min-height: 100vh;
+        text-shadow: 0 0 3px black
+    }
+
+    .hero.my-hi>div {
+        margin: 20vh auto; display: block; text-align: center
+    }
 }
