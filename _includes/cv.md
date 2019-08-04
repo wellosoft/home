@@ -1,76 +1,51 @@
 
 
-## General Info
+![](https://res.cloudinary.com/wellosoft/image/upload/w_600,h_900,c_thumb,g_auto/v1564509091/home/MeBehindAlma.jpg){:style="float:right;width:150px"}
 
-![](https://res.cloudinary.com/wellosoft/image/upload/v1560013253/home/avatar-4.jpg){:style="float:right;width:150px"}
+# Wildan Mubarok
 
-|---|---|
-|Name|Wildan Mubarok|
-|Gender|Male|
-|Birth year|2000|
-|Nationality|Indonesia|
-|Website|https://wellosoft.net|
-|Email|wildanmubarok22@gmail.com|
+Freelancer at wellosoft.net
+
+- [wellosoft.net](https://wellosoft.net)
+- [willnode@wellosoft.net](mailto:willnode@wellosoft.net)
+- [linkedin.com/in/willnode](https://www.linkedin.com/in/willnode/)
+- [stackoverflow.com/story/willnode](https://stackoverflow.com/story/willnode)
+- [github.com/willnode](https://github.com/willnode)
 
 <div style="clear:both"></div>
 
-## Academics
+## Brief Summary
 
-Currently studying in:
+A self-taught programmer since twelve. Doing mostly in design and code logics for web and game development. Also learns all the way down into managing web servers and working with CLI tools.
 
-|---|
-|[Trunojoyo University](https://www.trunojoyo.ac.id/)|
-|2018 - Today|
-|Bachelor of Information Technology|
+## Academics Experience
 
-## Objective Learning Skills
+Currently studying at [Trunojoyo University](https://www.trunojoyo.ac.id/) as *Bachelor of Information Technology*, 2018 - Today.
 
-+ Efficient Algorithms
-+ Procedural Design
-+ Web Designs
+## Working Experience
 
-## Notable Projects
+Authores website redesign at:
++ [disperindag.banyuwangi.go.id](https://disperindag.banyuwangi.go.id), March 2019
++ [journal.trunojoyo.ac.id/rekayasa](https://journal.trunojoyo.ac.id/rekayasa), June 2019
++ [wellosoft.net](https://github.com/willnode/willnode.github.io), August 2019
 
-+ [Forth Engine](https://forth.wellosoft.net/)
-+ [TEXDraw](https://www.assetstore.unity3d.com/#!/content/51426)
-+ [To the Highest Place](https://willnode.itch.io/tthp)|
+## Notable Personal Projects
 
-## Programming Skills
+[Forth Engine](https://forth.wellosoft.net/) -- [TEXDraw](https://www.assetstore.unity3d.com/#!/content/51426) -- [To the Highest Place](https://willnode.itch.io/tthp)
 
-|Language|Since|
-|---|---|---|
-|VB|2012|
-|C#|2014|
-|C++|2017|
-|Javascript|2017|
-|Python|2018|
-|PHP|2019|
+## Known Programming Languages
 
-## Notable Programming Softwares
+Currently major at `C#`, `C++`, `JavaScript` and `PHP`.
 
-|Software|Since|
-|---|---|---|
-|Visual Studio|2012|
-|Unity|2014|
-|Node.JS|2017|
-|CMake|2019|
+Other languages include `Python`, `VB`, `Go`, `Java` and few batchscripts.
 
+## Known Software and IDEs
 
-## Notable Design Softwares
+Frequently used is `Unity Game Engine`, `Visual Studio`, `VS Code`.
 
-|Software|Since|
-|---|---|
-|Blender|2014|
-|Corel|2016|
+Other software include `Android Studio`, `Python IDLE`, `Node.JS`, `XAMPP` and few others.
 
-## Channels
+## Other Channels
 
-+ [Github](https://github.com/willnode)
-+ [Twitter](https://twitter.com/willnode)
-+ [Instagram](https://ig.me/wiiin0de)
-+ [YouTube](https://www.youtube.com/channel/UCJr_vGlEh3DvYyPXh-VJscg)
-+ [Codepen](https://codepen.io/willnode)
-+ [Artstation](https://artstation.com/willnode)
-+ [Asset Store](https://assetstore.unity.com/publishers/11882)
+[Twitter](https://twitter.com/wiiin0de) -- [Telegram](https://telegram.com/wiiin0de) -- [Instagram](https://ig.me/wiiin0de) -- [YouTube](https://www.youtube.com/channel/UCJr_vGlEh3DvYyPXh-VJscg) -- [Codepen](https://codepen.io/willnode) -- [Artstation](https://artstation.com/willnode) -- [Asset Store](https://assetstore.unity.com/publishers/11882)
 
----

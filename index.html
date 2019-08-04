@@ -42,7 +42,7 @@ thumb:
                     {% include_relative img/wellosoft.svg %}
                 </div>
                 <small>Welcome to the amazing&hellip;</small>
-                <h1>WELLOSOFT.NET<span class="blink">_</span></h1>
+                <h1 class="nowrap">WELLOSOFT.NET<span class="blink">_</span></h1>
 
             </div>
         </div>
@@ -52,7 +52,7 @@ thumb:
         <div class="bg-white">
             <div class="index-flex">
                 <div>
-                    <img class="profile" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
+                    <img class="profile circle" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
                 </div>
                 <div>
                     <div class="home-contact hero">
@@ -138,20 +138,20 @@ thumb:
             {% include_relative img/hr-curvy.svg %}
         </div>
             <!-- Email -->
-        <div class="bg-blue">
-            <div class="home-email hero">
+        <div id="section-email" class="bg-blue">
+            <div class="home-email hero nowrap">
                 <p>
-                    <a class="icon" href="/img/dino.txt" target="_blank" rel="nofollow noopener">
+                    <a class="icon" href="/js/dino.txt" target="_blank" rel="nofollow noopener">
                         {% include_relative img/gmail.svg %}
                     </a>
                 </p>
                 <small>Support Email</small>
-                <p><a data-balloon="Support Email for GitHub, Unity Products, etc." data-balloon-pos="down"
+                <p class="nowrap"><a data-balloon="Support Email for GitHub, Unity Products, etc." data-balloon-pos="down"
                     href="mailto:{{page.email.support}}">{{page.email.support}}</a></p>
                 <small>DM and Enquiries</small>
-                <p><a data-balloon="Email for Events, Invitations, Updates, etc." data-balloon-pos="down"
+                <p class="nowrap"><a data-balloon="Email for Events, Invitations, Updates, etc." data-balloon-pos="down"
                     href="mailto:{{page.email.alias}}">{{page.email.alias}}</a></p>
-                <p><a data-balloon="If you prefer chats (This is NOT a support channel)" data-balloon-pos="down"
+                <p class="nowrap"><a data-balloon="If you prefer chats (This is NOT a support channel)" data-balloon-pos="down"
                     href="https://t.me/WIIIN0DE">Telegram DM</a></p>
             </div>
         </div>
@@ -169,6 +169,10 @@ thumb:
                 `<a href="https://devlog.wellosoft.net/"><span><i>More...</i></span></a>`
             );
         });
+        function gotoEmail()
+        {
+            window.scroll({ behavior: 'smooth', top: $('#section-email')[0].offsetTop});
+        }
     </script>
 </body>
 

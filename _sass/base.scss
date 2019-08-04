@@ -76,6 +76,13 @@ input[type='checkbox'] {
     font-size: 1.5rem;
     padding: 2em;
 
+
+    @media (max-width: 600px) {
+        & {
+            padding: 2em 5px;
+        }
+    }
+
     q {
         font-style: italic;
     }

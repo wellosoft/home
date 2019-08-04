@@ -70,6 +70,12 @@
         color: white;
         position: relative;
 
+        @media (max-width: 600px) {
+            & {
+                width: 100%;
+            }
+        }
+
         &::before {
             content: '';
             background: var(--url) center/cover;

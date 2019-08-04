@@ -132,11 +132,17 @@
         padding: 0px 20px;
     }
 
-    a {
-        color: black;
+    p {
         background-color: white;
         padding: 0.2em 1em;
         border-radius: 100px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a {
+        color: black;
+
     }
 }
 
@@ -206,7 +212,8 @@
 
     @media (max-width: 600px) {
         & {
-            margin-left: -3em;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 
