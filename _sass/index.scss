@@ -184,6 +184,12 @@
     font-family: monospace;
 }
 
+.index:not(.bio) {
+    .logo {
+        display: none;
+    }
+}
+
 .index.bio {
     .hero.welcome {
         min-height: calc(100vh - 64px);
@@ -209,14 +215,22 @@
             line-height: 1.5em;
             text-indent: 2em;
         }
-
-    @media (max-width: 600px) {
-        & {
-            margin-left: 0;
-            margin-right: 0;
-        }
     }
 
+
+    @media (max-width: 600px) {
+        .hero.my-bio .box {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .hero.my-bio::before {
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            max-height: calc(100vh + 2em);
+        }
     }
 
     .hero.my-memo {
