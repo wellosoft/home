@@ -20,14 +20,14 @@ A self-taught programmer since twelve. Doing mostly in design and code logics fo
 
 ## Academics Experience
 
-Currently studying at [Trunojoyo University](https://www.trunojoyo.ac.id/) as *Bachelor of Information Technology*, 2018 - Today.
+Currently studying at [Trunojoyo University](http://www.trunojoyo.ac.id/) as *Bachelor of Information Technology*, 2018 - Today.
 
 ## Working Experience
 
 Authores website redesign at:
-+ [disperindag.banyuwangi.go.id](https://disperindag.banyuwangi.go.id), March 2019
-+ [journal.trunojoyo.ac.id/rekayasa](https://journal.trunojoyo.ac.id/rekayasa), June 2019
-+ [wellosoft.net](https://github.com/willnode/willnode.github.io), August 2019
++ [disperindag.banyuwangikab.go.id](http://disperindag.banyuwangikab.go.id/), March 2019
++ [journal.trunojoyo.ac.id/rekayasa](http://journal.trunojoyo.ac.id/rekayasa/), June 2019
++ [wellosoft.net](https://github.com/willnode/willnode.github.io/), August 2019
 
 ## Notable Personal Projects
 
