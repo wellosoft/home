@@ -187,3 +187,9 @@ input[type='checkbox'] {
     }
 
 }
+
+@media (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
