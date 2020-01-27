@@ -49,64 +49,6 @@ var graphics = {
 if (graphics.bg)
     graphics.setg(0);
 
-/* Repos */
-// (function () {
-//     getForeground = function (bgColor) {
-//         /* //stackoverflow.com/a/41491220/3908409 */
-//         var color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
-//         var r = parseInt(color.substring(0, 2), 16);
-//         var g = parseInt(color.substring(2, 4), 16);
-//         var b = parseInt(color.substring(4, 6), 16);
-//         return (((r * 0.299) + (g * 0.587) + (b * 0.114)) > 186) ?
-//             '#000' : '#fff';
-//     };
-//     setMessage = function (txt) {
-//         document.getElementById('repos-stat').textContent = txt;
-//     };
-//     setMessage('Be patient. Our 🐒 still scraping the web for you...');
-//     var repos = [];
-//     var xhr = new XMLHttpRequest();
-//     xhr.open("GET", "https://gh-latest-repos-mboegechzb.now.sh", true);
-//     xhr.onreadystatechange = function (e) {
-//         if (xhr.readyState === 4) {
-//             if (xhr.status === 200) {
-//                 repos = JSON.parse(xhr.responseText);
-//                 repos.reverse();
-//                 setMessage(repos.length === 0 ? 'Whoops. Nothing here. But we still 💖 U' : '');
-//                 if (repos.length > 0) {
-//                     var result = '';
-//                     repos.forEach(r => {
-//                         result += `
-// <li>
-//     <a href='${r.url}'>
-//         <span class="repo">
-//             <span class="name">${r.name}</span>${
-//                 !r.primaryLanguage ? "" :
-//                 `<span class="lang" style="background-color: ${r.primaryLanguage.color}; color:${getForeground(r.primaryLanguage.color)}">${r.primaryLanguage.name}</span>`
-//                     }
-//         </span><br>
-//     </a>
-//     <a href='${r.url}'>
-//         <span class="desc">${r.description}</span>
-//     </a>
-//     <div>${r.stargazers ? ('⭐ ' + r.stargazers) : ''}</div>
-// </li>`;
-//                     });
-//                     document.getElementById('repos').innerHTML = result;
-//                 }
-//             } else if (xhr.status === 202) {
-//                 console.warn("REPOS: Resend after found 202");
-//                 setTimeout(() => {
-//                     xhr.send();
-//                 }, 1000);
-//             } else {
-//                 setMessage(xhr.status + ": Sorry our monkeys have failed load your request 🤔");
-//             }
-//         }
-//     }
-//     xhr.send();
-// })();
-
 /* Tracking */
 
 function track(str) {

@@ -18,51 +18,42 @@ links:
     icon: img/artstation.svg
 email:
     alias: willnode@wellosoft.net
-    support: support@wellosoft.net
 thumb:
     normal: //avatars1.githubusercontent.com/u/20214420
     hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
 ---
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {% include meta.html %}
     <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-    <script src="/vendor/jquery.min.js"></script>
-    <script src="/vendor/slick.min.js"></script>
     <meta name="theme-color" content="#07c">
 </head>
 <body class="index">
     {% include navbar.html %}
 
     <div>
-        <div class="bg-blue">
-            <div class="home-contact hero">
-                <div id="pict" class="index-logo">
-                    {% include_relative img/wellosoft.svg %}
-                </div>
-                <small>Welcome to the amazing&hellip;</small>
-                <h1 class="nowrap">WELLOSOFT.NET<span class="blink desktop-only">_</span></h1>
+        <div style="--up: #07c; --down: white;">
+            {% include_relative img/hr-hlline.svg %}
+        </div>
 
-            </div>
-        </div>
-        <div class="blue-up white-down">
-            {% include_relative img/hr-curvy.svg %}
-        </div>
         <div class="bg-white">
-            <div class="index-flex">
-                <div>
-                    <img class="profile circle" src="{{site.img}}avatar-2.jpg" alt="Me on Profile Picture" />
+            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
+                <div class="profile">
+                    <img class="circle" src="{{site.img}}avatar-2.jpg" alt="Me Profile Picture" />
+                    <div class="logo">
+                        {% include_relative img/wellosoft.svg %}
+                    </div>
                 </div>
-                <div>
+                <div class="flex-grow-1">
                     <div class="home-contact hero">
-                        <h2>Meet the Dev</h2>
-                        <ul class="links">
+                        <h1>WIIIN0DE</h1>
+                        <ul class="links row">
                             {% for v in page.links %}
-                            <li>
-                                <a href="{{ v.href }}" target="_blank" rel="noopener" data-balloon="{{ v.name }}"
-                                    data-balloon-pos="down">
-                                    {% include_relative {{ v.icon }} %}
+                            <li class="col-6 col-xl-3">
+                                <a href="{{ v.href }}" target="_blank" rel="noopener">
+                                    {% include_relative {{ v.icon }} %} {{ v.name }}
                                 </a>
                             </li>
                             {% endfor %}
@@ -72,103 +63,109 @@ thumb:
                             managing web servers and working with CLI tools.
                         </p>
                         <p>Currently I'm a student college while making a living by selling digital assets in Unity
-                            Asset Store since 2015.<span class="blink">_</span></p>
+                            Asset Store and doing a lot of local projects.<span class="blink">_</span></p>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="white-up blue-down">
+
+        <div style="--up: white; --down: #07c;">
             {% include_relative img/hr-lhline.svg %}
         </div>
+
         <div class="bg-blue hero">
-            <div class="index-flex">
-                <div class="grow">
-                    <div class="hero">
-                        <small>Featured Product</small>
-                        <h2>TEXDraw</h2>
-                        <p>Bringing TeX-Typing and TeX Document Processing into Unity Game Engine</p>
-                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><u>Check it out</u></a>
-                    </div>
-                </div>
+            <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
                 <div>
                         <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><img src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle" alt="TEXDraw" width="300"/></a>
                 </div>
-            </div>
-        </div>
-        <div class="blue-up white-down">
-            {% include_relative img/hr-hlline.svg %}
-        </div>
-        <div class="bg-white hero">
-            <div class="index-flex">
-                <div>
-                        <a href="https://forth.wellosoft.net/"><img src="https://forth.wellosoft.net/images/preview.gif" class="circle" alt="Forth Engine" width="300"/></a>
-                </div>
-                <div class="grow">
+                <div class="flex-grow-1">
                     <div class="hero">
-                        <small>Featured in Development Project</small>
-                        <h2>Forth Engine</h2>
-                        <p>OpenGL-powered Four Dimensional Game Engine in C++</p>
-                        <a href="https://forth.wellosoft.net/"><u>Check it out</u></a>
+                        <h2>Unity Products</h2>
+                        <p>I make products and share (also sell) Unity plugin and asset packs</p>
+                        <a href="http://u3d.as/cco"><u>Check it out</u></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="white-up blue-down">
+        <div style="--up: #07c; --down: white">
+            {% include_relative img/hr-hlline.svg %}
+        </div>
+        <div class="bg-white hero">
+            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
+                <div>
+                    <a href="https://forth.wellosoft.net/"><img src="https://forth.wellosoft.net/images/preview.gif" class="circle" alt="Forth Engine" width="300"/></a>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="hero">
+                        <h2>GitHub Projects</h2>
+                        <p>I occasionally wrote small apps either in Web, Python or C++</p>
+                        <a href="https://github.com/willnode/"><u>Check it out</u></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="--up: white; --down: #07c;">
+                {% include_relative img/hr-lhline.svg %}
+            </div>
+
+            <div class="bg-blue hero">
+                <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
+                    <div>
+                            <iframe height="400" width="300" scrolling="no" title="Heartbeat Logo" src="https://codepen.io/willnode/embed/zgwOzy?height=400&theme-id=dark&default-tab=result" frameborder="no"></iframe>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="hero">
+                            <h2>Codepen Designs</h2>
+                            <p>I occasionally save web design here for prototyping and housekeeping stuff</p>
+                            <a href="https://codepen.io/willnode"><u>Check it out</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="--up: #07c; --down: white">
+                {% include_relative img/hr-hlline.svg %}
+            </div>
+            <div class="bg-white hero">
+                <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
+                    <div>
+                        <a href="https://forth.wellosoft.net/"><img src="https://res.cloudinary.com/wellosoft/image/upload/c_thumb,w_400,g_face/v1580134998/home/wireig.png" class="circle" alt="Splash Wire" width="300"/></a>
+                    </div>
+                    <div class="flex-grow-1">
+                        <div class="hero">
+                            <h2>Artstation Arts</h2>
+                            <p>I do 3D modeling and render them as part of my hobby and side projects</p>
+                            <a href="https://artstation.com/willnode/"><u>Check it out</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="--up: white; --down: #07c;">
             {% include_relative img/hr-lhline.svg %}
         </div>
-        <div class="bg-blue">
+        <div id="section-email" class="bg-blue">
             <div class="hero" style="padding:3em 1em">
-                <a href="/asset-store/">More Products</a> &bullet;
-                <a href="/projects/">More Projects</a> &bullet;
+                <a href="/asset-store/">Products</a> &bullet;
                 <a href="/cv/">Curriculum Vitae</a>
 
             </div>
-        </div>
-        <div class="blue-up white-down">
-            {% include_relative img/hr-lhline.svg %}
-        </div>
-        <div class="bg-white">
-            <div class="hero">
-                <h3>Devlog</h3>
-                <div class="devlog-list"></div>
-            </div>
-        </div>
-        <div class="white-up blue-down">
-            {% include_relative img/hr-curvy.svg %}
-        </div>
             <!-- Email -->
-        <div id="section-email" class="bg-blue">
-            <div class="home-email hero nowrap">
-                <p>
+            <div class="home-email hero nowrap d-flex align-items-center justify-content-center">
+                <p class="nowrap"><a
+                    href="mailto:{{page.email.alias}}">Email</a></p>
+                <p class="mx-3">
                     <a class="icon" href="/js/dino.txt" target="_blank" rel="nofollow noopener">
                         {% include_relative img/gmail.svg %}
                     </a>
                 </p>
-                <small>Support Email</small>
-                <p class="nowrap"><a data-balloon="Support Email for GitHub, Unity Products, etc." data-balloon-pos="down"
-                    href="mailto:{{page.email.support}}">{{page.email.support}}</a></p>
-                <small>DM and Enquiries</small>
-                <p class="nowrap"><a data-balloon="Email for Events, Invitations, Updates, etc." data-balloon-pos="down"
-                    href="mailto:{{page.email.alias}}">{{page.email.alias}}</a></p>
-                <p class="nowrap"><a data-balloon="If you prefer chats (This is NOT a support channel)" data-balloon-pos="down"
-                    href="https://t.me/WIIIN0DE">Telegram DM</a></p>
+                <p class="nowrap"><a
+                    href="https://t.me/WIIIN0DE">Telegram</a></p>
             </div>
         </div>
     </div>
 
     {% include foot.html %}
     <script>
-        $.getJSON('https://devlog.wellosoft.net/home-api.json', (data) => {
-            $('.devlog-list').append(
-                data.slice(0, 10).map(x =>
-                    `<a href="${x.uri}"><span>${x.title}</span><small> &mdash; ${x.date.substr(0,10)}</small></a>`
-                ).join('')
-            );
-            $('.devlog-list').append(
-                `<a href="https://devlog.wellosoft.net/"><span><i>More...</i></span></a>`
-            );
-        });
         function gotoEmail()
         {
             window.scroll({ behavior: 'smooth', top: $('#section-email')[0].offsetTop});

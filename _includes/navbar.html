@@ -14,14 +14,15 @@
     </div>
     <input type="checkbox" id="nav-check">
     <div class="menu">
-        <a data-balloon="Read my story" data-balloon-pos="down" href="/bio/">Bio</a>
-        <a data-balloon="Read my story" data-balloon-pos="down" href="/asset-store/">Products</a>
-        <a data-balloon="See what I've create!" data-balloon-pos="down" href="/projects/">Projects</a>
-        <a data-balloon="Visit my log" data-balloon-pos="down" href="/cv/">CV</a>
+        <a href="/asset-store/">Products</a>
         {% if page.url=='/' %}
-        <label data-balloon="Show my email" data-balloon-pos="down" onclick="gotoEmail()" for="email">Contact</label>
+        <a href="/cv/">CV</a>
+        <label onclick="window.scroll({ behavior: 'smooth', top: $('#section-email')[0].offsetTop});" for="email">Contact</label>
+        {% else if page.permalink=='/cv/' %}
+        <a href="/">Home</a>
+        <label onclick="print()">Print</label>
         {% else %}
-        <a data-balloon="Back to main page" data-balloon-pos="down" href="/">Home</a>
+        <a href="/">Home</a>
         {% endif %}
     </div>
 </div>

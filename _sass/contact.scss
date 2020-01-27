@@ -13,7 +13,7 @@
     }
     svg {
         width: 2em;
-        vertical-align: text-bottom;
+        margin-right: 1em;
         fill: var(--fore-color);
     }
     li {
@@ -22,7 +22,7 @@
         border-radius: 0px 5px 5px 5px;
         white-space: nowrap;
         overflow-wrap: normal;
-        display: inline-flex;
+        vertical-align: middle;
         padding: 1rem;
         animation: border-color 0.2s ease-in;
         &:hover,
@@ -57,28 +57,22 @@
     max-width: 100vw;
 }
 
-.index-flex {
-    display: flex;
-    margin: 2em 0;
-    align-items: center;
-
-    .grow {
-        padding: 1em;
-        flex-grow: 1;
-    }
-
-    h2 {
-        margin-top: 0;
-    }
-
-    .profile {
+.profile {
+    position: relative;
+    .circle {
         width: 300px;
         margin: 10px;
     }
-
-    @media (max-width: 600px) {
-        & {
-            flex-direction: column;
-        }
+    .logo {
+        position: absolute;
+        display: block !important;
+        right: 0;
+        width: 100px;
+        bottom: 0;
+        background: white;
+        fill: #07c;
+        border-radius: 100px;
+        padding: 0.5em;
+        box-shadow: 2px 2px 4px #07c;
     }
 }

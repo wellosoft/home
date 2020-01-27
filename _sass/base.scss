@@ -11,7 +11,7 @@ body {
 body.index {
     min-height: 100%;
     width: 100%;
-    background-color: #07c;
+    background-color: white;
 }
 
 body:not(.index) {
@@ -22,9 +22,7 @@ body:not(.index) {
 
 a {
     text-decoration: none;
-    border-bottom: 1px dotted;
-    border-bottom-color: transparent;
-    transition: color 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .links-aon a {
@@ -73,7 +71,6 @@ input[type='checkbox'] {
 .hero {
 
     text-align: center;
-    font-size: 1.5rem;
     padding: 2em;
 
 
@@ -161,6 +158,7 @@ input[type='checkbox'] {
 .hr-curvy {
     position: relative;
     height: 0;
+    pointer-events: none;
 
     svg {
         position: absolute;
@@ -170,20 +168,17 @@ input[type='checkbox'] {
         display: block;
     }
 
-    .blue-up>& .up {
-        fill: #07c;
+    .up {
+    fill: var(--up, transparent);
     }
-
-    .white-up>& .up {
-        fill: white;
+    .down {
+    fill: var(--down, transparent);
     }
-
-    .white-down>& .down {
-        fill: white;
+    .upback {
+    fill: var(--upback, transparent);
     }
-
-    .blue-down>& .down {
-        fill: #07c;
+    .downback {
+    fill: var(--downback, transparent);
     }
 
 }
