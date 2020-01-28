@@ -14,15 +14,21 @@
     </div>
     <input type="checkbox" id="nav-check">
     <div class="menu">
+        {% case page.url %}
+        {% when '/' %}
         <a href="/asset-store/">Products</a>
-        {% if page.url=='/' %}
         <a href="/cv/">CV</a>
         <label onclick="window.scroll({ behavior: 'smooth', top: $('#section-email')[0].offsetTop});" for="email">Contact</label>
-        {% else if page.permalink=='/cv/' %}
+        {% when '/cv/' %}
         <a href="/">Home</a>
+        <a href="/asset-store/">Products</a>
         <label onclick="print()">Print</label>
+        {% when '/asset-store/' %}
+        <a href="/">Home</a>
+        <a href="/cv/">CV</a>
+        <a href="/grants/">Get Access</a>
         {% else %}
         <a href="/">Home</a>
-        {% endif %}
+        {% endcase %}
     </div>
 </div>

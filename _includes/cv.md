@@ -1,8 +1,8 @@
 
 
-![](https://res.cloudinary.com/wellosoft/image/upload/w_600,h_900,c_thumb,g_auto/v1564509091/home/MeBehindAlma.jpg){:style="float:right;width:150px"}
+![](https://res.cloudinary.com/wellosoft/image/upload/w_600,h_900,c_fill,g_auto/v1580177807/home/avatar-5.png){:style="float:right;width:150px"}
 
-# Wildan Mubarok
+# Wildan M
 
 Web Developer, the rest is 2D/3D/Game Designer.
 
