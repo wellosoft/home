@@ -4,3 +4,9 @@
 })(window,document,"galite","script","//cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
 galite('create', 'UA-109180894-1', 'auto');
 galite('send', 'pageview');
+
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('/sw.js');
+	});
+}
