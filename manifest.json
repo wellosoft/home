@@ -4,12 +4,12 @@
 	"description": "Wildan M's CV on Wello Soft",
 	"icons": [
 	  {
-		"src": "img/logo-192.png",
+		"src": "assets/logo-192.png",
 		"type": "image/png",
 		"sizes": "192x192"
 	  },
 	  {
-		"src": "img/logo-512.png",
+		"src": "assets/logo-512.png",
 		"type": "image/png",
 		"sizes": "512x512"
 	  }

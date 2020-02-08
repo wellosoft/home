@@ -18,7 +18,6 @@ self.addEventListener('install', function(e) {
                 './vendor/bootstrap/js/bootstrap.min.js',
                 './vendor/bootstrap/css/bootstrap.min.css',
                 './vendor/font-awesome/css/font-awesome.min.css',
-                './vendors/coreui/icons/css/coreui-icons.min.css',
                 './style.css',
             ]);
             self.skipWaiting();

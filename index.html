@@ -77,7 +77,7 @@ thumb:
         <div class="bg-blue hero">
             <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
                 <div>
-                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><img src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle" alt="TEXDraw" width="300"/></a>
+                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle lazyload" alt="TEXDraw" width="300"/></a>
                 </div>
                 <div class="flex-grow-1">
                     <div class="hero">
@@ -94,7 +94,7 @@ thumb:
         <div class="bg-white hero">
             <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
                 <div>
-                    <a href="https://forth.wellosoft.net/"><img src="https://forth.wellosoft.net/images/preview.gif" class="circle" alt="Forth Engine" width="300"/></a>
+                    <a href="https://forth.wellosoft.net/"><img data-src="https://forth.wellosoft.net/images/preview.gif" class="circle lazyload" alt="Forth Engine" width="300"/></a>
                 </div>
                 <div class="flex-grow-1">
                     <div class="hero">
@@ -112,7 +112,7 @@ thumb:
             <div class="bg-blue hero">
                 <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
                     <div>
-                            <iframe height="400" width="300" scrolling="no" title="Heartbeat Logo" src="https://codepen.io/willnode/embed/zgwOzy?height=400&theme-id=dark&default-tab=result" frameborder="no"></iframe>
+                            <iframe height="400" width="300" scrolling="no" title="Heartbeat Logo" data-src="https://codepen.io/willnode/embed/zgwOzy?height=400&theme-id=dark&default-tab=result" frameborder="no" class="lazyload"></iframe>
                     </div>
                     <div class="flex-grow-1">
                         <div class="hero">
@@ -129,7 +129,7 @@ thumb:
             <div class="bg-white hero">
                 <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
                     <div>
-                        <a href="https://artstation.com/artwork/Z5vbQG"><img src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill/v1580134998/home/wireig.png" class="circle" alt="Splash Wire" width="300"/></a>
+                        <a href="https://artstation.com/artwork/Z5vbQG"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill/v1580134998/home/wireig.png" class="circle lazyload" alt="Splash Wire" width="300"/></a>
                     </div>
                     <div class="flex-grow-1">
                         <div class="hero">
@@ -145,8 +145,9 @@ thumb:
         </div>
         <div id="section-email" class="bg-blue">
             <div class="hero" style="padding:3em 1em">
-                <a href="/asset-store/">Products</a> &bullet;
-                <a href="/cv/">Curriculum Vitae</a>
+                <a href="/asset-store/">Unity Products</a> &bullet;
+                <a href="/cv/">Curriculum Vitae</a> &bullet;
+                <a href="https://github.com/willnode?tab=repositories&q=is%3Apublic&type=source">GitHub Projects</a>
 
             </div>
             <!-- Email -->
@@ -154,7 +155,7 @@ thumb:
                 <p class="nowrap"><a
                     href="mailto:{{page.email.alias}}">Email</a></p>
                 <p class="mx-3">
-                    <a class="icon" href="/js/dino.txt" target="_blank" rel="nofollow noopener">
+                    <a class="icon" href="/assets/dino.txt" target="_blank" rel="nofollow noopener">
                         {% include_relative img/gmail.svg %}
                     </a>
                 </p>
@@ -165,12 +166,6 @@ thumb:
     </div>
 
     {% include foot.html %}
-    <script>
-        function gotoEmail()
-        {
-            window.scroll({ behavior: 'smooth', top: $('#section-email')[0].offsetTop});
-        }
-    </script>
 </body>
 
 </html>
