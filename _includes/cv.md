@@ -4,7 +4,7 @@
 
 # Wildan M
 
-Web Developer, the rest is 2D/3D/Game Designer.
+Making Web by the day, Game by the night.
 
 - [wellosoft.net](https://wellosoft.net)
 - [willnode@wellosoft.net](mailto:willnode@wellosoft.net)
@@ -24,19 +24,19 @@ Currently studying at [Trunojoyo University](http://www.trunojoyo.ac.id/) as *Ba
 
 ## Working Experience
 
-I do a lot of web projects for local demands. [small and big one](https://trudigi.id).
+I can adapt with a lot of working environment. But mostly, I love working remote.
 
-## Notable Personal Projects
+## Notable Projects
 
-[Forth Engine](https://forth.wellosoft.net/) -- [TEXDraw](https://www.assetstore.unity3d.com/#!/content/51426) -- [To the Highest Place](https://willnode.itch.io/tthp) -- [TRUDIGI](https://trudigi.id)
+[Engine4](https://forth.wellosoft.net/) -- [TEXDraw](https://www.assetstore.unity3d.com/#!/content/51426) -- [DOM Cloud](https://domcloud.id)
 
-## Known Programming Software
+## Notable Tools
 
-Notable experience in `CodeIgniter` and `React` for Web Development.
+Notable experience in *CodeIgniter*, *Laravel*, *React* for Web Development.
 
-For Game development or 3D modeling I use `Unity` and `Blender`.
+Used *Unity*, *Blender* and few other basic editing tools for Game Development.
 
-The rest of tools include `Node.JS`, `Python`, `Flutter`, `C++` and `Adobe Suite`.
+The rest of tools I'm familiar with includes *Git*, *Node.JS*, *Python* and *C++*.
 
 ## Other Channels
 
