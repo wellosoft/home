@@ -2,46 +2,69 @@
 title: Access Grants
 excerpt: Grant access to Wello Soft private repo!
 hero: https://res.cloudinary.com/wellosoft/image/upload/home/Evil_Duck_CR_-_Copy.jpg
-layout: compress
 permalink: /grants/
 ---
 <html lang="en">
-    <head>
-		{% include meta.html %}
-		<meta name="theme-color" content="#07c">
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-    </head>
-    <body>
-		{% include navbar.html %}
-		<div class="hero">
-			<h1>Get access to Private Repo</h1>
-			<p>Here's the list of asset and it's related documentation and repos:</p>
-			<ul>
-				<li><b>TEXDraw:</b> <a href="//u3d.as/mFe">Asset</a> <a href="//willnode.gitlab.io/texdraw">Documentation</a> <a href="//gitlab.com/willnode/TEXDraw">Repository</a></li>
-				<li><b>Engine4:</b> <a href="//u3d.as/fdm">Asset</a> <a href="//willnode.gitlab.io/engine4">Documentation</a> <a href="//gitlab.com/willnode/Engine4">Repository</a></li>
-			</ul>
-			<p>However if you want to access the repository, you need to have purchase the asset. <br>
-				The invoice number of your purchase can be used to grant you the internal repository and get access to latest changes right away.</p>
-			<p>In order to get in, just fill the required information below 👇</p>
-		</div>
-        <form action="https://wiiin0de-gitlab-auth.dom.my.id" method="post">
-			<div id="grants-box">
-				<div>
-					<span>Invoice Number:</span><input type="text" name="invoice" placeholder="Invoice number that you've bought. Numbers only" required pattern="\d+"><br>
+
+<head>
+	{% include head.html %}
+	<meta name="theme-color" content="#07c">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="card my-3">
+					<div class="card-body d-flex flex-column align-items-center text-center">
+						<h1>Get access to Private Repo</h1>
+						<p>Here's the list of asset and it's related documentation and repos:</p>
+						<ul>
+							<li><b>TEXDraw:</b> <a href="//u3d.as/mFe">Asset</a> <a
+									href="//willnode.gitlab.io/texdraw">Documentation</a> <a
+									href="//gitlab.com/willnode/TEXDraw">Repository</a></li>
+							<li><b>Engine4:</b> <a href="//u3d.as/fdm">Asset</a> <a
+									href="//willnode.gitlab.io/engine4">Documentation</a> <a
+									href="//gitlab.com/willnode/Engine4">Repository</a></li>
+						</ul>
+						<p>However if you want to access the repository, you need to have purchase the asset. <br>
+							The invoice number of your purchase can be used to grant you the internal repository and get
+							access to
+							latest changes right away.</p>
+						<p>In order to get in, just fill the required information below 👇</p>
+						<form action="https://wiiin0de-gitlab-auth.dom.my.id" method="post">
+							<div>
+								<span>Invoice Number:</span>&nbsp;<input type="text" name="invoice"
+									placeholder="Invoice number that you've bought. Numbers only" required
+									pattern="\d+"><br>
+							</div>
+							<div>
+								<span>GitLab Username:</span>&nbsp;<input type="text" name="username" id="gitname"
+									placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"
+									oninput="document.getElementById('gittest').setAttribute('href', 'https://gitlab.com/' + document.getElementById('gitname').value);"><br>
+								<a id="gittest" href="https://gitlab.com/" target="_blank"
+									rel="noreferrer nofollow">Test</a>
+							</div>
+							<div class="g-recaptcha my-3"
+								data-sitekey='{% if jekyll.environment == "production" %}6LfW_00UAAAAAEx3dWvyUpNKpiBPqLTbHd0lwM48{% else %}6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI{% endif %}'>
+							</div>
+							<input type="submit" class="btn btn-primary" value="Submit">
+							<a href="/" class="btn btn-outline-secondary">Back</a>
+						</form>
+					</div>
 				</div>
-				<div>
-					<span>GitLab Username:</span><input type="text" name="username" id="gitname" placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"
-					oninput="document.getElementById('gittest').setAttribute('href', 'https://gitlab.com/' + document.getElementById('gitname').value);"><br>
-					<a id="gittest" href="https://gitlab.com/" target="_blank" rel="noreferrer nofollow">Test</a>
-				</div>
-				<div class="g-recaptcha" data-sitekey='{% if jekyll.environment == "production" %}6LfW_00UAAAAAEx3dWvyUpNKpiBPqLTbHd0lwM48{% else %}6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI{% endif %}'></div>
-				<input type="submit" value="Submit">
 			</div>
-		</form>
-		<div  id="grants-faq" class="hero">
-			{% capture logs %}{% include grants.md %}{% endcapture %}
-			{{ logs | markdownify }}
+			<div class="col-lg-6">
+				<div class="card my-3">
+					<div class="card-body">
+						{% capture logs %}{% include grants.md %}{% endcapture %}
+						{{ logs | markdownify }}
+					</div>
+				</div>
+			</div>
 		</div>
-	{% include foot.html %}
-    </body>
+	</div>
+</body>
+
 </html>

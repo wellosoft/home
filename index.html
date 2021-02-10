@@ -1,171 +1,105 @@
 ---
-layout: compress
-title: Wello Soft
-excerpt: Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool
-hero: https://res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg
-links:
--   name: GitHub
-    href: //github.com/willnode
-    icon: img/github.svg
--   name: Unity
-    href: //u3d.as/cco
-    icon: img/unity.svg
--   name: CV
-    href: /cv
-    icon: img/wheniwork.svg
-email:
-    alias: willnode@wellosoft.net
-thumb:
-    normal: //avatars1.githubusercontent.com/u/20214420
-    hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
+title: Hi! I'm Wildan
+excerpt: Web Developer Freelancer and Unity Tool Creators
+image: https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_auto/v1580177807/home/avatar-5.png
 ---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    {% include meta.html %}
-    <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-    <meta name="theme-color" content="#07c">
+    {% include head.html %}
 </head>
-<body class="index">
-    {% include navbar.html %}
 
-    <div>
-        <div style="--up: #07c; --down: white;">
-            {% include_relative img/hr-hlline.svg %}
-        </div>
-
-        <div class="bg-white">
-            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
-                <div class="profile">
-                    <img class="circle" src="{{site.img}}avatar-2.jpg" alt="Me Profile Picture" />
-                    <div class="logo">
-                        {% include_relative img/wellosoft.svg %}
-                    </div>
-                </div>
-                <div class="flex-grow-1">
-                    <div class="home-contact hero">
-                        <h1>WIIIN0DE</h1>
-                        <ul class="links row">
-                            {% for v in page.links %}
-                            <li class="col-4">
-                                <a href="{{ v.href }}" target="_blank" rel="noopener">
-                                    {% include_relative {{ v.icon }} %} {{ v.name }}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <p>My name is <b>Wildan</b> and I'm a self-taught programmer since twelve.
-                            I develop web by the day and game by the night. Currently I'm a student
-                            college, while making profits by selling assets in Unity and
-                            custom web projects. You can see few of my best projects below.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div style="--up: white; --down: #07c;">
-            {% include_relative img/hr-lhline.svg %}
-        </div>
-
-        <div class="bg-blue hero">
-            <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
-                <div>
-                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle lazyload" alt="TEXDraw" width="300"/></a>
-                </div>
-                <div class="flex-grow-1">
-                    <div class="hero">
-                        <h2>TEXDraw</h2>
-                        <p>Creating equations in Unity has never been easier without it.</p>
-                        <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426?aid=1101l4NDI"><u>Check it out</u></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="--up: #07c; --down: white">
-            {% include_relative img/hr-hlline.svg %}
-        </div>
-        <div class="bg-white hero">
-            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
-                <div>
-                    <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475?aid=1101l4NDI"><img data-src="https://forth.wellosoft.net/images/preview.gif" class="circle lazyload" alt="Forth Engine" width="300"/></a>
-                </div>
-                <div class="flex-grow-1">
-                    <div class="hero">
-                        <h2>Engine4</h2>
-                        <p>How can nobody on earth have releasing it's 4D game engine code? Well, I made one.</p>
-                        <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475?aid=1101l4NDI"><u>Check it out</u></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="--up: white; --down: #07c;">
-                {% include_relative img/hr-lhline.svg %}
-            </div>
-
-            <div class="bg-blue hero">
-                <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
-                    <div>
-                    <a href="https://domcloud.id/"><img data-src="https://domcloud.id/assets/icon.svg" class="lazyload" alt="DOM Cloud" width="300"/></a>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="hero">
-                            <h2>DOM Cloud</h2>
-                            <p>Indeed hosting each projects cost money, so I made my own provider, free for you too.</p>
-                            <a href="https://domcloud.id/"><u>Check it out</u></a>
+<body
+    style="background: url(https://images.unsplash.com/photo-1518173184999-0381b5eb56d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80) center/cover #004494; position: relative">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-10">
+                <div class="card my-3">
+                    <div class="card-body text-center">
+                        <h1 class="mb-3">Wildan Mubarok</h1>
+                        <img src="https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_auto/v1580177807/home/avatar-5.png" class="mb-3 w-50 rounded-circle" alt="">
+                        <p>Web Developer Freelancer<br> and Unity Tool Creators</p>
+                        <p class="text-black-50"><i class="fas fa-map-marker-alt me-2"></i> Surabaya, Indonesia</p>
+                        <div>
+                            <a href="https://github.com/willnode" class="mb-2 btn btn-lg d-block btn-outline-secondary">
+                                <i class="fab fa-github me-2"></i> GitHub
+                            </a>
+                            <a href="mailto:willnode@wellosoft.net" class="mb-2 btn btn-lg d-block btn-outline-danger">
+                                <i class="fas fa-envelope me-2"></i> Email
+                            </a>
+                            <a href="https://t.me/WIIIN0DE" class="mb-2 btn btn-lg d-block btn-outline-info">
+                                <i class="fab fa-telegram me-2"></i> Telegram
+                            </a>
+                            <a href="/web/" class="mb-2 btn btn-lg d-block btn-outline-primary">
+                                <i class="fas fa-briefcase me-2"></i> Hire Me
+                            </a>
+                            <a href="/personal/" class="mb-2 btn btn-lg d-block btn-outline-success">
+                                <i class="fas fa-book me-2"></i> Personal Writings
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="--up: #07c; --down: white">
-                {% include_relative img/hr-hlline.svg %}
-            </div>
-            <div class="bg-white hero">
-                <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
-                    <div>
-                        <a href="https://artstation.com/artwork/Z5vbQG"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill/v1580134998/home/wireig.png" class="circle lazyload" alt="Splash Wire" width="300"/></a>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="hero">
-                            <h2>Way More Projects</h2>
-                            <p>I create a lot more stuff to keep my creativity on.</p>
-                            <a href="https://github.com/willnode"><u>GitHub</u></a> &mdash;
-                            <a href="https://codepen.io/willnode"><u>Codepen</u></a> &mdash;
-                            <a href="https://youtube.com/channel/UCJr_vGlEh3DvYyPXh-VJscg"><u>YouTube</u></a> &mdash;
-                            <a href="https://artstation.com/willnode/"><u>Artstation</u></a>
+            <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <img class="ms-auto me-3 rounded" style="width: 200px"
+                                    src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png"
+                                    alt="">
+                                <div class="me-auto">
+                                    <h2>TEXDraw</h2>
+                                    <div>The best solution to display<br>
+                                        math expressions in Unity</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div class="text-center w-100 my-3">
+                                    <h4>More About Unity</h4>
+                                    <div class="d-flex flex-column">
+                                        <a href="https://u3d.as/cco">All Products</a>
+                                        <a href="/grants/">Grant Access</a>
+                                        <a href="https://gitlab.com/willnode/">GitLab Repo</a>
+                                        <a href="https://willnode.itch.io/">Free Games</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style="--up: white; --down: #07c;">
-            {% include_relative img/hr-lhline.svg %}
-        </div>
-        <div id="section-email" class="bg-blue">
-            <div class="hero" style="padding-top:3em">
-                <p>More to look For:</p>
-                <p>
-                    <a href="/asset-store/">Unity Products</a> &bullet;
-                    <a href="/cv/">Curriculum Vitae</a> &bullet;
-                    <a href="https://github.com/willnode?tab=repositories&q=is%3Apublic&type=source">GitHub Projects</a>
-                </p>
-            </div>
-            <!-- Email -->
-            <div class="home-email hero nowrap d-flex align-items-center justify-content-center">
-                <p class="nowrap"><a
-                    href="mailto:{{page.email.alias}}">Email</a></p>
-                <p class="mx-3">
-                    <a class="icon" href="/assets/dino.txt" target="_blank" rel="nofollow noopener">
-                        {% include_relative img/gmail.svg %}
-                    </a>
-                </p>
-                <p class="nowrap"><a
-                    href="https://t.me/WIIIN0DE">Chat</a></p>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <img class="ms-auto me-3" style="width: 200px" src="https://domcloud.id/assets/icon.svg"
+                                    alt="">
+                                <div class="me-auto">
+                                    <h2>DOM Cloud</h2>
+                                    <div>The optimized yet <br> simple service I made<br> to host web projects</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div class="text-center w-100 my-3">
+                                    <h4>More About Web</h4>
+                                    <div class="d-flex flex-column">
+                                        <a href="https://willnode.github.io/">Github.io Apps</a>
+                                        <a href="https://willnode.github.io/">Codepen</a>
+                                        <a href="https://www.linkedin.com/in/willnode/">LinkedIn</a>
+                                        <a href="https://stackoverflow.com/story/willnode">StackOverflow</a>
+                                        <a href="https://www.upwork.com/o/profiles/users/~01395090913acec641/">Upwork</a>
+                                        <a href="/web/">Brands I work with</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    {% include foot.html %}
 </body>
 
 </html>
