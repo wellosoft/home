@@ -3,17 +3,28 @@ title: Web Development made easy
 excerpt: Ever think you need a website? We can help.
 permalink: /web/
 links:
-- http://disperindag.banyuwangikab.go.id/
-- http://web.unwaha.ac.id/
-- http://pondokdenanyar.or.id/
-- '#'
-- '#'
-- http://paudalvihidayah.sch.id/
-- http://sanggaredukasi.id/
-- https://bestlogisticsurabaya.com/
-- http://journal.trunojoyo.ac.id/rekayasa/
-- http://maktabahazzaen.my.id/
-- '#'
+- url: disperindag.banyuwangikab.go.id
+  text: Helping to create online statistics for basic commodities
+- url: web.unwaha.ac.id
+  text: Helping to create many web insfrastructure inside campus
+- url: pondokdenanyar.or.id
+  text: Helping to create organization profile
+- url: '#'
+  text: Helping to create an online scoring system
+- url: '#'
+  text: Helping to create a goverment district profile
+- url: paudalvihidayah.sch.id
+  text: Helping to create a school profile
+- url: sanggaredukasi.id
+  text: Helping to create an online tryout system
+- url: bestlogisticsurabaya.com
+  text: Helping to create an online logistics system
+- url: journal.trunojoyo.ac.id/rekayasa
+  text: Helping to create a custom open journal system theme
+- url: maktabahazzaen.my.id
+  text: Helping to create an online book libraries
+- url: '#'
+  text: Helping to create an online food delivery system
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -21,13 +32,14 @@ links:
 <head>
     {% include head.html %}
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script defer type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <div class="pt-5 pb-3 text-center d-flex flex-column"
-        style="min-height: 100vh; background: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) center/cover #004494; background-attachment: fixed; position: relative">
+        style="min-height: 100vh; background: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) center/cover #eee; background-attachment: fixed; position: relative">
         <div class="row g-0">
             <div class="col-md-4">
                 <div class="py-5">
@@ -40,7 +52,7 @@ links:
         <div class="small px-3 mt-auto text-white"><i class="fas fa-arrow-down me-2"></i> Scroll down</div>
     </div>
 
-    <div class="bg-gradient" style="background-color: darkblue;">
+    <div class="bg-gradient bg-dark">
         <div class="skills container py-5">
             <div class="row justify-content-around">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -91,53 +103,65 @@ links:
                     <li>Standard rate (to measure everything else):<br><b>50$ per hour</b></li>
                 </ul>
                 <p class="text-center">Indonesian websites can be priced much lower<br>
-                (Ask us for exact price budget)</p>
+                    (Ask us for exact price budget)</p>
             </div>
         </div>
     </div>
 
-    <div class="bg-gradient bg-light py-5 text-center">
-        <h2>From school to goverment and entrepreneur websites,<br> we can do all</h2>
-    </div>
-
-    <div class="bg-gradient text-white text-center" style="background-color: darkblue;">
-        <div class="container">
-            <h4 class="py-5">Proud customers</h4>
-            <div class="row justify-content-around">
-                {% for link in page.links %}
-                <div class="col-md-3 col-6 d-flex align-items-center justify-content-center" style="height: 150px;">
-                    <a href="{{ link }}" target="_blank"
-                        class="brands w-100 h-100 d-flex align-items-center justify-content-center">
-                        <img src="https://res.cloudinary.com/wellosoft/image/upload/w_300,c_fill/v1612894708/brands/{{ forloop.index }}.png"
-                            alt="">
-                    </a>
+    <div class="text-center">
+        <div class="row g-0">
+            <div class="col-md-6 d-flex align-items-center">
+                <h2>From school to goverment and entrepreneur websites, we can do all.</h2>
+            </div>
+            <div class="col-md-6 p-5 bg-dark text-white">
+                <h4 class="py-5">Proud customers</h4>
+                <div class="brands">
+                    {% for link in page.links %}
+                    <div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill/v1612894710/brands/{{ forloop.index }}.png"
+                                alt="" class="my-3">
+                            <a href="http://{{ link.url }}" target="_blank"
+                                class="text-white mb-3 d-block">{{ link.url }}</a>
+                            <p>{{ link.text }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
-            <p class="small py-5" style="color: #fff7;">If your brand listed here and dislike it, please DM for removal.
-            </p>
         </div>
     </div>
-    <div class="py-5 text-center">
+    <div class="py-5 text-center" style="background: url(https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80) center/cover #ddd; position: relative">
         <div class="container" style="max-width: 400px;">
-            <img src="https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_auto/v1580177807/home/avatar-3.png" class="mb-3 w-50 rounded-circle" alt="">
-            <h4 class="mb-3">As a veteran web developer,<br> I glad to help everyone.</h4>
-            <a href="mailto:willnode@wellosoft.net" class="mb-2 btn btn-lg d-block btn-danger">
-                <i class="fas fa-envelope me-2"></i> Email
-            </a>
-            <a href="https://t.me/WIIIN0DE" class="mb-2 btn btn-lg d-block btn-info">
-                <i class="fab fa-telegram me-2"></i> Telegram
-            </a>
-            <a href="/">Back to home page</a>
+            <div class="card">
+                <div class="card-body py-5">
+                    <img src="https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_auto/v1580177807/home/avatar-3.png"
+                        class="mb-3 w-50 rounded-circle" alt="">
+                    <h4 class="mb-3">As a veteran web developer,<br> I'll be glad to help you.</h4>
+                    <a href="mailto:willnode@wellosoft.net" class="mb-2 btn btn-lg d-block btn-danger">
+                        <i class="fas fa-envelope me-2"></i> Email
+                    </a>
+                    <a href="https://t.me/WIIIN0DE" class="mb-3 btn btn-lg d-block btn-info">
+                        <i class="fab fa-telegram me-2"></i> Telegram
+                    </a>
+                    <a href="/">Back to home page</a>
+                </div>
+            </div>
         </div>
     </div>
     <style>
+        .brands .slick-slide {
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .brands img {
             transition: all 0.2s;
             object-fit: contain;
-            max-width: 100%;
-            min-width: 70%;
-            height: 75%;
+            max-width: 60%;
+            height: 150px;
         }
 
         .skills svg {
@@ -151,6 +175,14 @@ links:
             filter: drop-shadow(0px 1px 5px gainsboro)
         }
     </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            $('.brands').slick({
+                dots: true,
+                autoplay: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
