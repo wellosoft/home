@@ -1,6 +1,0 @@
-<div class="hr-curvy">
-<svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 200 50" preserveAspectRatio="none" >
- <path class="up" d="M 0,25 c 100,50 100,-50 200,0 l 0,-25 l -200,0z"/>
- <path class="down" d="M 0,25 c 100,50 100,-50 200,0 l 0,25 l -200,0z"/>
-</svg>
-</div>

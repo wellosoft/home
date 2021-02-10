@@ -1,8 +1,0 @@
-img: http://localhost:9000/home/
-compress_html:
-  ignore:
-    envs: development
-exclude:
-- CNAME
-- README.md
-- img/

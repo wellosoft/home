@@ -1,7 +1,0 @@
-sass:
-  style: compressed
-img: https://res.cloudinary.com/wellosoft/image/upload/v1546833986/home/
-exclude:
-- CNAME
-- README.md
-- img/
