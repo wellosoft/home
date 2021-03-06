@@ -11,6 +11,26 @@ title: Curriculum Vitae
             font-size: 0.9rem;
             text-align: justify;
         }
+
+        .container {
+            padding: 0 1.5em;
+        }
+
+        @media print {
+            .col-print-4 {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+
+            .col-print-8 {
+                flex: 0 0 66.66667%;
+                max-width: 66.66667%;
+            }
+
+            .container {
+                padding: 0 0.5em;
+            }
+        }
     </style>
 </head>
 
@@ -18,7 +38,7 @@ title: Curriculum Vitae
     <div class="container" style="max-width: 800px;">
         <h1 class="display-3 text-center mb-0 mt-4">Wildan Mubarok</h1>
         <div class="row">
-            <div class="col-4 mt-2">
+            <div class="col-md-4 col-print-4 mt-2">
                 <h3 class="my-3">Contact</h3>
                 <ul class="contact">
                     <li>wellosoft.net</li>
@@ -35,7 +55,8 @@ title: Curriculum Vitae
                         I also have a deep knowledge in front-end, mainly using Bootstrap, but I also understand
                         WordPress, PWA,
                         Electron and Flutter, depends on the software need.</p>
-                    <p>Having both of knowledge gives me an advantage of quicker development time. You can tell me what to
+                    <p>Having both of knowledge gives me an advantage of quicker development time. You can tell me what
+                        to
                         build and I can tell what software and API that you need to use. I try to improve overtime and I
                         learn quick. Most people that knows me will tell that I'm humble and very efficient to
                         communicate. If you know me from other people, I'm sure he/she knows how good or loyal I am when
@@ -49,7 +70,7 @@ title: Curriculum Vitae
                     <br>
                 </div>
             </div>
-            <div class="col-8 mt-2">
+            <div class="col-md-8 col-print-8 mt-2">
                 <h3 class="my-3">Education Background</h3>
 
                 <div class="ps-5">
@@ -81,7 +102,7 @@ title: Curriculum Vitae
 
                 <div class="ps-5">
                     <p>Backend: PHP &bullet; CodeIgniter &bullet; Laravel &bullet; NodeJS &bullet; MySQL
-                        <br>Frontend: Bootstrap  &bullet; React  &bullet; Flutter  &bullet; Electron  &bullet; WordPress
+                        <br>Frontend: Bootstrap &bullet; React &bullet; Flutter &bullet; Electron &bullet; WordPress
                         <br>Devops: Bash &bullet; Git &bullet; Python &bullet; Nginx &bullet; Cloud Computing </p>
                 </div>
             </div>
