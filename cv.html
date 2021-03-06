@@ -8,6 +8,15 @@ excerpt: Wildan Mubarok, Fullstack Web Freelancer
 <head>
     {% include head.html %}
     <style>
+        .contact a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
         .bio {
             font-size: 0.9rem;
             text-align: justify;
@@ -32,6 +41,12 @@ excerpt: Wildan Mubarok, Fullstack Web Freelancer
                 padding: 0 0.5em;
             }
         }
+
+        @media screen and (max-width: 768px) {
+            .ps-5 {
+                padding-left: 1em !important;
+            }
+        }
     </style>
 </head>
 
@@ -42,11 +57,11 @@ excerpt: Wildan Mubarok, Fullstack Web Freelancer
             <div class="col-md-4 col-print-4 mt-2">
                 <h3 class="my-3">Contact</h3>
                 <ul class="contact">
-                    <li>wellosoft.net</li>
-                    <li>t.me/WIIIN0DE</li>
-                    <li>github.com/willnode</li>
-                    <li>linkedin.com/in/willnode</li>
-                    <li>willnode@wellosoft.net</li>
+                    <li><a href="https://wellosoft.net">wellosoft.net</a></li>
+                    <li><a href="https://t.me/WIIIN0DE">t.me/WIIIN0DE</a></li>
+                    <li><a href="https://github.com/willnode">github.com/willnode</a></li>
+                    <li><a href="https://linkedin.com/in/willnode">linkedin.com/in/willnode</a></li>
+                    <li><a href="mailto:willnode@wellosoft.net">willnode@wellosoft.net</a></li>
                 </ul>
                 <h3 class="my-3">About Me</h3>
                 <div class="bio">
