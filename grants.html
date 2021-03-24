@@ -33,15 +33,15 @@ permalink: /grants/
 							access to
 							latest changes right away.</p>
 						<p>In order to get in, just fill the required information below 👇</p>
-						<form action="https://wiiin0de-gitlab-auth.dom.my.id" method="post">
+						<form action="https://wiiin0de-gitlab-auth.dom.my.id" method="post" class="w-100">
 							<div>
-								<span>Invoice Number:</span>&nbsp;<input type="text" name="invoice"
-									placeholder="Invoice number that you've bought. Numbers only" required
+								<span>Invoice Number:</span>&nbsp;<input type="text" name="invoice" class="form-control"
+									placeholder="(Numbers only) Your invoice number." required
 									pattern="\d+"><br>
 							</div>
 							<div>
-								<span>GitLab Username:</span>&nbsp;<input type="text" name="username" id="gitname"
-									placeholder="Enter your GitLab Username" required pattern="[\w\d_-]+"
+								<span>GitLab Username:</span>&nbsp;<input type="text" name="username" id="gitname" class="form-control"
+									placeholder="Your GitLab Username" required pattern="[\w\d_-]+"
 									oninput="document.getElementById('gittest').setAttribute('href', 'https://gitlab.com/' + document.getElementById('gitname').value);"><br>
 								<a id="gittest" href="https://gitlab.com/" target="_blank"
 									rel="noreferrer nofollow">Test</a>
