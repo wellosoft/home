@@ -8,98 +8,97 @@ image: https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_a
 
 <head>
     {% include head.html %}
+    <style>
+        body {
+            background: #111;
+            color: white;
+        }
+
+        a {
+            transition: all 0.2s;
+            color: whitesmoke;
+        }
+
+        a:hover,
+        a:focus {
+            color: #07c;
+        }
+
+        .callout-box {
+            background: #222;
+            color: white;
+            padding: 20px;
+            border: 5px solid gray;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            transform: translate(0px, 15px);
+            height: calc(40px + 4.5em);
+            line-height: 1.5em;
+        }
+
+        .callout-box:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 20px;
+            bottom: -34px;
+            border: 16px solid transparent;
+            border-top: 16px solid gray;
+            border-left-color: gray;
+            z-index: 2;
+        }
+    </style>
 </head>
 
-<body
-    style="background: url(https://images.unsplash.com/photo-1518173184999-0381b5eb56d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80) center/cover #004494; position: relative">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-8 col-10">
-                <div class="card my-3">
-                    <div class="card-body text-center">
-                        <h1 class="mb-3">Wildan Mubarok</h1>
-                        <img src="https://res.cloudinary.com/wellosoft/image/upload/w_500,c_fill,ar_1:1,g_auto/v1580177807/home/avatar-5.png" class="mb-3 w-50 rounded-circle" alt="">
-                        <p>Web Developer and Freelancer<br> formerly Unity Plugin Maker</p>
-                        <p class="text-black-50"><i class="fas fa-map-marker-alt me-2"></i> Surabaya, Indonesia</p>
-                        <div>
-                            <a href="https://github.com/willnode" class="mb-2 btn btn-lg d-block btn-outline-secondary">
-                                <i class="fab fa-github me-2"></i> GitHub
-                            </a>
-                            <a href="mailto:willnode@wellosoft.net" class="mb-2 btn btn-lg d-block btn-outline-danger">
-                                <i class="fas fa-envelope me-2"></i> Email
-                            </a>
-                            <a href="https://t.me/WIIIN0DE" class="mb-2 btn btn-lg d-block btn-outline-info">
-                                <i class="fab fa-telegram me-2"></i> Telegram
-                            </a>
-                            <a href="/web/" class="mb-2 btn btn-lg d-block btn-outline-primary">
-                                <i class="fas fa-briefcase me-2"></i> Hire Me
-                            </a>
-                            <a href="https://blog.wellosoft.net" class="mb-2 btn btn-lg d-block btn-outline-success">
-                                <i class="fas fa-book me-2"></i> Blog Writings
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <div class="container" style="max-width: 700px;">
+        <div class="row" style="height: 100vh; align-content: center;">
+            <div class="col-12">
+                <em>
+                    <div id="callout" class="callout-box">...</div>
+                </em>
             </div>
-            <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-8 d-flex align-items-center">
-                                <img class="ms-auto me-3 rounded" style="width: 200px"
-                                    src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png"
-                                    alt="">
-                                <div class="me-auto">
-                                    <h2>TEXDraw</h2>
-                                    <div>The best solution to display<br>
-                                        math expressions in Unity</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 d-flex align-items-center">
-                                <div class="text-center w-100 my-3">
-                                    <h4>More About Unity</h4>
-                                    <div class="d-flex flex-column">
-                                        <a href="https://u3d.as/cco">All Products</a>
-                                        <a href="/grants/">Grant Access</a>
-                                        <a href="https://gitlab.com/willnode/">GitLab Repo</a>
-                                        <a href="https://willnode.itch.io/">Free Games</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col">
+                <img src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill,g_auto/v1580177807/home/avatar-5.png"
+                    class="mb-3 mt-5 w-100 callout-image" alt="">
+            </div>
+            <div class="col my-4 text-center">
+                <h1 class="mb-3">Wildan Mubarok</h1>
+                <p><em>Software-building hardcore, <br>12 hours screen time daily</em></p>
+                <p class="mb-3 font-monospace">
+                    <a href="mailto:willnode@wellosoft.net">Email</a>
+                    <a href="https://t.me/WIIIN0DE">Telegram</a>
+                    <a href="https://twitter.com/willnode">Twitter</a>
+                    <a href="https://github.com/willnode">GitHub</a>
+                    <a href="https://linkedin.com/willnode">Linkedin</a>
+                    <a href="https://youtube.com/WildanMubarok">YouTube</a>
 
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-8 d-flex align-items-center">
-                                <img class="ms-auto me-3" style="width: 200px" src="https://domcloud.id/assets/icon.svg"
-                                    alt="">
-                                <div class="me-auto">
-                                    <h2>DOM Cloud</h2>
-                                    <div>The optimized yet <br> simple service I made<br> to host web projects</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 d-flex align-items-center">
-                                <div class="text-center w-100 my-3">
-                                    <h4>More About Web</h4>
-                                    <div class="d-flex flex-column">
-                                        <a href="https://willnode.github.io/">Github.io Apps</a>
-                                        <a href="https://willnode.github.io/">Codepen</a>
-                                        <a href="https://www.linkedin.com/in/willnode/">LinkedIn</a>
-                                        <a href="https://stackoverflow.com/story/willnode">StackOverflow</a>
-                                        <a href="/cv">Curriculum Vitae</a>
-                                        <a href="/web">Brands I work with</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <a href="/cv">Curriculum Vitae</a>
+                    <br>(ps. currently not for hire)
+                    <br><a href="/now">What i'm doing now</a>
+                </p>
+                <h4>Services</h4>
+                <p class="mb-3 font-monospace">
+                    <a href="mailto:willnode@wellosoft.net">TEXDraw</a> |
+                    <a href="https://t.me/WIIIN0DE">DOM Cloud</a> |
+                    <a href="https://t.me/WIIIN0DE">Many Freebies</a></a>
+                </p>
+                <h4>More me</h4>
+                <p class="mb-3 font-monospace">
+                    <a href="https://twitter.com/willnode">Mesh Debugger</a> |
+                    <a href="https://twitter.com/willnode">ForwardDomain</a> |
+                    <a href="https://linkedin.com/willnode">Deobfuscator</a> |
+                    <a href="https://youtube.com/WildanMubarok">Random YouTube</a> |
+                    <a href="https://github.com/willnode">Other Freebies</a>
+                </p>
             </div>
         </div>
     </div>
+    <!-- do not open (you'll really regret it!) -->
+    <script src="/assets/omnibox.js"></script>
+    <!-- you'll really regret it! -->
+    <script src="/assets/the_answer_to_life_universe_and_everything.js"></script>
 </body>
 
 </html>
