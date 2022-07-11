@@ -12,7 +12,9 @@ const omniboxLibraryLocale = {
         "UX is an underrated concept. I know you will be mad if you can't skip waiting for next thought by clicking this balloon.",
         "I often forget or lazy to do workout in the morning. My future life will be mad at me.",
         "I won't change my profile picture until I graduated from college.",
-        "There's 1% chance that this page will redirects to [some surpise] page if you hit the refresh button."
+        "There's 1% chance that this page will redirects to [some surpise] page if you hit the refresh button.",
+        "I don't know why I put \"12 hours screen time daily\". I'm not too proud of it, actually.",
+        "If you wanted to be a frontend devs: You might not need bazillion of frameworks, you only need to understand CSS Flex",
     ],
 }
 
