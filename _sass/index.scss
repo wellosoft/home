@@ -10,7 +10,7 @@
 }
 
 .bg-blue {
-    --back-color: #07c;
+    --back-color: #963;
     --fore-color: white;
     --hover-color: white;
 }
@@ -24,7 +24,7 @@
 .bg-white {
     --back-color: white;
     --fore-color: black;
-    --hover-color: #07c;
+    --hover-color: #963;
 }
 
 .bg-blue, .bg-white, .bg-pink {
@@ -113,7 +113,7 @@
 
         &:hover,
         &:focus {
-            fill: #07c;
+            fill: #963;
             transition: fill 0.2s ease-out;
         }
     }

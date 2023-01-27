@@ -4,20 +4,20 @@ title: Wello Soft
 excerpt: Wello Soft is a one-man fictional company by willnode that pretended to exist because it was really cool
 hero: https://res.cloudinary.com/wellosoft/image/upload/home/wellosoft-bg.jpg
 links:
--   name: GitHub
-    href: //github.com/willnode
-    icon: img/github.svg
--   name: Unity
-    href: //u3d.as/cco
-    icon: img/unity.svg
--   name: CV
-    href: /cv
-    icon: img/wheniwork.svg
+- name: GitHub
+  href: //github.com/willnode
+  icon: img/github.svg
+- name: Blog
+  href: //blog.wellosoft.net/
+  icon: img/hashnode.svg
+- name: CV
+  href: /cv
+  icon: img/wheniwork.svg
 email:
-    alias: willnode@wellosoft.net
+  alias: willnode@wellosoft.net
 thumb:
-    normal: //avatars1.githubusercontent.com/u/20214420
-    hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
+  normal: //avatars1.githubusercontent.com/u/20214420
+  hover: //secure.gravatar.com/avatar/93670e8980fdd7f5a17bce99def7bbe3?s=400
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -25,20 +25,21 @@ thumb:
 <head>
     {% include meta.html %}
     <meta name="google-site-verification" content="NNSORJ-sHRRpUNH7it1ceq3h5RaH5-DXZynCwbJW130">
-    <meta name="theme-color" content="#07c">
+    <meta name="theme-color" content="#963">
 </head>
+
 <body class="index">
     {% include navbar.html %}
 
     <div>
-        <div style="--up: #07c; --down: white;">
+        <div style="--up: #963; --down: white;">
             {% include_relative img/hr-hlline.svg %}
         </div>
 
         <div class="bg-white">
-            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
+            <div class="container py-5 d-flex flex-column flex-lg-row align-items-center">
                 <div class="profile">
-                    <img class="circle" src="{{site.img}}avatar-5.jpg" alt="Me Profile Picture" />
+                    <img class="circle" src="{{site.img}}avatar-6.jpg" alt="Me Profile Picture" />
                     <div class="logo">
                         {% include_relative img/wellosoft.svg %}
                     </div>
@@ -55,24 +56,26 @@ thumb:
                             </li>
                             {% endfor %}
                         </ul>
-                        <p>My name is <b>Wildan</b> and I'm a self-taught programmer since twelve.
-                            I develop web by the day and game by the night. Currently I'm a student
-                            college, while making profits by selling assets in Unity and
-                            custom web projects. You can see few of my best projects below.</p>
+                        <p>My name is <b>Wildan</b> and I'm a self-taught coder since twelve.
+                            I work by the day and hustle by the night. Currently I'm a full-time
+                            engineer while making some dents by selling assets in Unity and
+                            authoring web projects. You can see few of my best projects below.</p>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div style="--up: white; --down: #07c;">
+        <div style="--up: white; --down: #963;">
             {% include_relative img/hr-lhline.svg %}
         </div>
 
         <div class="bg-blue hero">
             <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
                 <div>
-                        <a href="/texdraw/"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png" class="circle lazyload" alt="TEXDraw" width="300"/></a>
+                    <a href="/texdraw/"><img
+                            data-src="https://res.cloudinary.com/wellosoft/image/upload/c_fill,h_300,w_300/v1512857611/expertise/library-texdraw.png"
+                            class="circle lazyload" alt="TEXDraw" width="300" /></a>
                 </div>
                 <div class="flex-grow-1">
                     <div class="hero">
@@ -83,84 +86,95 @@ thumb:
                 </div>
             </div>
         </div>
-        <div style="--up: #07c; --down: white">
+        <div style="--up: #963; --down: white">
             {% include_relative img/hr-hlline.svg %}
         </div>
         <div class="bg-white hero">
             <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
                 <div>
-                    <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475?aid=1101l4NDI"><img data-src="https://forth.wellosoft.net/images/preview.gif" class="circle lazyload" alt="Forth Engine" width="300"/></a>
+                    <a href="https://domcloud.co/"><img data-src="https://domcloud.co/assets/icon.svg" class="lazyload"
+                            alt="DOM Cloud" width="300" /></a>
                 </div>
                 <div class="flex-grow-1">
                     <div class="hero">
-                        <h2>Engine4</h2>
-                        <p>How can nobody on earth have releasing it's 4D game engine code? Well, I made one.</p>
-                        <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475?aid=1101l4NDI"><u>Check it out</u></a>
+                        <h2>DOM Cloud</h2>
+                        <p>Generous web hosting platform for everyone.</p>
+                        <a href="https://domcloud.co/"><u>Check it out</u></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="--up: white; --down: #07c;">
-                {% include_relative img/hr-lhline.svg %}
-            </div>
+        <div style="--up: white; --down: #963;">
+            {% include_relative img/hr-lhline.svg %}
+        </div>
 
-            <div class="bg-blue hero">
-                <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
-                    <div>
-                    <a href="https://domcloud.co/"><img data-src="https://domcloud.co/assets/icon.svg" class="lazyload" alt="DOM Cloud" width="300"/></a>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="hero">
-                            <h2>DOM Cloud</h2>
-                            <p>Indeed hosting each projects cost money, so I made my own provider, free for you too.</p>
-                            <a href="https://domcloud.co/"><u>Check it out</u></a>
-                        </div>
+        <div class="bg-blue hero">
+            <div class="container py-5 d-flex flex-column flex-md-row-reverse align-items-center">
+                <div>
+                    <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475?aid=1101l4NDI"><img
+                            data-src="https://forth.wellosoft.net/images/preview.gif" class="circle lazyload"
+                            alt="Forth Engine" width="300" /></a>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="hero">
+                        <h2>Engine4</h2>
+                        <p>Experimental C++ 4D game engine code.</p>
+                        <a href="https:/forth.wellosoft.net"><u>Check
+                                it out</u></a>
                     </div>
                 </div>
             </div>
-            <div style="--up: #07c; --down: white">
-                {% include_relative img/hr-hlline.svg %}
-            </div>
-            <div class="bg-white hero">
-                <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
-                    <div>
-                        <a href="https://artstation.com/artwork/Z5vbQG"><img data-src="https://res.cloudinary.com/wellosoft/image/upload/w_400,c_fill/v1580134998/home/wireig.png" class="circle lazyload" alt="Splash Wire" width="300"/></a>
-                    </div>
-                    <div class="flex-grow-1">
-                        <div class="hero">
-                            <h2>Way More Projects</h2>
-                            <p>I create a lot more stuff to keep my creativity on.</p>
-                            <a href="https://github.com/willnode"><u>GitHub</u></a> &mdash;
-                            <a href="https://codepen.io/willnode"><u>Codepen</u></a> &mdash;
-                            <a href="https://youtube.com/channel/UCJr_vGlEh3DvYyPXh-VJscg"><u>YouTube</u></a> &mdash;
-                            <a href="https://artstation.com/willnode/"><u>Artstation</u></a>
-                        </div>
+        </div>
+        <div style="--up: #963; --down: white">
+            {% include_relative img/hr-hlline.svg %}
+        </div>
+        <div class="bg-white hero">
+            <div class="container py-5 d-flex flex-column flex-md-row align-items-center">
+                <div>
+                    <a href="https://artstation.com/artwork/Z5vbQG"><img
+                            data-src="https://wiiin0de.wellosoft.net/wp-content/uploads/2022/12/image-1-300x300.png"
+                            class="circle lazyload" alt="Splash Wire" width="300" /></a>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="hero">
+                        <h2>Way More Projects</h2>
+                        <p>I create a lot more stuff to keep my creativity on.</p>
+                        <a href="https://forwarddomain.net/"><u>Forward Domains</u></a> &mdash;
+                        <a href="https://madura.wellosoft.net/"><u>Madurese Translator</u></a> &mdash;
+                        <a href="https://willnode.github.io/deobfuscator/"><u>Deobfuscator</u></a> &mdash;
+                        <a href="https://willnode.github.io/random-youtube/"><u>Random YouTube</u></a> &mdash;
+                        <a href="https://willnode.github.io/"><u>More web toys</u></a> 
                     </div>
                 </div>
             </div>
-            <div style="--up: white; --down: #07c;">
+        </div>
+        <div style="--up: white; --down: #963;">
             {% include_relative img/hr-lhline.svg %}
         </div>
         <div id="section-email" class="bg-blue">
             <div class="hero" style="padding-top:3em">
                 <p>More to look For:</p>
                 <p>
-                    <a href="/asset-store/">Unity Products</a> &bullet;
-                    <a href="/cv/">Curriculum Vitae</a> &bullet;
-                    <a href="https://github.com/willnode?tab=repositories&q=is%3Apublic&type=source">GitHub Projects</a>
+                    <a href="https://github.com/willnode"><u>GitHub</u></a> &mdash;
+                    <a href="https://codepen.io/willnode"><u>Codepen</u></a> &mdash;
+                    <a href="https://youtube.com/channel/UCJr_vGlEh3DvYyPXh-VJscg"><u>YouTube</u></a> &mdash;
+                    <a href="https://artstation.com/willnode/"><u>Artstation</u></a>
+                </p>
+                <p>
+                    <a href="/asset-store/"><u>Unity Products</u></a> &bullet;
+                    <a href="/cv/"><u>Curriculum Vitae</u></a> &bullet;
+                    <a href="https://github.com/willnode?tab=repositories&q=is%3Apublic&type=source"><u>GitHub Projects</u></a>
                 </p>
             </div>
             <!-- Email -->
             <div class="home-email hero nowrap d-flex align-items-center justify-content-center">
-                <p class="nowrap"><a
-                    href="mailto:{{page.email.alias}}">Email</a></p>
+                <p class="nowrap"><a href="mailto:{{page.email.alias}}">Email</a></p>
                 <p class="mx-3">
                     <a class="icon" href="/assets/dino.txt" target="_blank" rel="nofollow noopener">
                         {% include_relative img/gmail.svg %}
                     </a>
                 </p>
-                <p class="nowrap"><a
-                    href="https://t.me/WIIIN0DE">Chat</a></p>
+                <p class="nowrap"><a href="https://t.me/WIIIN0DE">Chat</a></p>
             </div>
         </div>
     </div>

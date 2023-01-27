@@ -2,7 +2,7 @@
     body.index & {
 
         &, a {
-            background: #07c;
+            background: #963;
             color: white;
         }
 
@@ -16,7 +16,7 @@
         }
     }
 
-    box-shadow: 0 0 0px 0px rgba(#07c, 0);
+    box-shadow: 0 0 0px 0px rgba(#963, 0);
     display: flex;
     margin: 0;
     padding: 0 40px;
@@ -27,12 +27,12 @@
         height: 48px;
         cursor: pointer;
         margin: 0.5em 0px;
-        fill: #07c;
+        fill: #963;
     }
 
     &:focus,
     &:hover {
-        box-shadow: 0 0 5px 0px rgba(#07c, 50);
+        box-shadow: 0 0 5px 0px rgba(#963, 50);
         transition: box-shadow 0.2s ease-out;
     }
 
@@ -64,7 +64,7 @@
                 display: inline-block;
                 width: 48px;
                 height: 48px;
-                padding: (48px - 25px) / 2;
+                padding: calc((48px - 25px) / 2);
                 margin: 0.5em;
             }
 
