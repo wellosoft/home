@@ -1,7 +1,7 @@
 ---
 layout: compress
 title: WIIIN0DE
-excerpt: Work by the day, Hustle by the night.
+excerpt: Work by the day, hustle by the night.
 hero: https://res.cloudinary.com/wellosoft/image/upload/w_800/v1674830833/home/wellosoft-net-bg.png
 links:
 - name: GitHub
@@ -51,7 +51,7 @@ thumb:
                             {% for v in page.links %}
                             <li class="col-4">
                                 <a href="{{ v.href }}" target="_blank" rel="noopener">
-                                    {% include_relative {{ v.icon }} %} {{ v.name }}
+                                    {% include_relative {{ v.icon }} %}<span class="d-none d-sm-inline">&nbsp; {{ v.name }}</span> 
                                 </a>
                             </li>
                             {% endfor %}

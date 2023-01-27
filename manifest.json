@@ -1,7 +1,7 @@
 {
-	"short_name": "Wello Soft",
-	"name": "Wello Soft",
-	"description": "Wildan M's CV on Wello Soft",
+	"short_name": "WIIIN0DE",
+	"name": "WIIIN0DE",
+	"description": "Work by the day, hustle by the night.",
 	"icons": [
 	  {
 		"src": "assets/logo-192.png",
@@ -15,8 +15,8 @@
 	  }
 	],
 	"start_url": "/",
-	"background_color": "#0077CC",
+	"background_color": "#996633",
 	"display": "standalone",
 	"scope": "/",
-	"theme_color": "#0077CC"
+	"theme_color": "#996633"
   }
