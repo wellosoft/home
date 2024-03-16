@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+<html lang="id">
+
+<head>
+    {% include meta.html %}
+    <link rel="stylesheet" type="text/css" media="screen" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <meta name="theme-color" content="#963">
+</head>
+
+<body class="post">
+    {% include navbar.html %}
+    <div class="container" style="max-width: 800px;">
+        <h1 class="my-5 title">
+            {{ page.title }}
+        </h1>
+        {{ content }}
+
+        <p>
+            <a href="/posts" class="text-decoration-underline">Kembali ke daftar posting</a>
+        </p>
+    </div>
+</body>
+
+</html>

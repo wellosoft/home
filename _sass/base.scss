@@ -25,6 +25,10 @@ a {
     transition: all 0.2s ease-out;
 }
 
+body.post a {
+    text-decoration: underline;
+}
+
 .links-aon a {
     border-bottom-color: black;
 }

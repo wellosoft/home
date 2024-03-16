@@ -1,0 +1,39 @@
+---
+layout: compress
+permalink: /posts/
+title: Blog Posts
+---
+<html lang="id">
+
+<head>
+    {% include meta.html %}
+    <link rel="stylesheet" type="text/css" media="screen" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <meta name="theme-color" content="#963">
+</head>
+
+<body class="post">
+    {% include navbar.html %}
+    <div class="container my-5">
+        <h1 class="my-5">Arsip Artikel</h1>
+        <p>
+    
+        </p>
+        <div class="row">
+            {% for post in site.posts %}
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <p class="card-text">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Diposting {{ post.date | date: "%d %B %Y" }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

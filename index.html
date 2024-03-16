@@ -41,7 +41,7 @@ thumb:
                 <div class="profile">
                     <img class="circle" src="{{site.img}}avatar-6.jpg" alt="Me Profile Picture" />
                     <div class="logo">
-                        {% include_relative img/wellosoft.svg %}
+                        {% include wellosoft.svg %}
                     </div>
                 </div>
                 <div class="flex-grow-1">
@@ -49,7 +49,7 @@ thumb:
                         <h1>WIIIN0DE</h1>
                         <ul class="links row">
                             {% for v in page.links %}
-                            <li class="col-4">
+                            <li class="col-3">
                                 <a href="{{ v.href }}" target="_blank" rel="noopener">
                                     {% include_relative {{ v.icon }} %}<span class="d-none d-sm-inline">&nbsp; {{ v.name }}</span> 
                                 </a>
@@ -160,9 +160,9 @@ thumb:
                 </div>
                 <div class="flex-grow-1">
                     <div class="hero">
-                        <h2>CODEX (Indonesian Blog)</h2>
-                        <p>Personal, philosophical notes that I like to write in spare time</p>
-                        <a href="https://wiiin0de.wellosoft.net"><u>Check
+                        <h2>Indonesian Tech Blog</h2>
+                        <p>Learning notes I like to write in spare time</p>
+                        <a href="/posts"><u>Check
                                 it out</u></a>
                     </div>
                 </div>

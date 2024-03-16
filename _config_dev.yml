@@ -2,6 +2,7 @@ img: http://localhost:9000/home/
 compress_html:
   ignore:
     envs: development
+permalink: /:year/:title/
 exclude:
 - CNAME
 - README.md
