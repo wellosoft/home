@@ -4,152 +4,120 @@ permalink: /cv/
 title: CV
 image: https://res.cloudinary.com/wellosoft/image/upload/w_800/v1674830833/home/avatar-6.jpg
 title: Curriculum Vitae
-excerpt: Wildan Mubarok, Fullstack Web Freelancer
+excerpt: Wildan Mubarok CV
 ---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    {% include head.html %}
+    <title>Wildan Mubarok Curriculum Vitae</title>
     <style>
         body {
-            color: #111;
+            font-family: Arial, sans-serif;
         }
 
-        h2,
-        h3 {
-            color: #963;
-        }
-
-        .contact a,
-        .milestones a {
-            color: black;
-        }
-
-        .contact a:hover,
-        .milestones a:hover {
-            text-decoration: underline;
-        }
-
-        .bio {
-            font-size: 0.9rem;
-            text-align: justify;
+        header {
+            text-align: center;
         }
 
         .container {
-            padding: 0 1.5em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin: 5px 0;
+        }
+
+        .timing {
+            float: right;
         }
 
         @media print {
-            .col-print-4 {
-                flex: 0 0 33.33333%;
-                max-width: 33.33333%;
-            }
-
-            .col-print-8 {
-                flex: 0 0 66.66667%;
-                max-width: 66.66667%;
-            }
-
-            .container {
-                padding: 0 0.5em;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .ps-5 {
-                padding-left: 1em !important;
+            .print-none {
+                display: none;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" style="max-width: 800px;">
-        <h1 class="display-3 text-center mb-0 mt-4">Wildan Mubarok</h1>
-        <div class="row">
-            <div class="col-md-4 col-print-4 mt-2">
-                <h3 class="my-3">Contact</h3>
-                <ul class="contact">
-                    <li><a href="https://wellosoft.net">wellosoft.net</a></li>
-                    <li><a href="https://t.me/WIIIN0DE">t.me/WIIIN0DE</a></li>
-                    <li><a href="https://github.com/willnode">github.com/willnode</a></li>
-                    <li><a href="https://linkedin.com/in/willnode">linkedin.com/in/willnode</a></li>
-                    <li><a href="mailto:willnode@wellosoft.net">willnode@wellosoft.net</a></li>
-                </ul>
-                <h3 class="my-3">About Me</h3>
-                <div class="bio">
-                    <p>
-                        Having experience in coding since 2015, I've been working on both small and large
-                        projects. I usually use PHP + Bootstrap for small projects, and Node frameworks for larger
-                        ones. I have a lot of experience in full-stack web development, and I know algorithms or tools
-                        from things I usually write on Node, Python or Go, (and formerly, C++ and C#) in
-                        side-projects.
-                    </p>
-                    <p>
-                        I write a lot of small tools and web toys that end up in my GitHub profile to stay curious. I
-                        also sometimes write blogs and documentation for my side projects. I also created web services
-                        like a hosting service to fulfill my own needs and sharpen my knowledge in an entirely new
-                        field. While I did work on my side projects, I also did work on large projects with several
-                        people, which made my soft skills significantly better for the last three years of my career
-                        development.
-                    </p>
-                </div>
-                <div class="d-print-none text-black-50">
-                    <a href="javascript:print()">Print this</a> &bullet; <a href="/">Back to home</a>
-                </div>
+    <div class="container">
+        <header>
+            <h1>M Wildan Mubarok A</h1>
+            <p> 📧 <a href="mailto:willnode@wellosoft.net">willnode@wellosoft.net</a>
+                📞 <a href="https://t.me/wiiin0de">t.me/wiiin0de</a>
+                📍 <a href="javascript:alert('Remote welcomes in UTC + 7!!!')">Surabaya, Indonesia</a>
+                🛄 <a href="https://linkedin.com/in/willnode">linkedin.com/in/willnode</a> </p>
+        </header>
+        <section class="experience section">
+            <h2>Work Experience</h2>
+            <h3>Software Engineer &mdash; GoTo Logistics <span class="timing">Jan 2022 - Now</span></h3>
+            <ul>
+                <li>Proficiently write backend software primilarily in Go</li>
+                <li>Proficiently write internal software in Python, Rust and Javascript</li>
+                <li>Proficiently managing DB in PostgreSQL, Redis and BigQuery</li>
+                <li>Proficiently doing DevOps using Docker and Kubernetes</li>
+                <li>Proficiently writing high performance software and high quality tests</li>
+            </ul>
+            <h3>Solo Founder &mdash; DOM Cloud Hosting <span class="timing">June 2020 - Dec 2021</span></h3>
+            <ul>
+                <li>Bootstrapping in-house, small cloud platform-as-a-service from zero</li>
+                <li>Doing rapid iteration in first two years and still selling today</li>
+                <li>Proficiently write software in PHP, Svelte and Node.js</li>
+                <li>Proficiently doing DevOps using Linux VM from stratch and doing custom installs</li>
+                <li>Proficiently write good technical documentation and listening to user feedback</li>
+                <li>Proficiently submitting issues and PR to upstream open-source projects</li>
+            </ul>
+            <h3>Fullstack Developer &mdash; Freelance <span class="timing">June 2018 - Dec 2021</span></h3>
+            <ul>
+                <li>Create web and mobile projects since starting college</li>
+                <li>Mainly write projects in PHP, sometimes Python and Flutter</li>
+                <li>Proficiently using Frontend stack such as Boostrap and React</li>
+                <li>Proficiently read and understand new algorithms given from college</li>
+                <li>Occasionaly work in parallel for up to 4 projects at the same time</li>
+            </ul>
+        </section>
+        <section class="education section">
+            <h2>Education</h2>
+            <h3>Magister in Information Technology &mdash; ITS <span class="timing">June 2022 - Now</span></h3>
+            <ul>
+                <li>Institut Teknologi Sepuluh Nopember &mdash; attending until now</li>
+                <li>Mostly for spending my free time in a useful way</li>
+                <li>I'm attending this college remotely and outside working hours</li>
+            </ul>
+            <h3>Bachelor in Information Technology &mdash; UTM <span class="timing">June 2018 - January 2022</span></h3>
+            <ul>
+                <li>Universitas Trunojoyo Madura &mdash; GPA 3.69 of 4.00</li>
+                <li>Occasionaly get web projects from lecturers</li>
+                <li>Attending Bangkit Academy from Kampus Merdeka in mid 2021</li>
+                <li>Publishing the first dataset for transformer-based Madura machine translator as thesis</li>
+            </ul>
+        </section>
+        <section class="project section">
+            <h2>Projects</h2>
+            <p>I have so many projects listed in my GitHub profile: <a
+                    href="https://github.com/willnode">github.com/willnode</a>
+                counting over 100 repos and many diverse projects and languages since 2016 with notable projects
+                include DOM Cloud, JS deobfuscator and forwarddomain.net. I also starts to contribute in open source
+                projects recently such as Redox OS. I also sell the most popular LaTeX Engine as Unity Game plugin since
+                2015.</p>
+        </section>
 
-                <div class="d-print-none text-black-50">
-                    <br>
-                </div>
-            </div>
-            <div class="col-md-8 col-print-8 mt-2">
-                <h3 class="my-3">Education Background</h3>
-
-                <div class="ps-3">
-                    <h5>Trunojoyo University</h5>
-                    <p>Information Technology Bachelor Degree
-                        <br><i>2018 - 2022</i></p>
-                </div>
-
-                <h3 class="my-3">Career Milestones</h3>
-
-                <div class="ps-3 milestones">
-                    <h5>2023: <a href="https://benerin.co">Created Benerin API</a></h5>
-                    <p>An early side project for Indonesian spell-proofing API.</p>
-                    <h5>2022: Software Engineer at <a href="https://www.linkedin.com/company/gotologistics/">GoTo
-                            Logistics</a></h5>
-                    <p>Working as a fulltime software engineer in a large tech company.</p>
-                    <h5>2021: <a
-                            href="https://drive.google.com/drive/folders/1o-nxnIJ1zuuteGb2Eqx6EG9K_FmueN7B?usp=sharing">Bangkit
-                            Graduate in Machine Learning</a></h5>
-                    <p>My first course with "Kampus Merdeka". Learned AI.</p>
-                    <h5>2020: <a href="https://domcloud.co">Created DOM Cloud Hosting</a> </h5>
-                    <p>My first startup, a PaaS to host websites. Learned Linux.</p>
-                    <h5>2019: LPPM of Trunojoyo's Internship</h5>
-                    <p>My first ticket to work on many research projects in the University.</p>
-                    <h5>2018: <a href="https://wellosoft.net/web/">Freelancing as Web Developer</a></h5>
-                    <p>My first starting point for career in web development.</p>
-                    <h5>2017: <a href="https://assetstore.unity.com/packages/tools/modeling/engine-4-34475">Fourth
-                            Dimension Engine for Unity</a></h5>
-                    <p>My first experimental project with geometry and physics simulation.</p>
-                    <h5>2016: <a href="https://assetstore.unity.com/packages/tools/gui/texdraw-51426">LaTeX Rendering
-                            Engine for Unity</a></h5>
-                    <p>My first successful scripting product that sells. Learned AST.</p>
-                    <h5>2015: <a href="https://github.com/willnode/Observatory"> Solar System Simulation</a></h5>
-                    <p>My first edu-game project with 3D algorithm in it. 1:1 Accuracy.</p>
-                </div>
-
-                <div class="d-print-none">
-                <h3 class="my-3">Key Skills</h3>
-
-                <div class="ps-3">
-                    <p>CodeIgniter &bullet; Laravel &bullet; Strapi &bullet; React &bullet; WordPress &bullet;
-                        <br>JavaScript &bullet; PHP &bullet; Python &bullet; C++ &bullet; C# &bullet; Go &bullet; Rust &bullet;
-                        <br>Linux &bullet; Git &bullet; Docker &bullet; 3D &bullet; Computing &bullet; Torch &bullet; AI </p>
-                </div>
-            </div>
-            </div>
+        <div class="print-none">
+            <a href="javascript:print()">Print this</a> &bullet; <a href="/">Back to home</a>
         </div>
     </div>
 </body>

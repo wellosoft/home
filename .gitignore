@@ -3,3 +3,5 @@ bundle.js
 _site/
 .sass-cache/
 .jekyll-cache/
+.bundle
+vendor/bundle
