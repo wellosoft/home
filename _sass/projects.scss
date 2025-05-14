@@ -1,3 +1,4 @@
+@use "sass:color";
 #projects {
     h1, h2 {
         padding: 0px 10px;
@@ -23,7 +24,7 @@
 
     .master-slick.projects {
         height: calc(4rem + 30vw + 150px);
-        background-color: darken($color: darkslategray, $amount: 10);
+        background-color: color.adjust($color: darkslategray, $lightness: -10%);
 
         .item {
             margin: 1rem;
