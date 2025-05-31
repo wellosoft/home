@@ -3,6 +3,5 @@ sass:
 img: https://res.cloudinary.com/wellosoft/image/upload/v1546833986/home/
 permalink: /:year/:title/
 exclude:
-- CNAME
 - README.md
 - img/
