@@ -1,0 +1,22 @@
+{
+	"short_name": "WIIIN0DE",
+	"name": "WIIIN0DE",
+	"description": "Work by the day, hustle by the night.",
+	"icons": [
+	  {
+		"src": "assets/logo-192.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	  },
+	  {
+		"src": "assets/logo-512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	  }
+	],
+	"start_url": "/",
+	"background_color": "#996633",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#996633"
+  }
